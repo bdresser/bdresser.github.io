@@ -1,6 +1,10 @@
 $( document ).ready(function(){
 
-	$('body').fadeIn(1000);
+	//page.base('');
+	page('/', home);
+	page('/photo', photo);
+	page('/web', web);
+	page();
 
 	function photo(){
 		console.log("hello world");
@@ -12,15 +16,9 @@ $( document ).ready(function(){
 		$('.indicator').text("on the homepage");
 	}
 
-	page.base('');
-	page('/', home);
-	page('/photo', photo);
-	page();
+	function web(){
 
-	// $('.photo-side').click(function(e){
-	// 	page('/photo');
-	// 	e.preventDefault();
-	// });
+	}
 
 	$('.photo' )
 		.mouseenter(function(e) {
