@@ -5,13 +5,21 @@ html {
   box-sizing: inherit;
 }
 
-html { 
-  background: url(bg5.jpg) no-repeat center center fixed; 
+.home-content {
+	display:none;
+	margin:0px;
+	padding:0px;
+	height:100vh; 
+  background: url(/assets/bg11.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 
+body {
+	margin:0px;
+	width:100%;
 }
 
 .indicator {
@@ -21,8 +29,9 @@ html {
 
 p {
 	font-family: 'Source Code Pro';
-	font-weight: 100;
-	text-align: center;
+	font-weight: 200;
+	text-align: left;
+	font-size:12px;
 }
 
 .text-box {
@@ -43,6 +52,7 @@ p {
 }
 .last-name {
 	text-transform: uppercase;
+	text-align: center;
 	font-size: 35px;
 	line-height: 35px;
 	letter-spacing: -1px;
@@ -50,7 +60,7 @@ p {
 	margin-bottom: 10px;
 }
 
-.social-container {
+.social-container-home {
 	padding-left: 65px;
 }
 
@@ -67,13 +77,15 @@ p {
 }
 
 
-
+.link-text {
+	font-family: "Source Code Pro";
+	font-size: 80px;
+	font-weight: 400;
+}
 
 .web-link, .photo-link {
 	width: 30%;
 	text-align: bottom;
-	font-size: 80px;
-	font-weight: 400;
 	position: absolute;
 	top: 0;
 	color: white;
@@ -134,3 +146,59 @@ p {
 	opacity: 1 !important;
 	//transition: 1s;
 }
+
+.black {
+	color: black;
+}
+
+/* Page Styles */
+
+.page-head {
+	width: 250px;
+	margin-right:8%;
+	margin-top:70px;
+}
+
+.photo-page {
+	display:none;
+}
+
+.back-button {
+	width: 100%;
+	text-align: center;
+	font-family: "Source Code Pro";
+	margin-top: 10px;
+	color: rgb(150,150,150);
+}
+
+.back-button:hover{
+	background-color: rgb(70,70,70);
+	cursor:pointer;
+}
+
+.photo-page-head {
+	float: right;
+}
+
+.web-page-head {
+	float: left;
+}
+
+.page-head-text {
+	margin:0px;
+	color: rgb(150,150,150);
+}
+
+@media only screen and (max-width: 1000px) {
+	.photo-page-head, .web-page-head {
+		float:none;
+	}
+	.page-head {
+		margin: auto;
+	}
+}
+
+.social-container-page {
+	padding-left: 10px;
+}
+
