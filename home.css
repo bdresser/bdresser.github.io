@@ -15,11 +15,14 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  //transition: all 1s;
+
 }
 
 body {
 	margin:0px;
 	width:100%;
+	background-color: black;
 }
 
 .indicator {
@@ -29,9 +32,9 @@ body {
 
 p {
 	font-family: 'Source Code Pro';
-	font-weight: 200;
-	text-align: left;
+	font-weight: 400;
 	font-size:12px;
+	color: rgb(150,150,150);
 }
 
 .text-box {
@@ -52,6 +55,8 @@ p {
 }
 .last-name {
 	text-transform: uppercase;
+	color: white;
+	font-weight: 300;
 	text-align: center;
 	font-size: 35px;
 	line-height: 35px;
@@ -64,7 +69,7 @@ p {
 	padding-left: 65px;
 }
 
-.social {
+.social, .social-small {
 	height: 40px;
 	width: auto;
 	margin:0px;
@@ -72,12 +77,16 @@ p {
 	transition: .8s;
 }
 
-.social:hover {
+.social-small {
+	height: 35px;
+}
+
+.social:hover, .social-small:hover {
 	opacity: .7;
 }
 
 
-.link-text {
+.big-link-text {
 	font-family: "Source Code Pro";
 	font-size: 80px;
 	font-weight: 400;
@@ -155,33 +164,63 @@ p {
 
 .page-head {
 	width: 250px;
-	margin-right:8%;
+	
 	margin-top:70px;
 }
 
-.photo-page {
+.underline {
+	border-bottom: 4px solid rgb(150,150,150);
+	width: 100%;
+}
+
+.photo-page, .web-page {
 	display:none;
 }
 
+
 .back-button {
 	width: 100%;
+	height:50px;
 	text-align: center;
 	font-family: "Source Code Pro";
+	font-size: 13px;
 	margin-top: 10px;
+	padding-top:15px;
 	color: rgb(150,150,150);
+	text-decoration: none;
+	transition: all .3s;
 }
 
 .back-button:hover{
-	background-color: rgb(70,70,70);
+	background-color: rgb(150,150,150);
+	color: rgb(250,250,250);
 	cursor:pointer;
+}
+
+.back-button:active {
+	text-decoration: none;
+}
+.back-button:visited {
+	text-decoration: none;
 }
 
 .photo-page-head {
 	float: right;
+	margin-right:8%;
 }
 
 .web-page-head {
+	width: 230px;
 	float: left;
+	margin-left: 8%;
+}
+
+.web-page p {
+	text-align: right;
+}
+
+.web-page .page-head-text {
+	padding-right: 40px;
 }
 
 .page-head-text {
@@ -199,6 +238,27 @@ p {
 }
 
 .social-container-page {
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
+.social-container-web {
+	padding-left: 0px;
+}
+
+
+.link-underline {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link-underline:hover {
+	text-decoration: underline;
+}
+
+.link-no-underline {
+	text-decoration: none;
+	color:inherit;
+}
+
+.link-no-underline:hover {
+	text-decoration: none;
