@@ -5,7 +5,7 @@ html {
   box-sizing: inherit;
 }
 
-.home-content {
+/*.home-content*/ .home-bg {
 	display:none;
 	margin:0px;
 	padding:0px;
@@ -17,8 +17,12 @@ html {
   background-size: cover;*/
 }
 
+.home-all {
+	display: none;
+}
+
 .bg1 {
-	background: url("/assets/bg4.jpg") no-repeat center center fixed; 
+	background: url("/assets/cover1.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -26,15 +30,16 @@ html {
 }
 
 .bg2 {
-	background: url("/assets/bg5.jpg") no-repeat center center fixed; 
+	background: url("/assets/cover2.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  	color: white;
 }
 
 .bg3 {
-	background: url("/assets/bg8.jpg") no-repeat center center fixed; 
+	background: url("/assets/cover3.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -42,7 +47,7 @@ html {
 }
 
 .bg4 {
-	background: url("/assets/bg7.jpg") no-repeat center center fixed; 
+	background: url("/assets/cover4.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -50,7 +55,7 @@ html {
 }
 
 .bg5 {
-	background: url("/assets/bg10.jpg") no-repeat center center fixed; 
+	background: url("/assets/cover5.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -58,7 +63,15 @@ html {
 }
 
 .bg6 {
-	background: url("/assets/bg11.jpg") no-repeat center center fixed; 
+	background: url("/assets/cover6.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg7 {
+	background: url("/assets/cover7.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -210,7 +223,7 @@ p {
 
 .page-head {
 	width: 250px;
-	
+	position: fixed;
 	margin-top:70px;
 }
 
@@ -251,17 +264,16 @@ p {
 }
 
 .photo-page-head {
-	float: right;
-	margin-right:8%;
+	margin-left: calc(92% - 220px);
 }
 
 .web-page-head {
 	width: 230px;
-	float: left;
 	margin-left: 8%;
+	text-align: right;
 }
 
-.web-page p {
+.web-page .page-info-text {
 	text-align: right;
 }
 
@@ -274,18 +286,6 @@ p {
 	color: rgb(150,150,150);
 }
 
-@media only screen and (max-width: 1000px) {
-	.photo-page-head, .web-page-head {
-		float:none;
-	}
-	.page-head {
-		margin: auto;
-	}
-
-	.web-page p, .photo-page p {
-		text-align: center;
-	}
-}
 
 .social-container-page {
 	padding-left: 20px;
@@ -293,6 +293,7 @@ p {
 
 .social-container-web {
 	padding-left: 0px;
+	padding-right: 20px;
 }
 
 
@@ -312,3 +313,72 @@ p {
 
 .link-no-underline:hover {
 	text-decoration: none;
+}
+
+.page-content {
+	width: 600px;
+	display: inline-block;
+	margin-top: 115px;
+}
+
+/* Photo Page Style */
+
+.photo-page-content {
+	float: right;
+	margin-right: 500px;
+	margin-top: 100px;
+}
+
+.gallery-pic {
+	width: 700px;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+/* Web Page Style */
+
+.fader {
+	opacity: 0;
+}
+
+.web-page-content {
+	margin-left: calc(230px + 15%);
+}
+
+.project-title {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: -.5px;
+	padding-bottom: 10px;
+	border-bottom: 4px solid rgb(150,150,150);
+}
+
+.project {
+	margin-bottom: 80px;
+}
+
+
+
+
+/* mobile styles */
+
+@media only screen and (max-width: 1000px) {
+	.photo-page-head, .web-page-head {
+		
+	}
+	.page-head {
+		position: absolute;
+		margin-left:calc(50% - 115px);
+	}
+
+	.web-page .page-info-text, .photo-page .page-info-text {
+		text-align: center;
+	}
+
+	.page-content {
+		margin-top: 380px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
