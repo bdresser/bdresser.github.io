@@ -10,13 +10,59 @@ html {
 	margin:0px;
 	padding:0px;
 	height:100vh; 
-  background: url("/assets/bg11.jpg") no-repeat center center fixed; 
+  /*background: url("/assets/bg11.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  //transition: all 1s;
+  background-size: cover;*/
+}
 
+.bg1 {
+	background: url("/assets/bg4.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg2 {
+	background: url("/assets/bg5.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg3 {
+	background: url("/assets/bg8.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg4 {
+	background: url("/assets/bg7.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg5 {
+	background: url("/assets/bg10.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg6 {
+	background: url("/assets/bg11.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 body {
@@ -234,6 +280,10 @@ p {
 	}
 	.page-head {
 		margin: auto;
+	}
+
+	.web-page p, .photo-page p {
+		text-align: center;
 	}
 }
 

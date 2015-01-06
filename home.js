@@ -1,33 +1,25 @@
 $( document ).ready(function() {
 
+	// "Global" background timer
 	var timer;
 
+	// If we are on bobbydresser.com/
+	// load homepage and start background images 
 	if(location.pathname === '/'){
 			showHome();
 			cycleBG();
 	}
 
+	// Rotate background image on timer
 	function cycleBG() {
 		var body = $('.home-content');
-	    var backgrounds = [
-	      'url(/assets/bg5.jpg) no-repeat center center fixed', 
-	      'url(/assets/bg4.jpg) no-repeat center center fixed',
-	      'url(/assets/bg7.jpg) no-repeat center center fixed',
-	      'url(/assets/bg8.jpg) no-repeat center center fixed',
-	      'url(/assets/bg9.jpg) no-repeat center center fixed',
-	      'url(/assets/bg10.jpg) no-repeat center center fixed',
-	      'url(/assets/bg11.jpg) no-repeat center center fixed'];
+	    var backgrounds = ['bg1', 'bg2', 'bg3', 'bg4', 'bg5', 'bg6'];
 	    var current = 0;
 
 	    function changeImg() {
 	    	body.hide();
-	    	body.css(
-	            'background',
-	        backgrounds[current = ++current % backgrounds.length]);
-	        body.css('-webkit-background-size', 'cover');
-	        body.css('-moz-background-size', 'cover');
-	        body.css('-o-background-size', 'cover');
-	        body.css('background-size', 'cover');
+	    	body.removeClass(backgrounds[current]);
+	    	body.addClass(backgrounds[current = ++current % backgrounds.length]);
 	        body.fadeIn(600);
 	    }
 
@@ -36,16 +28,12 @@ $( document ).ready(function() {
 		        timer = setTimeout(nextBackground, 5000);
 	    }
 
+	    // begin timer
 	    timer = setTimeout(nextBackground, 5000);
-	    body.css('background', backgrounds[0]);
-	    body.css('-webkit-background-size', 'cover');
-        body.css('-moz-background-size', 'cover');
-        body.css('-o-background-size', 'cover');
-        body.css('background-size', 'cover');
-
-	
 	}
 
+
+	// Handle page changes
 	function clearHome(){
 		clearTimeout(timer);
 		$('body').css('background-color', 'white');
@@ -57,7 +45,8 @@ $( document ).ready(function() {
 	}
 
 	function showHome() {
-		$('.home-content').fadeIn(600);
+		$('.home-content').fadeIn(400);
+		$('.home-content').addClass('bg1');
 	}
 
 	function showPhoto() {
@@ -76,10 +65,6 @@ $( document ).ready(function() {
 		clearHome();
 	});
 
-	// $(".back-button").click(function(){
-	// 	showHome();
-	// })
-
 	Path.map("#/photo").enter(showPhoto).to(function(){
  		$('.home-content').hide();
  		clearHome();
@@ -97,43 +82,7 @@ $( document ).ready(function() {
 	}).exit(function(){
 		$('.web-page').fadeOut(400);
 	});
-
-	// Path.map("#/something").enter(showHome()).to(function(){
-	// 	showHome();
-	// 	$('.photo-page').hide();
-	// });
-
 	
 	Path.listen();
-
-	// function photo(){
-	// 	console.log("hello world");
-	// 	//$('html').css("background", "none");
-	// 	$('.indicator').text("on the photopage");
-	// }
-
-	// function home(){
-	// 	$('.indicator').text("on the homepage");
-	// }
-
-	// function web(){
-
-	// }
-
-	// $('.photo' )
-	// 	.mouseenter(function(e) {
-	// 		$('.photo-link').addClass("white");
-	// 	})
-	// 	.mouseleave(function(e) {
-	// 		$('.photo-link').removeClass("white");
-	// 	});
-
-	// $('.web' )
-	// 	.mouseenter(function(e) {
-	// 		$('.web-link').addClass("white");
-	// 	})
-	// 	.mouseleave(function(e) {
-	// 		$('.web-link').removeClass("white");
-	// 	});
 
 });
