@@ -7,11 +7,20 @@ $( document ).ready(function() {
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
 	if(location.pathname === '/'){
+
 		showHome();
 	}
 
+	function preload(arrayOfImages) {
+	    $(arrayOfImages).each(function(){
+	        $('<img/>')[0].src = this;
+	    });
+	}
+
+
 	// Rotate background image on timer
 	function cycleBG() {
+
 		var body = $('.home-bg');
 		// var loader = $('.loader');
 	    var backgrounds = ['bg1', 'bg2', 'bg3', 'bg4', 'bg5', 'bg6', 'bg7'];
@@ -29,12 +38,7 @@ $( document ).ready(function() {
 	    	body.hide();
 	    	body.removeClass(backgrounds[current]);
 	    	body.addClass(backgrounds[current = ++current % backgrounds.length]);
-	    	//current = ++current;
-    		//body.addClass(backgrounds[(current+1) % backgrounds.length]);
-    		// loader.removeClass(backgrounds[current]);
-    		// loader.addClass(backgrounds[(current+1) % backgrounds.length]);
-	    	//current = current % backgrounds.length;
-	        body.fadeIn(900);
+	        body.fadeIn(1000);
 	    }
 
 	    function nextBackground() {
@@ -56,22 +60,29 @@ $( document ).ready(function() {
 
 	function showHome() {
 
-		//var img = $('.home-all').css("display");
-
 		$('body').css('background-color', 'black');
 
 		if($('.home-bg').css("background-size") === 'auto'){
-			//$('.home-bg').addClass('bg2');
-			$('.home-bg').addClass('bg1');
-			
+			$('.home-bg').addClass('bg1');			
 		}
 
-		$('.bg-preload').unveil();
 		$('.home-bg').show();
-		//$('.home-all').fadeIn(500);
-		$('.home-all').show();
+		$('.home-all').fadeIn(800);
 
-		//cycleBG();
+		pic = new Image();
+		pic2 = new Image();
+	    pic3 = new Image();
+	    pic4 = new Image();
+	    pic5 = new Image();
+	    pic6 = new Image();
+	    pic.src="/assets/cover2.jpg";
+	    pic2.src="/assets/cover3.jpg";
+	    pic3.src="/assets/cover4.jpg";
+	    pic4.src="assets/cover5.jpg";
+	    pic5.src="assets/cover6.jpg";
+	    pic6.src="assets/cover7.jpg";
+
+		cycleBG();
 	}
 
 	function showPhoto() {
