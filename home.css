@@ -236,6 +236,9 @@ p {
 	display:none;
 }
 
+.margin-bottom {
+	margin-bottom: 30px;
+}
 
 .back-button {
 	width: 100%;
@@ -325,8 +328,9 @@ p {
 
 .photo-page-content {
 	float: right;
-	margin-right: 500px;
+	margin-right: 400px;
 	margin-top: 100px;
+	width:700px;
 }
 
 .gallery-pic {
