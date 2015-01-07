@@ -68,8 +68,6 @@ $( document ).ready(function() {
 		}
 
 		
-		//$('.home-bg').show();
-
 		$('.home-all').fadeIn(500, function(){
 			cycleBG();
 		});
