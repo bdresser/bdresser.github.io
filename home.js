@@ -65,7 +65,7 @@ $( document ).ready(function() {
 			$('.home-bg').addClass('bg1');			
 		}
 
-		$('.home-all').fadeIn(500);
+		$('.home-all').fadeIn(1000);
 		$('.home-bg').fadeIn(500);
 		
 
