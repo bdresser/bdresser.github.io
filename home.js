@@ -7,7 +7,7 @@ $( document ).ready(function() {
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
 	if(location.pathname === '/'){
-		showHome();
+			showHome();
 	}
 
 	function preload(arrayOfImages) {
@@ -65,8 +65,11 @@ $( document ).ready(function() {
 			$('.home-bg').addClass('bg1');			
 		}
 
-		$('.home-all').fadeIn(1000);
-		$('.home-bg').fadeIn(500);
+		
+		$('.home-bg').show();
+		$(window).load(function(){
+			$('.home-all').fadeIn(800);
+		})
 		
 
 		pic = new Image();
