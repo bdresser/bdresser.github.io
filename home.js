@@ -8,7 +8,11 @@ $( document ).ready(function() {
 	// load homepage and start background images 
 	if(location.pathname === '/'){
 			console.log("path fired");
-			showHome();
+			imagesLoaded($('.loader'), function() {
+				console.log("doth loaded...!");
+				showHome();
+			})
+			
 
 	}
 

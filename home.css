@@ -5,15 +5,10 @@ html {
   box-sizing: inherit;
 }
 
-/*.home-content*/ .home-bg {
+.home-bg {
 	margin:0px;
 	padding:0px;
 	height:100vh; 
-  /*background: url("/assets/bg11.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
 }
 
 .home-all {
