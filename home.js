@@ -13,30 +13,37 @@ $( document ).ready(function() {
 	// Rotate background image on timer
 	function cycleBG() {
 		var body = $('.home-bg');
+		// var loader = $('.loader');
 	    var backgrounds = ['bg1', 'bg2', 'bg3', 'bg4', 'bg5', 'bg6', 'bg7'];
 	    current = 0;
 
-	    if(body.hasClass('bg2')) { current = 1;}
-	    if(body.hasClass('bg3')) { current = 2;}
-	    if(body.hasClass('bg4')) { current = 3;}
-	    if(body.hasClass('bg5')) { current = 4;}
-	    if(body.hasClass('bg6')) { current = 5;}
 	    if(body.hasClass('bg7')) { current = 6;}
-
+	    if(body.hasClass('bg6')) { current = 5;}
+		if(body.hasClass('bg5')) { current = 4;}
+	    if(body.hasClass('bg4')) { current = 3;}
+	    if(body.hasClass('bg3')) { current = 2;}
+	    if(body.hasClass('bg2')) { current = 1;}
+	    if(body.hasClass('bg1')) { current = 0;}
+	    
 	    function changeImg() {
 	    	body.hide();
 	    	body.removeClass(backgrounds[current]);
 	    	body.addClass(backgrounds[current = ++current % backgrounds.length]);
+	    	//current = ++current;
+    		//body.addClass(backgrounds[(current+1) % backgrounds.length]);
+    		// loader.removeClass(backgrounds[current]);
+    		// loader.addClass(backgrounds[(current+1) % backgrounds.length]);
+	    	//current = current % backgrounds.length;
 	        body.fadeIn(900);
 	    }
 
 	    function nextBackground() {
 		    	body.fadeOut(200, changeImg);
-		        timer = setTimeout(nextBackground, 5000);
+		        timer = setTimeout(nextBackground, 4500);
 	    }
 
 	    // begin timer
-	    timer = setTimeout(nextBackground, 5000);
+	    timer = setTimeout(nextBackground, 4500);
 	}
 
 
@@ -48,18 +55,23 @@ $( document ).ready(function() {
 	}
 
 	function showHome() {
-		console.log($('.home-bg').css("background-size"));
-		console.log($('.home-all').css("display"));
-		var img = $('.home-all').css("display");
-		if(img === "none" || img === "block"){
-			if($('.home-bg').css("background-size") === 'auto'){
-				$('.home-bg').addClass('bg1');
-			}
-			$('.home-bg').fadeIn();
-			console.log('showing home');
-			$('.home-all').fadeIn(600);
-			cycleBG();
+
+		//var img = $('.home-all').css("display");
+
+		$('body').css('background-color', 'black');
+
+		if($('.home-bg').css("background-size") === 'auto'){
+			//$('.home-bg').addClass('bg2');
+			$('.home-bg').addClass('bg1');
+			
 		}
+
+		$('.bg-preload').unveil();
+		$('.home-bg').show();
+		//$('.home-all').fadeIn(500);
+		$('.home-all').show();
+
+		//cycleBG();
 	}
 
 	function showPhoto() {

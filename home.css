@@ -21,8 +21,40 @@ html {
 	display: none;
 }
 
-.bg1 {
-	background: url("/assets/cover1.jpg") no-repeat center center fixed; 
+.bg7 {
+	background: url("/assets/cover7.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg6 {
+	background: url("/assets/cover6.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg5 {
+	background: url("/assets/cover5.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg4 {
+	background: url("/assets/cover4.jpg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg3 {
+	background: url("/assets/cover3.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -38,40 +70,8 @@ html {
   	color: white;
 }
 
-.bg3 {
-	background: url("/assets/cover3.jpg") no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
-.bg4 {
-	background: url("/assets/cover4.jpg") no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
-.bg5 {
-	background: url("/assets/cover5.jpg") no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
-.bg6 {
-	background: url("/assets/cover6.jpg") no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
-.bg7 {
-	background: url("/assets/cover7.jpg") no-repeat center center fixed; 
+.bg1 {
+	background: url("/assets/cover1.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -352,6 +352,7 @@ p {
 	letter-spacing: -.5px;
 	padding-bottom: 10px;
 	border-bottom: 4px solid rgb(150,150,150);
+	margin-bottom: 5px;
 }
 
 .project {
@@ -381,4 +382,19 @@ p {
 		width: 80%;
 		margin-left: 10%;
 	}
+
+	.photo-page-content {
+		float: none;
+		margin-right: 0px;
+		//margin-left: 0px;
+	}
+
+	.gallery-pic {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.loader {
+	display:none;
 }
