@@ -6,7 +6,7 @@ html {
 }
 
 /*.home-content*/ .home-bg {
-	display:none;
+	//display:none;
 	margin:0px;
 	padding:0px;
 	height:100vh; 

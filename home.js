@@ -7,7 +7,9 @@ $( document ).ready(function() {
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
 	if(location.pathname === '/'){
+			console.log("path fired");
 			showHome();
+
 	}
 
 	function preload(arrayOfImages) {
@@ -66,10 +68,12 @@ $( document ).ready(function() {
 		}
 
 		
-		$('.home-bg').show();
-		$(window).load(function(){
-			$('.home-all').fadeIn(800);
-		})
+		//$('.home-bg').show();
+
+		$('.home-all').fadeIn(500, function(){
+			cycleBG();
+		});
+		console.log("showed bg!");
 		
 
 		pic = new Image();
@@ -85,10 +89,11 @@ $( document ).ready(function() {
 	    pic5.src="assets/cover6.jpg";
 	    pic6.src="assets/cover7.jpg";
 
-		cycleBG();
+		
 	}
 
 	function showPhoto() {
+		$('.home-all').hide();
 		$('.photo-page').fadeIn(500);
 	    
 	    // Fade images in when they appear in window
@@ -104,6 +109,7 @@ $( document ).ready(function() {
 	}
 
 	function showWeb() {
+		$('.home-all').hide();
 		$('.web-page').fadeIn(400);
 	}
 
@@ -118,7 +124,6 @@ $( document ).ready(function() {
 
 
 	Path.map("#/photo").enter(showPhoto).to(function(){
- 		$('.home-all').hide();
  		clearHome();
  		$("img").unveil(200);
 	}).exit(function(){
@@ -127,7 +132,6 @@ $( document ).ready(function() {
 	});
 
 	Path.map("#/web").enter(showWeb).to(function(){
- 		$('.home-all').hide();
  		clearHome();
 	}).exit(function(){
 		$('.web-page').fadeOut(400);
