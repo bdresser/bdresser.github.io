@@ -4,15 +4,10 @@ $( document ).ready(function() {
 	var timer;
 	var current;
 
-	console.log("path is...");
-	console.log(document.URL);
-
-
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
 	//if(location.pathname === '/'){
-	//if (document.URL === "http://bobbydresser.com/" ){
-	if(document.URL === 'http://localhost:8888/') {
+	if (document.URL === "http://bobbydresser.com/" ){
 
 			imagesLoaded($('.loader'), function() {
 				console.log("calling showHome");
