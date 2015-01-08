@@ -11,9 +11,11 @@ $( document ).ready(function() {
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
 	//if(location.pathname === '/'){
-	if (document.URL === "http://bobbydresser.com/" ){
-			console.log(location.pathname);
+	//if (document.URL === "http://bobbydresser.com/" ){
+	if(document.URL === 'http://localhost:8888/') {
+
 			imagesLoaded($('.loader'), function() {
+				console.log("calling showHome");
 				showHome();
 			});
 	}
@@ -80,6 +82,7 @@ $( document ).ready(function() {
 		$('.home-all').fadeIn(500, function(){
 			cycleBG();
 		});
+
 		console.log("showed bg!");
 		
 
@@ -136,15 +139,13 @@ $( document ).ready(function() {
  		clearHome();
  		$("img").unveil(200);
 	}).exit(function(){
-		$('.photo-page').fadeOut(400);
-		showHome();
+		$('.photo-page').fadeOut(400, showHome());
 	});
 
 	Path.map("#/web").enter(showWeb).to(function(){
  		clearHome();
 	}).exit(function(){
-		$('.web-page').fadeOut(400);
-		showHome();
+		$('.web-page').fadeOut(400, showHome());
 	});
 	
 	Path.listen();
