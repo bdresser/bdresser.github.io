@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
-	//if(location.pathname === '/'){
+	//if(document.URL === "http://localhost:8888/"){
 	if (document.URL === "http://bobbydresser.com/" ){
 
 			imagesLoaded($('.loader'), function() {
@@ -68,7 +68,7 @@ $( document ).ready(function() {
 	function showHome() {
 
 		$('body').css('background-color', 'black');
-
+		console.log($('.home-bg').css("background-size"));
 		if($('.home-bg').css("background-size") === 'auto'){
 			$('.home-bg').addClass('bg1');			
 		}

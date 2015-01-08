@@ -15,6 +15,18 @@ html {
 	display: none;
 }
 
+.pg404 {
+	width: 300px;
+	margin:auto;
+	margin-top: 200px;
+	text-align: center;
+
+}
+
+.big-404 {
+	font-size: 40px;
+}
+
 .bg7 {
 	background: url("/assets/cover7.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -129,6 +141,8 @@ p {
 	opacity: .4;
 	transition: .8s;
 }
+
+
 
 .social-small {
 	height: 35px;
@@ -396,4 +410,15 @@ p {
 .loader {
 	display:none;
 }
+/*
+.404 h1 {
+	color: white !important;
+	font-size: 50px !important;
+	text-align: center !important;
+}
 
+.404 p{
+	color: white !important;
+	font-size: 24px !important;
+	text-align: center !important;
+}*/
