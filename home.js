@@ -4,16 +4,21 @@ $( document ).ready(function() {
 	var timer;
 	var current;
 
+	console.log("path is...");
+	console.log(document.URL);
+
+
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
-	if(location.pathname === '/'){
-			console.log("path fired");
+	//if(location.pathname === '/'){
+	if (document.URL === "http://bobbydresser.com/" ){
+			console.log(location.pathname);
 			imagesLoaded($('.loader'), function() {
-				console.log("doth loaded...!");
 				showHome();
-			})
-			
-
+			});
+	}
+	else {
+		$('.home-bg').hide();
 	}
 
 	function preload(arrayOfImages) {
@@ -126,6 +131,8 @@ $( document ).ready(function() {
 
 
 	Path.map("#/photo").enter(showPhoto).to(function(){
+
+		console.log("on phto");
  		clearHome();
  		$("img").unveil(200);
 	}).exit(function(){
