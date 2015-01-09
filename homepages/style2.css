@@ -1,0 +1,89 @@
+
+
+body {
+	margin:0px;
+	//background-color:black;
+}
+
+.grid {
+	width: 100%;
+	height: 100%;
+	margin:auto;
+	padding:2px;
+
+}
+
+.cell {
+	float: left;
+	width: calc(25% - 8px);
+	height: calc(33vh - 7px);
+	margin:0px;
+	border: 4px solid white;
+	background-color: black;
+
+}
+
+.cell:hover {
+	background-color: white;
+}
+
+.cell p {
+	color: white;
+	margin:0px;
+	padding: 30px;
+	font-size: 40px;
+	font-family: "Raleway";
+	font-weight: 100;
+
+}
+
+.cell h1 {
+	color: white;
+	padding:20px;
+	margin:0px;
+	font-size: 60px;
+	font-family: "Raleway";
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+.row-2.col-3:hover {
+	cursor: pointer;
+	background-color: rgb(10,100,250);
+}
+
+.row-1.col-2:hover {
+	cursor: pointer;
+	background-color: rgb(100,240,10);
+}
+
+.row-1.col-4:hover {
+	cursor: pointer;
+	background-color: rgb(200,90,10);
+}
+
+.row-3.col-1:hover {
+	cursor: pointer;
+	background-color: rgb(190,150,150);
+}
+
+.row-3.col-4:hover {
+	cursor: pointer;
+	background-color: rgb(100,90,210);
+}
+
+.row-2.col-4:hover {
+	cursor: pointer;
+	background-color: rgb(50,100,0);
+}
+
+.row-2.col-4:hover {
+	cursor: pointer;
+	background-color: rgb(50,0,20);
+}
+
+.row-2.col-1:hover {
+	cursor: pointer;
+	background-color: rgb(15,15,60);
+}
+

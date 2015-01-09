@@ -1,0 +1,60 @@
+
+	p {
+		font-family: Courier;
+	}
+
+	.name {
+		font-size: 80px;
+		text-align: center;
+		margin-top: 200px;
+		color: grey;
+	}
+
+	.name p {
+		margin-bottom: 30px;
+	}
+
+	.buttons div {
+		display: inline-block;
+		letter-spacing: 1px;
+		margin-left: 60px;
+		padding: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: grey;
+	}
+
+	.buttons div:hover {
+		background-color: black;
+		color: white !important;
+		transition: .2s;
+		cursor: pointer;
+	}
+
+	.buttons p {
+		text-transform: uppercase;
+	}
+
+	.buttons {
+		text-align: center;		
+	}
+
+	#left {
+		margin-left: 0px;
+	}
+
+	@media only screen and (max-width: 640px) {
+		.name {
+			margin-top: 50px;
+			font-size: 50px;
+		}
+
+		.buttons div {
+			width: 80px;
+			margin-left: 10px;
+			padding: 10px;
+		}
+
+
+	}
+

@@ -326,6 +326,17 @@ p {
 	text-decoration: none;
 }
 
+.link {
+	color: rgb(50,150,250);
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+
+
 .page-content {
 	width: 600px;
 	display: inline-block;

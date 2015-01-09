@@ -1,0 +1,21 @@
+.homepage-links-container {
+	width: 200px;
+	margin:auto;
+	margin-top: 200px;
+}
+
+.homepage-link, li {
+	font-family: "Source Code Pro";
+	font-size: 20px;
+	text-decoration: none;
+	color: rgb(200,200,200);
+
+}
+
+.homepage-link:link {
+	color: rgb(200,200,200);
+}
+
+.homepage-link:hover {
+	color: rgb(150,200,250);
+}

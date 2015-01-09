@@ -1,0 +1,46 @@
+html { 
+  background: url(bg4.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.name {
+	float: right;
+	font-size: 24px;
+	font-family: Courier;
+	font-weight: regular;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.links {
+	float: right;
+	clear: right;
+	font-family: Courier;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.link {
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.link:hover, .name:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.photo {
+	position: absolute;
+	font-size: 12px;
+	font-family: Courier;
+	color:white;
+	bottom: 10px;
+	right: 20px;
+}

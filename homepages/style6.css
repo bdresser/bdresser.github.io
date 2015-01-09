@@ -1,0 +1,37 @@
+body {
+	margin:0px;
+	background-color: rgb(200, 100, 0);
+}
+
+.all {
+	width: 97%;
+	height: 95vh;
+	border: 7px solid rgb(200,200,200);
+	margin:auto;
+	margin-top: 2vh;
+}
+
+.nav {
+	position: fixed;
+	width: 120px;
+	//height: 190px;
+	right: 50px;
+	bottom: 30vh;
+	border: 7px solid rgb(200,200,200);
+	text-align: center;
+}
+
+.entry {
+	font-family: "Helvetica";
+	color: rgb(200,200,200);
+	margin:0px;
+	height: 35px;
+	padding-top: 15px;
+
+}
+
+.entry:hover {
+	background-color: rgb(200,200,200);
+	cursor: pointer;
+	color: rgb(200, 100, 0);
+}

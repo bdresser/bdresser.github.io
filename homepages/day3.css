@@ -1,0 +1,46 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.name {
+	height: 98vh;
+	width: auto;
+	position: absolute;
+}
+
+/*.left-wrap {
+	width: 14%;
+	position:;
+}*/
+
+.right-wrap {
+	width: 85%;
+	display: inline-block;
+	margin-left: 13%;
+	margin-top: 10px;
+}
+
+.button {
+	width: 100%;
+	height: 31vh;
+	background-color: rgb(215,215,215);
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.button-img {
+	height: 100%;
+	width: auto;
+	float: right;
+	margin-right: 0px;
+}
+
+.button:hover {
+	padding-right: 94%;
+	transition: 3s;
+	background-color: rgb(200,500,50);
+}

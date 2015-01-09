@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0px;
+}
+
+.block {
+	height: 250px;
+	width: 100%;
+	margin:0px;
+	padding: 30px;
+	text-align: center;
+	transition: all 1s;
+	//box-shadow: 1px 0px 10px 3px rgb(50,50,50);
+}
+
+.block:hover {
+	letter-spacing: 1.5px;
+	cursor: cell;
+}
+
+.b1 {
+	background-color: rgb(250, 30, 50);
+}
+
+.b2 {
+	background-color: rgb(100, 250, 150);
+}
+
+.b3 {
+	background-color: rgb(150, 0, 200);
+}
+
+.b4 {
+	background-color: rgb(250, 150, 0);
+}
+
+.b5 {
+	background-color: rgb( 220, 220, 250);
+}
+
+
+.title {
+	width: 100%;
+	font-family: "Bree Serif";
+	margin:0px;
+	margin-top: 15px;
+	font-size: 80px;
+}
+
+.subtitle {
+	//font-family: "Bree Serif";
+	font-family: "Arial";
+}
+
+@media only screen and (max-width: 600px) {
+	.title {
+		font-size: 20px;
+	}
+	.subtitle {
+		font-size: 14px;
+	}
+	.block {
+		height: 140px;
+	}
+}
