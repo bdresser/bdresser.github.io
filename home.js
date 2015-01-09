@@ -6,8 +6,8 @@ $( document ).ready(function() {
 
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
-	if(document.URL === "http://localhost:8888/" ){ // for local development
-	//if (document.URL === "http://bobbydresser.com/" ){
+	//if(document.URL === "http://localhost:8888/" ){ // for local development
+	if (document.URL === "http://bobbydresser.com/" ){
 
 			imagesLoaded($('.loader'), function() {
 				console.log(document.URL);
