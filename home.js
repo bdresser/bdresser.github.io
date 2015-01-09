@@ -6,14 +6,15 @@ $( document ).ready(function() {
 
 	// If we are on bobbydresser.com/
 	// load homepage and start background images 
-	//if(document.URL === "http://localhost:8888/"){
+	//if(document.URL === "http://localhost:8888/" ){ // for local development
 	if (document.URL === "http://bobbydresser.com/" ){
 
 			imagesLoaded($('.loader'), function() {
-				console.log("calling showHome");
+				console.log(document.URL);
 				showHome();
 			});
 	}
+
 	else {
 		$('.home-bg').hide();
 	}
@@ -68,7 +69,6 @@ $( document ).ready(function() {
 	function showHome() {
 
 		$('body').css('background-color', 'black');
-		console.log($('.home-bg').css("background-size"));
 		if($('.home-bg').css("background-size") === 'auto'){
 			$('.home-bg').addClass('bg1');			
 		}
@@ -76,10 +76,7 @@ $( document ).ready(function() {
 		
 		$('.home-all').fadeIn(500, function(){
 			cycleBG();
-		});
-
-		console.log("showed bg!");
-		
+		});		
 
 		pic = new Image();
 		pic2 = new Image();
@@ -130,7 +127,6 @@ $( document ).ready(function() {
 
 	Path.map("#/photo").enter(showPhoto).to(function(){
 
-		console.log("on phto");
  		clearHome();
  		$("img").unveil(200);
 	}).exit(function(){
@@ -146,7 +142,6 @@ $( document ).ready(function() {
 	Path.listen();
 
 	$(".to-top").click(function() {
-		console.log("to top");
 	  $("html, body").animate({ scrollTop: 0 }, "slow");
 	  return false;
 	});
