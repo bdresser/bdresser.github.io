@@ -2,15 +2,44 @@
 
 <head>
 	<link rel="stylesheet" href="design-home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+
+		$(document).ready(function(){
+
+			var setColors = function(){
+				var color0 = '#'+Math.floor(Math.random()*16777215).toString(16);
+				var color1 = '#'+Math.floor(Math.random()*16777215).toString(16);
+				var color2 = '#'+Math.floor(Math.random()*16777215).toString(16);
+				var color3 = '#'+Math.floor(Math.random()*16777215).toString(16);
+				var color4 = '#'+Math.floor(Math.random()*16777215).toString(16);
+
+				$("body").css("background-color", color0);
+				$(".link1").css("color", color1);
+				$(".link2").css("color", color2);
+			};
+
+			setColors();
+
+			$(".change").click(function(){
+				setColors();
+			});
+			
+		});
+
+	</script>
 </head>
 
 <body>
 	<div class="main-text">
-		<p class='header'>interactive design</p>
-		<p class='header bobby'></p>
+		<p class='header title'>interactive design</p>
 
-		<a href="clock.html" class='link header'>
-			<p>clock</p>
+		<a href="clock.html" class='link1'>
+			<p class='header'>clock</p>
 		</a>
+		<div class="change link2 header">change colors</div>
 	</div>
 </body>
+
+
+
