@@ -1,0 +1,43 @@
+body {
+	background: rgb(250,0,240);
+	-webkit-font-smoothing: antialiased;
+}
+
+ol {
+	width: 50%;
+	margin: auto;
+	font-family: Helvetica;
+	
+}
+
+p {
+	font-weight: 100;
+	line-height: 20px;
+}
+
+.overview {
+	font-size: 30px;
+	line-height: 35px;
+	letter-spacing: -.5px;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 60px;
+	border-bottom: 3px solid dotted;
+	padding-bottom: 20px;
+	text-align: center;
+	margin-top: 300px;
+}
+
+.step {
+	margin-bottom: 100px;
+}
+
+.footer {
+	color: rgb(200,200,200);
+	font-size: 50px;
+	text-align: center;
+	line-height: 50px;
+	text-transform: uppercase;
+}
