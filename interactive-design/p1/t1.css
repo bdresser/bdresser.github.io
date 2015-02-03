@@ -1,7 +1,6 @@
 body {
-	width: 50%;
-	margin: auto;
-	margin-top: 150px;
-	font-size: 20px;
-	line-height: 25px;
+	background-color: black;
+	font-size: 19px;
+	line-height: 23px;
+	color: white;
 }
