@@ -1,0 +1,14 @@
+h1{
+	font-size: 300px;
+	opacity: .2;
+	position: fixed;
+	z-index: 100;
+	font-family: "Verdana";
+	margin:0px;
+}
+
+p {
+	font-family: "Verdana";
+	font-size: 20px;
+	line-height: 29px;
+}

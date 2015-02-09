@@ -1,0 +1,14 @@
+p {
+	font-size: 8px;
+	width: 200px;
+}
+
+h1 {
+	position: absolute;
+	font-size: 250px;
+	right: 10px;
+}
+
+body {
+	background-color: rgb(200, 30, 0);
+}

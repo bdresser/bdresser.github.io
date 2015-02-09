@@ -1,0 +1,20 @@
+ul {
+	text-decoration: none;
+	font-size: 100px;
+}
+
+li {
+	display: inline;
+}
+
+a {
+	color: rgb(100,200,200);
+}
+
+a:hover {
+	color: rgb(100,100,200);		
+	}
+
+	a:visited {
+		color: rgb(100,200,200);
+	}

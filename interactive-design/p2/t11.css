@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0px;
+}
+
+.section {
+	width: 100%;
+	height: 400px;
+	font-family: "Tahoma";
+	font-size: 20px;
+	padding: 100px;
+	padding-left: 100px;
+	margin:0px;
+}
+
+.one {
+	background-color: rgb(100,100,100);
+}
+
+.two {
+	background-color: rgb(200,200,200);
+}
+
+.three {
+	background-color: rgb(150,150,150);
+}
+
+.four {
+	background-color: rgb(220,220,220);
+}

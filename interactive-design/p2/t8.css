@@ -1,0 +1,24 @@
+.still {
+	position: fixed;
+	width: 30%;
+	left:0px;
+	padding-left: 50px;
+}
+
+h1 {
+	font-size: 80px;
+	line-height: 100px;
+
+}
+
+.article {
+	float: right;
+	margin-left: 30%;
+	margin-right: 5%;
+	font-size: 22px;
+	line-height: 28px;
+}
+
+body {
+	font-family: "Lucida Sans Unicode"
+}
