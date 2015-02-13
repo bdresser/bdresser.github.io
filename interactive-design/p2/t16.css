@@ -1,0 +1,27 @@
+p {
+	display: none;
+	font-size: 30px;
+	line-height: 40px;
+	font-family: "Courier";
+	font-weight: 100;
+	text-align: center;
+	margin:200px;
+}
+
+.button {
+	height: 70px;
+	width: 200px;
+	background-color: rgb(250,100,100);
+	position: absolute;
+	border-radius: 65px;
+	top: 500px;
+	left: 43%;
+}
+
+.button-text {
+	font-family: "Courier";
+	font-size: 15px;
+	text-align: center;
+	margin-top: 28px;
+	color: black;
+}

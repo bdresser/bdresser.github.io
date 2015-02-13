@@ -1,0 +1,51 @@
+<!doctype HTML>
+<!-- 1990s text -->
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Death Switch</title>
+	<link rel="stylesheet" href="t16.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+
+		var ps = [];
+		$('p').each(function(){
+			ps.push(this);
+		});
+		console.log(ps[0]);
+
+		var i = 0;
+
+		window.setInterval(function(){
+			var prev = ps[i-1];
+			var current = ps[i];
+			$(current).css("display", "block");
+			$(prev).css("display", "none");
+			if(i < ps.length)
+				i = i+1;
+			else 
+				i = 0;
+		}, 500);
+
+	});
+
+	</script>
+
+</head>
+<body>
+	<p>Death Switch</p>
+	<p> </p>
+	<p>Death Switch</p>
+	<p> </p>
+	<p>Death Switch</p>
+	<p> </p>
+	<p>From SUM by David Eagleman</p>
+	<p> </p>
+	<p>inspired by <a href="https://vimeo.com/65248695">Letter & Spirit</a></p>
+	<a href="text16.html"><div class='button'><h2 class='button-text'>read the story</h2></div></a>
+
+</body>
+</html>
