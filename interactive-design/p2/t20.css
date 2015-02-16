@@ -1,0 +1,39 @@
+.title {
+	position: fixed;
+	top: -100px;
+	border-bottom: 10px solid rgb(0,10,20);
+}
+
+.author {
+	margin-top: 240px;
+}
+
+body {
+	height: 1900px;
+	font-size: 150px;
+	font-family: "Helvetica";
+	font-weight: 100;
+}
+
+.arrow {
+	margin-top: 700px;
+	margin-right: 50px;
+	float: right;
+	color: rgb(0,0,0);
+}
+
+.text {
+	background-color: rgb(200,210,30);
+	text-align: right;
+}
+
+.text p {
+	font-size: 80px;
+}
+
+#relief {
+	position: fixed;
+	font-size: 14px;
+	right: 10px;
+	top: 0px;
+}

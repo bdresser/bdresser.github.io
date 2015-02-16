@@ -40,8 +40,22 @@ body {
 	right: 30px;
 }
 
+.inverse {
+	border: 8px solid white;
+	color: white;
+}
+
 .scroll:hover {
 	cursor: pointer;
 	background-color: rgb(200,100,200);
 	color: white;
+}
+
+.cover {
+	background-color: rgb(200,100,200);
+}
+
+.inverse:hover {
+	background-color: white;
+	color: rgb(200,100,200);
 }
