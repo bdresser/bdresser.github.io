@@ -16,3 +16,51 @@ body {
 h1 {
 	font-size: 100px;
 }
+
+.rotate {
+	/* Safari */
+	-webkit-transform: rotate(-90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-90deg);
+
+	/* IE */
+	-ms-transform: rotate(-90deg);
+
+	position: absolute;
+	font-family: Helvetica;
+	font-size: 120px;
+}
+
+.title {
+	top: 235px;
+	left: -200px;
+}
+
+.subhead {
+	font-size: 24px;
+	top: 113px;
+	left: 80px;
+}
+
+.read {
+	position: absolute;
+	right:0px;
+	top:0px;
+	width: 50%;
+	height: 100vh;
+	transition: 2s ease-in;
+}
+
+.read p {
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 180px;
+	text-align:right;
+	color: rgb(200,150,100);
+}
+
+.read:hover {
+	cursor:pointer;
+	background-color: rgb(150,100,50);
+}

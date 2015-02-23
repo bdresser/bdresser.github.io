@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.link {
+	transition: .5s ease-out;
+}
+
+span {
+	padding-right: 25px;
+}
+
+.link:hover {
+	background-color: rgb(100,100,200);
+
+}

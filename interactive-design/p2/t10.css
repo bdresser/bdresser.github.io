@@ -16,3 +16,15 @@ body {
 	font-size: 24px;
 	background-color: rgb(30,200,130);
 }
+
+.cover .title:hover {
+	background-color: rgb(0,0,0);
+	cursor: pointer;
+}
+
+.arrow {
+	position: absolute;
+	right: 80px;
+	top: 265px;
+	color: rgb(30,200,130);
+}

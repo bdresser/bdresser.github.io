@@ -35,6 +35,12 @@ h3 {
 }
 h3:hover {
 	border-bottom: 5px solid rgb(130,20,230);
+	margin-bottom: 45px;
+}
+
+.p-title:hover {
+		margin-bottom: 95px;
+
 }
 
 .sub-head {

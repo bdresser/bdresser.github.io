@@ -28,3 +28,13 @@ html {
 	background-color: yellow;
 
 }
+
+.cover h1 {
+	font-size: 180px;
+	margin-bottom: 0px;
+}
+
+.cover h2 {
+	font-size: 60px;
+	margin-top:-20px;
+}

@@ -21,3 +21,36 @@ body {
 p {
 	clear: both;
 }
+
+.cover {
+}
+
+.c-title {
+	font-size: 100px;
+	text-align: center;
+
+}
+.c-title h1 {
+	margin-bottom: 0px;
+}
+
+.c-title p {
+	margin-top: 0px;
+	font-size: 70px;
+}
+
+.box {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: white;
+	transition: .1s;
+}
+
+.box:hover {
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+}
