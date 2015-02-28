@@ -1,0 +1,118 @@
+.nav {
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	height: 30px;
+	width: 30px;
+	background-color: rgb(240,240,240);
+	border-radius: 40px;
+	z-index: 1000;
+}
+
+.menu-icon, .menu-icon-2 {
+	box-sizing: border-box;
+	z-index: 10;
+	height: auto;
+	width: 22px;
+	padding-top:7px;
+	padding-left: 7px;
+	margin:0px;
+}
+
+.menu-icon-2 {
+	display: none;
+	position: absolute;
+	left:3px;
+}
+
+.nav-up {
+	z-index: -1;
+	height: 30px;
+	width: 30px;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	border-radius: 40px;
+	background-color: rgb(240,240,240);	
+	transition: .2s;
+	box-sizing: border-box;
+}
+
+.nav-right {
+	box-sizing: border-box;
+	z-index: -1;
+	height: 30px;
+	width: 30px;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	border-radius: 40px;
+	background-color: rgb(240,240,240);
+	transition: .2s;
+}
+
+.cover-list {
+	display:none;
+	font-size: 11px;
+	transition: .5s;
+	marign-left: 0px;
+	margin-top:0px;
+	padding:0px;
+	transition: 1s;
+}
+
+.elt {
+	list-style-type: none;
+	font-family: Helvetica;
+	color: black;
+	margin:0px;
+	height: 14px;
+	text-align: center;
+}
+
+#arrow-link {
+	color: black;
+	width: auto;
+	margin:0px;
+	margin-top: 5px;
+	font-size: 15px;
+	display:none;
+}
+
+.nav:hover .nav-up{
+	height: 330px;
+	padding-top: 10px;
+	z-index: 200;
+}
+
+.nav:hover .nav-right{
+	width: 80px;
+	padding-left:37px;
+	z-index: 200;
+}
+
+.nav:hover .menu-icon-2{
+	z-index:300;
+	display:inline-block;
+}
+
+.nav:hover .cover-list{
+	display:block;
+	transition: .2s;
+}
+
+.nav:hover #arrow-link {
+	display:inline-block;
+}
+
+.main-nav-link {
+	color: black;
+	font-size: 12px;
+}
+
+.main-nav-link:hover {
+	width: auto;
+	background-color: rgb(100,200,200);
+}
+

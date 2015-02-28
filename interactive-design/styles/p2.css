@@ -1,6 +1,18 @@
 ul {
 	text-decoration: none;
-	font-size: 100px;
+	font-size: 110px;
+	margin-top: 40px;
+}
+
+p {
+	font-size: 20px;
+	margin:0px;
+	padding-left: 50px;
+	color: rgb(200,200,200);
+}
+
+.title {
+	margin-top: 60px;
 }
 
 li {

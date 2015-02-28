@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 
-body {
+.text, .cover {
 	font-size: 30px;
 	font-family: "Avenir";
 	color: white;
@@ -22,8 +22,6 @@ p {
 	clear: both;
 }
 
-.cover {
-}
 
 .c-title {
 	font-size: 100px;
