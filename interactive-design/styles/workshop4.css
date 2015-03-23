@@ -1,0 +1,78 @@
+img {
+	width: 500px;
+	margin-left:calc(50% - 250px);
+}
+
+.container {
+	width: 100%;
+}
+
+html {
+	background: url(../images/ps1.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@media screen and (max-width: 1324px) {
+	html {
+	background: url(../images/ps2.jpeg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	}
+}
+
+@media screen and (max-width: 1224px) {
+	html {
+		background: url(../images/ps3.jpeg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;	
+	}
+}
+
+@media screen and (max-width: 1124px) {
+	html {
+		background: url(../images/ps4.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	html {
+		background: url(../images/ps5.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+
+@media screen and (max-width: 924px) {
+	html {
+		background: url(../images/ps6.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+
+@media screen and (max-width: 824px) {
+	html {
+		background: url(../images/ps1.png) no-repeat center center fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
