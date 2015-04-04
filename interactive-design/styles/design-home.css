@@ -11,6 +11,12 @@ body {
 
 .title {
 	margin-bottom: 50px;
+	position: fixed;
+	top: 0px;
+	padding-top: 80px;
+	width: 100%;
+	z-index: 1000;
+	background-color: rgb(100,100,100);
 }
 
 .underline {
@@ -18,10 +24,14 @@ body {
 	margin:0px;
 }
 
+.link-list {
+	margin-top: 200px;
+}
+
 .main-text {
-	width: 50%;
-	text-align: center;
-	margin:auto;
+	width: 80%;
+	//text-align: center;
+	margin-left:20%;
 	margin-top: 100px;
 }
 
