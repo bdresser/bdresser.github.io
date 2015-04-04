@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>WORLD PARTY MAP</title>
+		<script type="text/javascript" src="js/paper-full.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Francois+One|Varela+Round|Hammersmith+One' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+		$( document ).ready(function(){
+			$('body').click(function(){
+				$(".where").toggle();
+				$(".here").toggle();
+			})
+				
+		});
+
+		</script>
+		<style>
+
+			body {
+				cursor: pointer;
+				width:100%;
+				height:100%;
+			}
+
+			.back {
+				position: fixed;
+				left: 10px;
+				bottom: 10px;
+				color: rgb(20,20,20);
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.where, .here {
+				font-size: 210px;
+				line-height: 20px;
+				margin-top: 0px;
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				color: rgb(230,230,230);
+				opacity:.5;
+				font-family: "Hammersmith One";
+			}
+
+			.here {
+				display:none;
+			}
+
+			.container {
+				width: 100%;
+			}
+			.globe {
+				width: 430px;
+				display: block;
+				height: auto;
+				margin-left:auto;
+				margin-right: auto;
+				margin-top:150px;
+			}
+
+
+
+			.arrow {
+				position: absolute;
+				width: 200px !important; 
+				height: auto;
+				opacity:.0;
+				transition:.2s;
+			}
+			
+
+			.arrow1 {
+				top: 100px;
+				margin-left: 20%;
+				
+
+			}
+
+			.arrow:hover {
+				opacity:.9;
+			}
+
+			.arrow2 {
+				top: 240px;
+				margin-left: 17%;
+			}
+			.arrow3 {
+				top: 390px;
+				margin-left: 17%;
+			}
+			.arrow4 {
+				margin-left: 25%;
+				top: 550px;
+			}
+			.arrow5 {
+				top: 600px;
+				margin-left: 42%;
+			}
+			.arrow6 {
+				top: 570px;
+				margin-left: 55%;
+			}
+			.arrow7 {
+				top: 480px;
+				margin-left: 65%;
+			}
+			.arrow8 {
+				top: 300px;
+				margin-left: 67%;
+			}
+			.arrow9 {
+				top: 130px;
+				margin-left: 65%;
+			}
+
+			.arrow10 {
+				top: 0px;
+				margin-left: 55%;
+			}
+
+			@media screen and (max-width: 768px) {
+				.where, .here {
+					font-size: 40px;
+				}
+
+				.globe {
+					width: 300px;
+				}
+
+				.arrow {
+					display:none;
+				}
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<p class='where'>WHERE?</p>
+			<p class='here'>HERE.</p>
+			<img src="Rotating_globe.gif" class='globe' alt="">
+			<img src="arrow1.png" class='arrow1 arrow' alt="">
+			<img src="arrow2.png" class='arrow2 arrow' alt="">
+			<img src="arrow3.png" class='arrow3 arrow' alt="">
+			<img src="arrow4.png" class='arrow4 arrow' alt="">
+			<img src="arrow5.png" class='arrow5 arrow' alt="">
+			<img src="arrow6.png" class='arrow6 arrow' alt="">
+			<img src="arrow7.png" class='arrow7 arrow' alt="">
+			<img src="arrow8.png" class='arrow8 arrow' alt="">
+			<img src="arrow9.png" class='arrow9 arrow' alt="">
+			<img src="arrow10.png" class='arrow10 arrow' alt="">
+			<div class="back"><a href="worldpartyday.html">&larr;</a></div>
+		</div>
+	</body>
+

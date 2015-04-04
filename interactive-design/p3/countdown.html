@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>THE ANTICIPATION</title>
+		<script type="text/javascript" src="js/countdown.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Francois+One|Varela+Round|Hammersmith+One' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+			<script type="text/javascript">
+			$( document ).ready(function(){
+
+				var timerId =
+				  countdown(
+				    new Date(2015,4,1),
+				    function(ts) {
+				      $('.htmlTimer').text(ts.toString("strong"));
+				      var color0 = '#'+Math.floor(Math.random()*16777215).toString(16);
+				      $('.htmlTimer').css("color", color0);
+				    },
+				    countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
+			});
+				
+			</script>
+			<style>
+				.htmlTimer {
+					font-size: 180px;
+					font-family: "Hammersmith One";
+					text-transform: uppercase;
+					line-height: 160px;
+					margin:0px;
+					width: 90%;
+					margin:auto;
+					margin-top: 80px;
+				}
+
+				@media screen and (max-width: 1024px ) {
+					.htmlTimer {
+						font-size: 120px;
+						line-height: 100px;
+					}
+				}
+
+				@media screen and (max-width: 768px) {
+					
+					.htmlTimer {
+						font-size: 40px;
+						line-height: 30px;
+						width: 100%;
+						text-align: center;
+					}
+				}
+
+				.back {
+					position: fixed;
+					left: 10px;
+					bottom: 10px;
+					color: rgb(20,20,20);
+				}
+
+				a {
+					text-decoration: none;
+				}
+			</style>
+		</head>
+
+		<body>
+				<p class='htmlTimer'></p>
+				<div class="back"><a href="worldpartyday.html">&larr;</a></div>
+
+
+		</body>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <title>blue arrow right down</title>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="layer2">
+   <g id="g1269">
+    <path stroke-linecap="square" fill="#ff0000" fill-rule="evenodd" stroke="#ff0000" stroke-width="8.75" stroke-linejoin="bevel" stroke-miterlimit="4" id="path1061" d="m616.422974,216.578644l-150.774078,77.707306l0,-38.516083l-382.556427,0l0,-77.032181l382.556427,0l0,-38.516022l150.774078,76.356979z"/>
+    <path stroke-linecap="square" stroke-linejoin="bevel" stroke="#ff0000" fill="#ff0000" fill-rule="evenodd" stroke-width="8.75" stroke-miterlimit="4" id="path1691" d="m601.414795,216.992966l-126.527557,13.93364l-381.811096,0l0,-45.518097l381.811096,0l0,-32.14801l126.527557,63.732468z"/>
+   </g>
+  </g>
+ </g>
+</svg>
