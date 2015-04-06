@@ -4,12 +4,62 @@
 <html>
 	<head>
 		<title>RSVP NOW</title>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Francois+One|Varela+Round|Hammersmith+One' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
+	<style>
+
+		body {
+			background-color: rgb(240,250,210);
+		}
+
+		#snap {
+			width: 300px;
+			height: 120px;
+			border: 0px;
+			border-radius:3px;
+			background-color: rgb(250,100,150);
+			font-family: "Hammersmith One";
+			font-size: 40px;
+			color: rgb(230,230,230);
+
+			display:block;
+			margin-left:auto;
+			margin-right: auto;
+			margin-top:500px;
+
+		}
+
+		#video {
+			position: absolute;
+			margin-left:auto;
+			margin-right:auto;
+			top:0;
+			left:0;
+			right:0;
+		}
+
+		#coming {
+			z-index: 1000;
+			position: absolute;
+			font-size: 200px;
+			color: rgb(250,100,150);
+			font-family: "Hammersmith One";
+			display:none;
+			margin-left:auto;
+			margin-right:auto;
+			top:0;
+			left:0;
+			right:0;
+		}
+		
+	</style>
 
 	<body>
-		<video id="video" width="640" height="480" autoplay></video>
-		<button id="snap">Snap Photo</button>
-		<canvas id="canvas" width="640" height="480"></canvas>
+		<video id="video" width="60%" height="auto" autoplay></video>
+		<button id="snap">RSVP</button>
+		<p id="coming">I'LL BE THERE</p>
+		<canvas id="canvas" width="60%" height="auto"></canvas>
 
 		<script>
 
@@ -47,6 +97,7 @@
 			document.getElementById("snap").addEventListener("click", function() {
 				context.drawImage(video, 0, 0, 640, 480);
 				console.log("img captures");
+				document.getElementById("coming").show();
 			});
 		}, false);
 
