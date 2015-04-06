@@ -166,7 +166,6 @@
 				top: 1500px;
 				padding-top: 30px;
 				text-shadow: 2px 2px rgb(150,200,50);
-				box-shadow: 2px 2px rgb(150,200,50);
 			}
 
 			.button-three {
@@ -208,24 +207,48 @@
 				text-align: center;
 			}
 
+			.mobile-link, .button-mobile {
+				display:none;
+				z-index:10000;
+			}
+
 			@media screen and (max-width: 850px){
 				.title-text {
-					font-size: 100px;
-					line-height: 80px;
+					font-size: 80px;
+					line-height: 70px;
+					letter-spacing: .5px;
 					top: 30px;
 				}
 
-				.button {
-					width: 300px;
+				.title-container {
+					height: 60vh;
 				}
 
-				.button-one {
-					top: 800px;
+				.button, .link-anchor {
+					display:none;
 				}
 
 				.button-text {
-					font-size: 40px;
+					font-size: 25px;
+					line-height: 20px;
+					margin:0px;
+					padding:15px;
+					text-decoration: none;
 				}
+
+				.mobile-link, .button-mobile {
+					display:block;
+					text-align:center;
+				}
+
+				.button {
+					width: 80%;
+					margin:auto;
+					padding-top: 15px;
+					border:4px solid rgb(230,230,230);
+				}
+
+
 			}
 
 
@@ -235,21 +258,31 @@
 
 	<body style="">
 		<canvas id="canvas" resize hidpi="off" style="-webkit-user-select: none; touch-action: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background: rgb(240,250,210);" data-paper-scope="1"></canvas>
+
 		<div class="title-container">
 			<h1 class='title-text'>
 				<span class="line-one">WORLD</span><br>
 				<span class="line-two">PARTY</span><br>
 				<span class="line-three">DAY</span></h1>
 		</div>
-		<a href="./map.html"><div class="button button-one">
-			<p class="button-text">WHERE IS THE PARTY?</p>
+
+		<div class="button button-mobile">
+			<a href="./map.html" class='button-text mobile-link'>WHERE IS THE PARTY?</a>
+			<a href="./countdown.html" class='button-text mobile-link'>WHEN IS IT??!</a>
+			<a href="./rsvp.html" class='button-text mobile-link'>RSVP NOW</a>
 		</div>
+
+
+		<a href="./map.html" class='link-anchor'>
+			<div class="button button-one">
+				<p class="button-text">WHERE IS THE PARTY?</p>
+			</div>
 		</a>
-		<a href="countdown.html"><div class="button button-two stop">
+		<a href="countdown.html" class='link-anchor'><div class="button button-two stop">
 			<p class="button-text">WHEN IS IT??!</p>
 		</div>
 		</a>
-		<a href="rsvp.html"><div class="button button-three">
+		<a href="rsvp.html" class='link-anchor'><div class="button button-three">
 			<p class="button-text">RSVP NOW</p>
 		</div>
 		</a>
