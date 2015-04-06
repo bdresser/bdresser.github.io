@@ -98,7 +98,8 @@
 			document.getElementById("snap").addEventListener("click", function() {
 				context.drawImage(video, 0, 0, 640, 480);
 				console.log("img captures");
-				document.getElementById("coming").show();
+				$("#coming").show();
+				$("#video").hide();
 			});
 		}, false);
 
