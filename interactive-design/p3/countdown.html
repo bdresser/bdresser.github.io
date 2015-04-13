@@ -15,11 +15,14 @@
 
 				var timerId =
 				  countdown(
-				    new Date(2015,4,1),
+				    new Date(2015,3,1,2),
 				    function(ts) {
 				      $('.htmlTimer').text(ts.toString("strong"));
 				      var color0 = '#'+Math.floor(Math.random()*16777215).toString(16);
+  				      var color1 = '#'+Math.floor(Math.random()*16777215).toString(16);
+
 				      $('.htmlTimer').css("color", color0);
+				      $('body').css("background-color", color1)
 				    },
 				    countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
 			});
