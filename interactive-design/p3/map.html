@@ -17,6 +17,13 @@
 				$(".where").toggle();
 				$(".here").toggle();
 			})
+
+			window.setInterval(blink, 500);
+
+			function blink() { 
+				$(".arrow").toggle();
+			}
+
 				
 		});
 
@@ -48,13 +55,15 @@
 				position: absolute;
 				width: 100%;
 				text-align: center;
-				color: rgb(250,20,20);
-				opacity:.5;
+				color:rgb(230,230,230);
+				text-shadow: 2px 2px rgb(50,200,200);
 				font-family: "Hammersmith One";
+				z-index: 100;
 			}
 
 			.here {
 				display:none;
+				text-shadow: 2px 2px rgb(150,200,50);
 			}
 
 			.container {
@@ -75,8 +84,11 @@
 				position: absolute;
 				width: 200px !important; 
 				height: auto;
-				opacity:.0;
-				transition:.2s;
+
+				-moz-animation: blink normal 2s infinite ease-in-out;
+				-webkit-animation: blink normal 2s infinite ease-in-out;
+				-ms-animation: blink normal 2s infinite ease-in-out;
+				animation: blink normal 2s infinite ease-in-out;
 			}
 			
 
@@ -137,6 +149,7 @@
 				}
 
 				.arrow {
+					width: 80px !important;
 					display:none;
 				}
 			}

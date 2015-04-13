@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<title>WORLD PARTY DAY</title>
+		<script type="text/javascript" src="js/paper-full.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700|Francois+One|Varela+Round|Hammersmith+One' rel='stylesheet' type='text/css'>
+
+		<script type="text/paperscript" canvas="canvas">
+
+	    // The amount of symbol we want to place;
+	    var count = 30;
+
+	    // Place the instances of the symbol:
+	    for (var i = 0; i < count; i++) {
+	        // The center position is a random point in the view:
+	        var center = Point.random() * view.size;
+	        var scale = (i + 1) / count;
+	        var randColor = Math.random()*255;
+	        console.log(randColor);
+	        var path = new Shape.Circle(center, 50 * scale);
+	        path.data.vector = new Point({
+	            angle: Math.random() * 360,
+	            length : scale * Math.random() / 5
+	        });
+	        var randGrey = "rgb(" + randColor + ", " + randColor + ", " + randColor + ")";
+
+	        path.fillColor = randGrey;
+	    }
+
+	    var vector = new Point({
+	        angle: 45,
+	        length: 0
+	    });
+
+	    var mouseVector = vector.clone();
+
+	    function onMouseMove(event) {
+	        mouseVector = (view.center - event.point) ;
+	    }
+
+	    //The onFrame function is called up to 60 times a second:
+	    function onFrame(event) {
+	        vector = vector + (mouseVector - vector) / 30;
+
+	        // Run through the active layer's children list and change
+	        // the position of the placed symbols:
+	        for (var i = 0; i < count; i++) {
+	            var item = project.activeLayer.children[i];
+	            var size = item.bounds.size;
+	            var length = vector.length / 30 * size.width / 30;
+	            item.position += vector.normalize(length) + item.data.vector;
+	            keepInView(item);
+	        }
+	    }
+
+	    function keepInView(item) {
+	        var position = item.position;
+	        var itemBounds = item.bounds;
+	        var bounds = view.bounds;
+	        //console.log(itemBounds);
+	        //console.log(position);
+	        //console.log(bounds);
+	        if (itemBounds.left > bounds.width) {
+	            position.x = -item.bounds.width;
+	        }
+
+	       if (position.x < -itemBounds.width) {
+        	//if (position.x < 0) {
+        		//console.log(itemBounds.width);
+	            position.x = bounds.width + itemBounds.width;
+	           // console.log("left");
+	        }
+
+	        if (itemBounds.top > view.size.height) {
+	            position.y = -itemBounds.height;
+	        }
+
+	        if (position.y < -itemBounds.height) {
+        	//if (position.y < 0) {
+	            position.y = bounds.height  + itemBounds.height / 2;
+	            //console.log("top");
+	        }
+	    }
+
+
+		</script>
+		<style>
+			canvas[resize] {
+				width: 100%;
+				height: 100%;
+			}
+
+			canvas {
+				position: fixed;
+			}
+			body {
+				//height: 100vh;
+				margin:0px;
+			}
+
+			html {
+			  box-sizing: border-box;
+			}
+			*, *:before, *:after {
+			  box-sizing: inherit;
+			}
+
+			.title-text {
+				z-index: 100;
+				font-size: 160px;
+				text-align: center;
+				line-height: 160px;
+				color: rgb(230,230,230);
+				
+				font-family: 'Hammersmith One';
+				letter-spacing: 6px;
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				top: 10px;
+				left: 0;
+				right: 0;
+			}
+
+			.line-one {
+				text-shadow: 2px 2px rgb(50,200,200);
+			}
+
+			.line-two {
+				text-shadow: 2px 2px rgb(150,200,50);
+			}
+
+			.line-three {
+				text-shadow: 2px 2px rgb(250,100,150);
+			}
+
+			.title-container {
+				width: 80%;
+				top: 0;
+				//height: 2300px;
+			}
+
+			.button {
+				width: 600px;
+				height: 220px;
+				border: 12px solid rgb(230,230,230);
+				border-radius: 5px;
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+				transition: .5s;
+			}
+
+			.button-one {
+				top: 1100px;
+				text-shadow: 2px 2px rgb(50,200,200);
+			}
+
+			.button-two {
+				top: 1500px;
+				padding-top: 30px;
+				text-shadow: 2px 2px rgb(150,200,50);
+			}
+
+			.button-three {
+				padding-top: 30px;
+				top: 1900px;
+				text-shadow: 2px 2px rgb(250,100,150);
+			}
+
+
+			.button-one:hover {
+				background-color: rgb(50,200,200);
+				border: 12px solid rgb(50,200,200);
+				cursor: pointer;
+			}
+
+			.button-two:hover {
+				background-color: rgb(150,200,50);
+				border: 12px solid rgb(150,200,50);
+				cursor: pointer;
+			}
+
+			.button-three:hover {
+				background-color: rgb(250,100,150);
+				border: 12px solid rgb(250,100,150);
+				cursor: pointer;
+			}
+	
+			
+
+			.button-text {
+				font-size: 80px;
+				font-family: 'Hammersmith One';
+				font-style: bold;
+				line-height: 70px;
+				color: rgb(230,230,230);
+				
+				margin:0px;
+				padding-top: 40px;
+				text-align: center;
+			}
+
+			.mobile-link, .button-mobile {
+				display:none;
+				z-index:10000;
+			}
+
+			@media screen and (max-width: 850px){
+				.title-text {
+					font-size: 80px;
+					line-height: 70px;
+					letter-spacing: .5px;
+					top: 30px;
+				}
+
+				.title-container {
+					height: 60vh;
+				}
+
+				.button, .link-anchor {
+					display:none;
+				}
+
+				.button-text {
+					font-size: 25px;
+					line-height: 20px;
+					margin:0px;
+					padding:15px;
+					text-decoration: none;
+				}
+
+				.mobile-link, .button-mobile {
+					display:block;
+					text-align:center;
+				}
+
+				.button {
+					width: 80%;
+					margin:auto;
+					padding-top: 15px;
+					border:4px solid rgb(230,230,230);
+				}
+
+				.mobile-one:hover {
+					color: rgb(50,200,200);
+				}
+
+				.mobile-two:hover {
+					color: rgb(150,200,50);
+				}
+
+				.mobile-three:hover {
+					color: rgb(250,100,150);
+				}
+
+
+			}
+
+
+		</style>
+
+	</head>
+
+	<body style="">
+		<canvas id="canvas" resize hidpi="off" style="-webkit-user-select: none; touch-action: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); background: rgb(240,250,210);" data-paper-scope="1"></canvas>
+
+		<div class="title-container">
+			<h1 class='title-text'>
+				<span class="line-one">THANK YOU</span><br>
+				<span class="line-two">FOR COMING</span><br>
+ 		</div>
+
+	</body>
+
+</html>
