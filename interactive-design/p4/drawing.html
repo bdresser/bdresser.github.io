@@ -1,0 +1,91 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Drawings of New York</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="sketch.js"></script>
+		<script src="./scripts/script.js"></script>
+		<style>
+
+			html {
+			  box-sizing: border-box;
+			}
+			*, *:before, *:after {
+			  box-sizing: inherit;
+			}
+			.tools {
+				width: 500px;
+				margin:auto;
+
+			}
+
+			.tools a {
+				height: 30px;
+				width: 30px;
+				border-radius: 3px;
+				display:inline-block;
+				margin-top: 20px;
+				text-decoration: none;
+				text-align: center;
+				vertical-align: middle;
+				padding-top: 8px;
+				color: black;
+			}
+
+			canvas {
+				border: 1px solid rgb(200,200,200);
+				margin-top: 10px;
+				margin:auto;
+				width: 50%;
+				height: 300px;
+				margin-left: 25%;
+			}
+
+
+			.description {
+				font-size: 16px;
+				width: 800px;
+				font-family: "Helvetica";
+				line-height: 22px;
+				margin:auto;
+				margin-top: 20px;
+			}
+
+			.title {
+				font-family: "Avenir";
+				font-size: 50px;
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 class='title'>Drawings of Humans</h1>
+		<canvas id="colors_sketch" width="800" height="300"></canvas>
+		<div class="tools">
+		  <a href="#colors_sketch" data-color="#f00" style="background: #f00;"></a>
+		  <a href="#colors_sketch" data-color="#ff0" style="background: #ff0;"></a>
+		  <a href="#colors_sketch" data-color="#0f0" style="background: #0f0;"></a>
+		  <a href="#colors_sketch" data-color="#0ff" style="background: #0ff;"></a>
+		  <a href="#colors_sketch" data-color="#00f" style="background: #00f;"></a>
+		  <a href="#colors_sketch" data-color="#f0f" style="background: #f0f;"></a>
+		  <a href="#colors_sketch" data-color="#000" style="background: #000;"></a>
+		  <a href="#colors_sketch" data-size="3" style="background: #ccc">3</a>
+		  <a href="#colors_sketch" data-size="5" style="background: #ccc">5</a>
+		  <a href="#colors_sketch" data-size="10" style="background: #ccc">10</a>
+		  <a href="#colors_sketch" data-size="15" style="background: #ccc">15</a>
+		</div>
+		<script type="text/javascript">
+		  $(function() {
+		    $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+		      $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
+		    });
+		    $.each([3, 5, 10, 15], function() {
+		      $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
+		    });
+		    $('#colors_sketch').sketch();
+		  });
+		</script>
+		<p class="description"></p>
+	</body>
+</html>
