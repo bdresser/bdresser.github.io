@@ -13,6 +13,13 @@
 			*, *:before, *:after {
 			  box-sizing: inherit;
 			}
+
+			html, body {
+				height: 100%;
+				width: 100%;
+				margin:0px;
+			}
+
 			.tools {
 				width: 500px;
 				margin:auto;
@@ -32,13 +39,19 @@
 				color: black;
 			}
 
-			canvas {
+			canvas{
 				border: 1px solid rgb(200,200,200);
 				margin-top: 10px;
 				margin:auto;
-				width: 50%;
-				height: 300px;
-				margin-left: 25%;
+				background:url(street-bg2.jpg);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+
+			.screensize {
+				width: 100%;
+				height:100%;
+				overflow:hidden;
 			}
 
 
@@ -60,8 +73,11 @@
 		</style>
 	</head>
 	<body>
-		<h1 class='title'>Drawings of Humans</h1>
-		<canvas id="colors_sketch" width="800" height="300"></canvas>
+		<!-- <h1 class='title'>Drawings of Humans</h1> -->
+		<!-- <canvas id="colors_sketch" width="800" height="300"></canvas> -->
+		<div class="screensize">
+		<canvas id="colors_sketch"></canvas>
+		</div>
 		<div class="tools">
 		  <a href="#colors_sketch" data-color="#f00" style="background: #f00;"></a>
 		  <a href="#colors_sketch" data-color="#ff0" style="background: #ff0;"></a>
@@ -77,13 +93,31 @@
 		</div>
 		<script type="text/javascript">
 		  $(function() {
+
+		    var canvas = document.getElementById('colors_sketch'),
+		            context = canvas.getContext('2d');
+
+		    // resize the canvas to fill browser window dynamically
+		    window.addEventListener('resize', resizeCanvas, false);
+
+		    function resizeCanvas() {
+		            canvas.width = window.innerWidth;
+		            canvas.height = window.innerHeight;
+		            $('#colors_sketch').sketch();
+		    }
+		    resizeCanvas();
+
 		    $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
 		      $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
 		    });
 		    $.each([3, 5, 10, 15], function() {
 		      $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
 		    });
-		    $('#colors_sketch').sketch();
+		    
+		    
+
+
+
 		  });
 		</script>
 		<p class="description"></p>
