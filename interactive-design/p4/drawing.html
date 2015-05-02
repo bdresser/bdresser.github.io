@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
 	<head>
-		<title>Drawings of New York</title>
+		<title>Drawings of Humans</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="sketch.js"></script>
 		<script src="./scripts/script.js"></script>
@@ -111,6 +111,11 @@
 				color: rgb(215,91,110);
 			}
 
+			.small {
+				font-size: 12px;
+				padding-top:0px;
+			}
+
 			.center {
 				width: 50%;
 				margin:auto;
@@ -144,6 +149,12 @@
 				display:none;
 			}
 
+			#border {
+				border: 2px solid rgb(215,91,110);
+				padding-top: 0px !important;
+				color: rgb(215,91,110);
+			}
+
 			@media screen and (max-width: 1000px){
 
 				.center {
@@ -168,6 +179,7 @@
 			<div class="intro center">
 				<img src="icon-one.png" alt="" class="icon one">
 				<p class="instruction">READ THE QUOTE</p>
+				<p class="instruction small">[ pulled daily from <a href="http://www.humansofnewyork.com/">Humans of New York</a> ]</p>
 				<div style='clear:both;'></div>
 				<img src="icon-two.png" alt="" class="icon two">
 				<p class="instruction">DRAW THE HUMAN</p>
@@ -190,6 +202,10 @@
 				<a href="" class="send">
 					<div class="button">2. ATTACH AND SUBMIT</div>
 				</a>
+				<p class="instruction2">AND</p>
+				<a href="http://drawings-of-humans.tumblr.com">
+					<div class="button">3. SEE ALL RESULTS</div>
+				</a>
 
 			</div>
 		</div>
@@ -210,10 +226,7 @@
 		  <a href="#colors_sketch" data-size="3" style="background: #ccc">S</a>
 		  <a href="#colors_sketch" data-size="5" style="background: #ccc">M</a>
 		  <a href="#colors_sketch" data-size="10" style="background: #ccc">L</a>
-		  <a class='submit' href="#">SUBMIT</a>
-
-		  <!-- <a href="#colors_sketch" data-download="png" style="">SUBMIT</a>
-		  <a class='submit' href=''>SEND</a> -->
+		  <a class='submit' id='border' href="#">SUBMIT</a>
 		  
 		</div>
 
@@ -246,30 +259,17 @@
 	  		$('.intro').fadeIn(1500);
 
 		  	$('.go-button').click(function(){
-		  		// $('.instruction').fadeOut(600);
-		  		// $('.icon').fadeOut(600);
-		  		// $('.button').fadeOut(600);
-		  		// $('.title').fadeTo(600, 0.3);
-		  		// $('.description').delay(650).fadeIn(1000);
+
 		  		$('.intro').fadeOut(500);
-		  		$('.title').fadeTo(600, 0.3);
+		  		$('.title').fadeTo(600, 0.2);
 		  		$('.description-container').delay(650).fadeIn(1000);
 
 		  	});
 
-		  	// var quote = $('.description').text();
-		  	// var quoteFormat = encodeURIComponent(quote);
-		  	// console.log(quote);
-		  	// var img = $('#colors_sketch');
-		  	// var hi = "drawing of human";
-		  	// var ref = "mailto:bobby.dresser@gmail.com?subject=" + hi + "&body=" + quote;
-		  	//console.log(ref);
-
-		  	//$('.submit').attr("href", ref);
-
 		  	$('.submit').click(function(){
 		  		$('.description').fadeOut(500)
 		  		$('.submit-dialogue').delay(500).fadeIn(500);
+		  		$('.title').fadeTo(600, 1);
 
 		  		var quote = $('.description').text();
 		  		var ref = "mailto:b31680932@gmail.com?subject=drawing+of+human&body=" + quote;
