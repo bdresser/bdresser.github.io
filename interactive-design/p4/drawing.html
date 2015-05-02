@@ -21,31 +21,36 @@
 			}
 
 			.tools {
-				width: 500px;
-				margin:auto;
+				width: 100%;
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				margin:0px;
+				padding:0px;
 
 			}
 
 			.tools a {
-				height: 30px;
-				width: 30px;
-				border-radius: 3px;
+				height: 20px;
+				width: 8.5%;
 				display:inline-block;
 				margin-top: 20px;
 				text-decoration: none;
 				text-align: center;
 				vertical-align: middle;
-				padding-top: 8px;
+				padding-top: 2px;
+				font-family: "avenir";
+				font-size: 14px;
 				color: black;
 			}
 
-			canvas{
-				border: 1px solid rgb(200,200,200);
+			canvas {
 				margin-top: 10px;
 				margin:auto;
-				background:url(street-bg2.jpg);
+				background:url(street-bg3.jpg);
 				background-size: 100% 100%;
 				background-repeat: no-repeat;
+				position: relative;
 			}
 
 			.screensize {
@@ -57,49 +62,169 @@
 
 			.description {
 				font-size: 16px;
-				width: 800px;
-				font-family: "Helvetica";
+				width: 750px;
+				font-family: "Avenir";
 				line-height: 22px;
-				margin:auto;
-				margin-top: 20px;
+				position: absolute;
+				/*display:none;*/
+			}
+
+			.text {
+				position: absolute;
+				z-index:100;
+				width: 100%;
 			}
 
 			.title {
 				font-family: "Avenir";
-				font-size: 50px;
+				font-size: 60px;
+				letter-spacing: 1px;
 				text-align: center;
+				font-weight: bold;
+				color: rgb(215,91,110);
+				margin:0px;
+				margin-top: 40px;
+			}
+
+			.icon {
+				width: 80px;
+				height: 80px;
+				margin-left: 20%;
+				margin-top: 30px;
+				float: left;
+			}
+
+			.instruction {
+				float: left;
+				font-family: "avenir";
+				font-size: 30px;
+				color: rgb(215,91,110);
+				margin:0px;
+				padding-top: 46px;
+				padding-left: 20px;
+			}
+
+			.instruction2 {
+				text-align: center;
+				font-family: "avenir";
+				margin-top: 40px;
+				color: rgb(215,91,110);
+			}
+
+			.center {
+				width: 50%;
+				margin:auto;
+				display:none;
+			}
+
+			.button {
+				width: 330px;
+				height: 75px;
+				border: 5px solid rgb(215,91,110);
+				margin:auto;
+				margin-top: 30px;
+				transition: .5s;
+				text-align: center;
+				padding-top: 20px;
+				font-family: "avenir";
+				color: rgb(215,91,110);
+			}
+
+			.button:hover {
+				background-color: rgb(215,91,110);
+				cursor: pointer;
+				color: white;
+			}
+
+			.margin-top {
+				margin-top: 150px;
+			}
+
+			.submit-dialogue {
+				display:none;
+			}
+
+			@media screen and (max-width: 1000px){
+
+				.center {
+					width: 90%;
+				}
+
+				.tools a {
+					width: 9%;
+				}
+			}
+
+			a {
+				text-decoration: none;
 			}
 
 		</style>
 	</head>
 	<body>
-		<!-- <h1 class='title'>Drawings of Humans</h1> -->
-		<!-- <canvas id="colors_sketch" width="800" height="300"></canvas> -->
-		<div class="screensize">
-		<canvas id="colors_sketch"></canvas>
+
+		<div class="text">
+			<p class="title">DRAWINGS OF HUMANS</p>
+			<div class="intro center">
+				<img src="icon-one.png" alt="" class="icon one">
+				<p class="instruction">READ THE QUOTE</p>
+				<div style='clear:both;'></div>
+				<img src="icon-two.png" alt="" class="icon two">
+				<p class="instruction">DRAW THE HUMAN</p>
+				<div class="button go-button margin-top">READY GO</div>
+				
+			</div>
+
+			<div class='center description-container'>
+				<p class="description"></p>
+			</div>
+
+			<div class="submit-dialogue center">
+
+				<a href="#colors_sketch" data-download="png">
+					<div class="button">1. SAVE YOUR IMAGE</div>
+				</a>
+				<div style='clear:both;'></div>
+
+				<p class="instruction2">THEN</p>
+				<a href="" class="send">
+					<div class="button">2. ATTACH AND SUBMIT</div>
+				</a>
+
+			</div>
 		</div>
+		
+		<div class="screensize">
+			<canvas id="colors_sketch"></canvas>
+		</div>
+
 		<div class="tools">
+
 		  <a href="#colors_sketch" data-color="#f00" style="background: #f00;"></a>
-		  <a href="#colors_sketch" data-color="#ff0" style="background: #ff0;"></a>
+		  <a href="#colors_sketch" data-color="#db9051" style="background: #db9051;"></a>
 		  <a href="#colors_sketch" data-color="#0f0" style="background: #0f0;"></a>
-		  <a href="#colors_sketch" data-color="#0ff" style="background: #0ff;"></a>
+		  <a href="#colors_sketch" data-color="#673810" style="background: #673810;"></a>
 		  <a href="#colors_sketch" data-color="#00f" style="background: #00f;"></a>
 		  <a href="#colors_sketch" data-color="#f0f" style="background: #f0f;"></a>
 		  <a href="#colors_sketch" data-color="#000" style="background: #000;"></a>
-		  <a href="#colors_sketch" data-size="3" style="background: #ccc">3</a>
-		  <a href="#colors_sketch" data-size="5" style="background: #ccc">5</a>
-		  <a href="#colors_sketch" data-size="10" style="background: #ccc">10</a>
-		  <a href="#colors_sketch" data-size="15" style="background: #ccc">15</a>
+		  <a href="#colors_sketch" data-size="3" style="background: #ccc">S</a>
+		  <a href="#colors_sketch" data-size="5" style="background: #ccc">M</a>
+		  <a href="#colors_sketch" data-size="10" style="background: #ccc">L</a>
+		  <a class='submit' href="#">SUBMIT</a>
+
+		  <!-- <a href="#colors_sketch" data-download="png" style="">SUBMIT</a>
+		  <a class='submit' href=''>SEND</a> -->
+		  
 		</div>
+
+
+
 		<script type="text/javascript">
 		  $(function() {
-
 		    var canvas = document.getElementById('colors_sketch'),
 		            context = canvas.getContext('2d');
 
-		    // resize the canvas to fill browser window dynamically
 		    window.addEventListener('resize', resizeCanvas, false);
-
 		    function resizeCanvas() {
 		            canvas.width = window.innerWidth;
 		            canvas.height = window.innerHeight;
@@ -107,19 +232,58 @@
 		    }
 		    resizeCanvas();
 
-		    $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+		    $.each(['#f00', '#db9051', '#0f0', '#673810', '#00f', '#f0f', '#000', '#fff'], function() {
 		      $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
 		    });
-		    $.each([3, 5, 10, 15], function() {
+		    $.each([3, 5, 10], function() {
 		      $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
 		    });
-		    
-		    
+		  });
 
 
+
+		  $(document).ready(function(){
+	  		$('.intro').fadeIn(1500);
+
+		  	$('.go-button').click(function(){
+		  		// $('.instruction').fadeOut(600);
+		  		// $('.icon').fadeOut(600);
+		  		// $('.button').fadeOut(600);
+		  		// $('.title').fadeTo(600, 0.3);
+		  		// $('.description').delay(650).fadeIn(1000);
+		  		$('.intro').fadeOut(500);
+		  		$('.title').fadeTo(600, 0.3);
+		  		$('.description-container').delay(650).fadeIn(1000);
+
+		  	});
+
+		  	// var quote = $('.description').text();
+		  	// var quoteFormat = encodeURIComponent(quote);
+		  	// console.log(quote);
+		  	// var img = $('#colors_sketch');
+		  	// var hi = "drawing of human";
+		  	// var ref = "mailto:bobby.dresser@gmail.com?subject=" + hi + "&body=" + quote;
+		  	//console.log(ref);
+
+		  	//$('.submit').attr("href", ref);
+
+		  	$('.submit').click(function(){
+		  		$('.description').fadeOut(500)
+		  		$('.submit-dialogue').delay(500).fadeIn(500);
+
+		  		var quote = $('.description').text();
+		  		var ref = "mailto:b31680932@gmail.com?subject=drawing+of+human&body=" + quote;
+		  		$('.send').attr("href", ref);
+		  		console.log(quote);
+
+		  	});
 
 		  });
+
+
+
+
 		</script>
-		<p class="description"></p>
+
 	</body>
 </html>

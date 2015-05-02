@@ -10,7 +10,6 @@ $.ajax({
     var collection = response.results.collection1;
 
     var description = collection[Math.floor(Math.random()*(collection.length))];
-    console.log(description.description.text);
 
     $('.description').append(description.description.text);
   
