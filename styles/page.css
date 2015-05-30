@@ -1,0 +1,154 @@
+/* Page Styles */
+
+body {
+	background-color: white;
+}
+
+.page-head {
+	width: 250px;
+	position: fixed;
+	margin-top:70px;
+}
+
+.underline {
+	border-bottom: 3px solid rgb(150,150,150);
+	width: 100%;
+}
+
+.margin-bottom {
+	margin-bottom: 30px;
+}
+
+.back-button {
+	width: 100%;
+	height:50px;
+	text-align: center;
+	font-family: "Source Code Pro";
+	font-size: 13px;
+	margin-top: 10px;
+	padding-top:15px;
+	color: rgb(150,150,150);
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.back-button:hover{
+	background-color: rgb(150,150,150);
+	color: rgb(250,250,250);
+	cursor:pointer;
+}
+
+.back-button:active {
+	text-decoration: none;
+}
+.back-button:visited {
+	text-decoration: none;
+}
+
+.photo-page-head {
+	margin-left: calc(92% - 220px);
+}
+
+.web-page-head {
+	width: 230px;
+	margin-left: 8%;
+	text-align: right;
+}
+
+.web-page .page-info-text {
+	text-align: right;
+}
+
+.web-page .page-head-text {
+	padding-right: 40px;
+}
+
+.page-head-text {
+	margin:0px;
+	color: rgb(150,150,150);
+}
+
+
+.social-container-page {
+	padding-left: 20px;
+}
+
+.social-container-web {
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
+
+.link-underline {
+	text-decoration: none;
+	//color: inherit;
+}
+
+.link-underline:hover {
+	text-decoration: underline;
+}
+
+.link-no-underline {
+	text-decoration: none;
+	color:inherit;
+}
+
+.link-no-underline:hover {
+	text-decoration: none;
+}
+
+.link {
+	color: rgb(50,150,250);
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+
+
+.page-content {
+	width: 600px;
+	display: inline-block;
+	margin-top: 115px;
+}
+
+/* Photo Page Style */
+
+.photo-page-content {
+	float: right;
+	margin-right: 400px;
+	margin-top: 100px;
+	width:700px;
+}
+
+.gallery-pic {
+	width: 700px;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.fader {
+	opacity: 0;
+}
+
+/* Web Page Style */
+
+.web-page-content {
+	margin-left: calc(230px + 15%);
+}
+
+.project-title {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: -.5px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid rgb(150,150,150);
+	margin-bottom: 5px;
+}
+
+.project {
+	margin-bottom: 80px;
+}

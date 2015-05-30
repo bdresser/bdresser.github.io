@@ -15,20 +15,10 @@ html {
 	display: none;
 }
 
-.pg404 {
-	width: 300px;
-	margin:auto;
-	margin-top: 200px;
-	text-align: center;
 
-}
-
-.big-404 {
-	font-size: 40px;
-}
 
 .bg7 {
-	background: url("/assets/cover7.jpg") no-repeat center center fixed; 
+	background: url("../assets/cover7.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -36,7 +26,7 @@ html {
 }
 
 .bg6 {
-	background: url("/assets/cover6.jpg") no-repeat center center fixed; 
+	background: url("../assets/cover6.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -44,7 +34,7 @@ html {
 }
 
 .bg5 {
-	background: url("/assets/cover5.jpg") no-repeat center center fixed; 
+	background: url("../assets/cover5.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -52,7 +42,7 @@ html {
 }
 
 .bg4 {
-	background: url("/assets/cover4.jpg") no-repeat center center fixed; 
+	background: url("../assets/cover4.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -60,7 +50,7 @@ html {
 }
 
 .bg3 {
-	background: url("/assets/cover3.jpg") no-repeat center center fixed; 
+	background: url("../assets/cover3.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -68,7 +58,7 @@ html {
 }
 
 .bg2 {
-	background: url("/assets/cover2.jpg") no-repeat center center fixed; 
+	background: url("../assets/cover2.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -77,7 +67,7 @@ html {
 }
 
 .bg1 {
-	background: url("/assets/cover1.jpg") no-repeat center center fixed; 
+	background: url("../assets/cover1.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -118,6 +108,7 @@ p {
 	letter-spacing: 1px;
 	margin-bottom: 0px;
 }
+
 .last-name {
 	text-transform: uppercase;
 	color: white;
@@ -142,8 +133,6 @@ p {
 	transition: .8s;
 }
 
-
-
 .social-small {
 	height: 35px;
 }
@@ -152,11 +141,10 @@ p {
 	opacity: .7;
 }
 
-
 .big-link-text {
 	font-family: "Source Code Pro";
 	font-size: 80px;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .web-link, .photo-link {
@@ -168,7 +156,6 @@ p {
 	//opacity: .8;
 	padding-top: 15%;
 }
-
 
 .web-link {
 	text-align:left;
@@ -227,209 +214,54 @@ p {
 	color: black;
 }
 
-/* Page Styles */
+/* loaders */
 
-.page-head {
-	width: 250px;
-	position: fixed;
-	margin-top:70px;
-}
-
-.underline {
-	border-bottom: 4px solid rgb(150,150,150);
-	width: 100%;
-}
-
-.photo-page, .web-page {
+.loader1 {
+	background: url(../assets/cover1.jpg) no-repeat;
 	display:none;
 }
 
-.margin-bottom {
-	margin-bottom: 30px;
+.loader2 {
+	background: url(../assets/cover2.jpg) no-repeat;
+	display:none;
 }
 
-.back-button {
-	width: 100%;
-	height:50px;
+.loader3 {
+	background: url(../assets/cover3.jpg) no-repeat;
+	display:none;
+}
+
+.loader4 {
+	background: url(../assets/cover4.jpg) no-repeat;
+	display:none;
+}
+
+.loader5 {
+	background: url(../assets/cover5.jpg) no-repeat;
+	display:none;
+}
+
+.loader6 {
+	background: url(../assets/cover6.jpg) no-repeat;
+	display:none;
+}
+
+.loader7 {
+	background: url(../assets/cover7.jpg) no-repeat;
+	display:none;
+}
+
+
+/* 404 styles */
+
+.pg404 {
+	width: 300px;
+	margin:auto;
+	margin-top: 200px;
 	text-align: center;
-	font-family: "Source Code Pro";
-	font-size: 13px;
-	margin-top: 10px;
-	padding-top:15px;
-	color: rgb(150,150,150);
-	text-decoration: none;
-	transition: all .3s;
+
 }
 
-.back-button:hover{
-	background-color: rgb(150,150,150);
-	color: rgb(250,250,250);
-	cursor:pointer;
+.big-404 {
+	font-size: 40px;
 }
-
-.back-button:active {
-	text-decoration: none;
-}
-.back-button:visited {
-	text-decoration: none;
-}
-
-.photo-page-head {
-	margin-left: calc(92% - 220px);
-}
-
-.web-page-head {
-	width: 230px;
-	margin-left: 8%;
-	text-align: right;
-}
-
-.web-page .page-info-text {
-	text-align: right;
-}
-
-.web-page .page-head-text {
-	padding-right: 40px;
-}
-
-.page-head-text {
-	margin:0px;
-	color: rgb(150,150,150);
-}
-
-
-.social-container-page {
-	padding-left: 20px;
-}
-
-.social-container-web {
-	padding-left: 0px;
-	padding-right: 20px;
-}
-
-
-.link-underline {
-	text-decoration: none;
-	color: inherit;
-}
-
-.link-underline:hover {
-	text-decoration: underline;
-}
-
-.link-no-underline {
-	text-decoration: none;
-	color:inherit;
-}
-
-.link-no-underline:hover {
-	text-decoration: none;
-}
-
-.link {
-	color: rgb(50,150,250);
-	text-decoration: none;
-}
-
-.link:hover {
-	text-decoration: underline;
-}
-
-
-
-.page-content {
-	width: 600px;
-	display: inline-block;
-	margin-top: 115px;
-}
-
-/* Photo Page Style */
-
-.photo-page-content {
-	float: right;
-	margin-right: 400px;
-	margin-top: 100px;
-	width:700px;
-}
-
-.gallery-pic {
-	width: 700px;
-	height: auto;
-	margin-bottom: 40px;
-}
-
-/* Web Page Style */
-
-.fader {
-	opacity: 0;
-}
-
-.web-page-content {
-	margin-left: calc(230px + 15%);
-}
-
-.project-title {
-	width: 100%;
-	font-size: 20px;
-	font-weight: 400;
-	letter-spacing: -.5px;
-	padding-bottom: 10px;
-	border-bottom: 4px solid rgb(150,150,150);
-	margin-bottom: 5px;
-}
-
-.project {
-	margin-bottom: 80px;
-}
-
-
-
-
-/* mobile styles */
-
-@media only screen and (max-width: 1000px) {
-	.photo-page-head, .web-page-head {
-		
-	}
-	.page-head {
-		position: absolute;
-		margin-left:calc(50% - 115px);
-	}
-
-	.web-page .page-info-text, .photo-page .page-info-text {
-		text-align: center;
-	}
-
-	.page-content {
-		margin-top: 380px;
-		width: 80%;
-		margin-left: 10%;
-	}
-
-	.photo-page-content {
-		float: none;
-		margin-right: 0px;
-		//margin-left: 0px;
-	}
-
-	.gallery-pic {
-		width: 100%;
-		height: auto;
-	}
-}
-
-.loader {
-	display:none;
-}
-/*
-.404 h1 {
-	color: white !important;
-	font-size: 50px !important;
-	text-align: center !important;
-}
-
-.404 p{
-	color: white !important;
-	font-size: 24px !important;
-	text-align: center !important;
-}*/
