@@ -4,6 +4,13 @@ body {
 	background-color: white;
 }
 
+p {
+	font-family: 'Source Code Pro';
+	font-weight: 400;
+	font-size:12px;
+	color: rgb(150,150,150);
+}
+
 .page-head {
 	width: 250px;
 	position: fixed;
@@ -21,7 +28,7 @@ body {
 
 .back-button {
 	width: 100%;
-	height:50px;
+	height:35px;
 	text-align: center;
 	font-family: "Source Code Pro";
 	font-size: 13px;
@@ -81,7 +88,7 @@ body {
 
 .link-underline {
 	text-decoration: none;
-	//color: inherit;
+	color: inherit;
 }
 
 .link-underline:hover {
@@ -106,7 +113,31 @@ body {
 	text-decoration: underline;
 }
 
+.social-container-home {
+	padding-left: 65px;
+}
 
+.social, .social-small {
+	height: 40px;
+	width: auto;
+	margin:0px;
+	opacity: .4;
+	transition: .8s;
+}
+
+.social-small {
+	height: 35px;
+}
+
+.social:hover, .social-small:hover {
+	opacity: .7;
+}
+
+.big-link-text {
+	font-family: "Source Code Pro";
+	font-size: 80px;
+	font-weight: 300;
+}
 
 .page-content {
 	width: 600px;
@@ -133,6 +164,8 @@ body {
 	opacity: 0;
 }
 
+
+
 /* Web Page Style */
 
 .web-page-content {
@@ -152,3 +185,36 @@ body {
 .project {
 	margin-bottom: 80px;
 }
+
+/* mobile styles */
+
+@media only screen and (max-width: 1000px) {
+	.photo-page-head, .web-page-head {
+		
+	}
+	.page-head {
+		position: absolute;
+		margin-left:calc(50% - 115px);
+	}
+
+	.web-page .page-info-text, .photo-page .page-info-text {
+		text-align: center;
+	}
+
+	.page-content {
+		margin-top: 380px;
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.photo-page-content {
+		float: none;
+		margin-right: 0px;
+		//margin-left: 0px;
+	}
+
+	.gallery-pic {
+		width: 100%;
+		height: auto;
+	}
+ }
