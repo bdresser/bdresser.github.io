@@ -90,6 +90,8 @@ $( document ).ready(function() {
 			$('.home-all').fadeIn(2000);
 		});
 
+		$('.loader').addClass(backgrounds[(current+1) % backgrounds.length]);
+
 		// wait, then start slideshow with next img
 		setTimeout(function(){
 			cycleBG(current);
