@@ -7,20 +7,20 @@ body {
 p {
 	font-family: 'Source Code Pro';
 	font-weight: 400;
-	font-size:12px;
+	font-size:14px;
 	color: rgb(150,150,150);
 }
 
 .page-head {
 	width: 250px;
 	position: fixed;
-	margin-top:70px;
+	margin-top:75px;
 }
-
+/*
 .underline {
 	border-bottom: 3px solid rgb(150,150,150);
 	width: 100%;
-}
+}*/
 
 .margin-bottom {
 	margin-bottom: 30px;
@@ -59,11 +59,6 @@ p {
 .web-page-head {
 	width: 230px;
 	margin-left: 8%;
-	text-align: right;
-}
-
-.web-page .page-info-text {
-	text-align: right;
 }
 
 .web-page .page-head-text {
@@ -83,6 +78,7 @@ p {
 .social-container-web {
 	padding-left: 0px;
 	padding-right: 20px;
+	padding-top: 10px;
 }
 
 
@@ -107,6 +103,7 @@ p {
 .link {
 	color: rgb(50,150,250);
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .link:hover {
@@ -140,7 +137,7 @@ p {
 }
 
 .page-content {
-	width: 600px;
+	width: 700px;
 	display: inline-block;
 	margin-top: 115px;
 }
@@ -174,23 +171,56 @@ p {
 
 .project-title {
 	width: 100%;
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: 400;
 	letter-spacing: -.5px;
 	padding-bottom: 10px;
-	border-bottom: 3px solid rgb(150,150,150);
+	/*border-bottom: 3px solid rgb(150,150,150);*/
 	margin-bottom: 5px;
+	font-family: "Source Code Pro";
+	color: #696868;
+}
+
+.project-title span {
+	float: right;
 }
 
 .project {
 	margin-bottom: 80px;
 }
 
+.project-1-img {
+	height: 400px;
+	width: auto;
+}
+
+.project-2-img {
+	height: 600px;
+	width: auto;
+}
+
+.project-img-full {
+	width: 100%;
+}
+
+.sub-title {
+	color: #696868;
+	text-decoration: underline;
+}
+
+.expanded {
+	display: none;
+	-webkit-transition: display .5s; /* Safari */
+  transition: display .5s;
+}
+
+
+
 /* mobile styles */
 
 @media only screen and (max-width: 1000px) {
 	.photo-page-head, .web-page-head {
-		
+
 	}
 	.page-head {
 		position: absolute;

@@ -3,6 +3,7 @@
 	<head>
 
 		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="../styles/page.css">
 		<link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
 		<title> &nbsp; Bobby Dresser</title>
@@ -11,12 +12,23 @@
 	<body>
 		<div class="web-page">
 			<div class="web-page-head page-head">
-				<p class="big-link-text page-head-text">WEB</p>
+				<!-- <p class="big-link-text page-head-text">WEB</p> -->
+				<p class='project-title page-info-text'>Hi, I'm Bobby.</p>
+				<p class='page-info-text'>I'm a product manager currently based in New York. Here's some of my past work.</p>
 				<div class="underline"></div>
-				<p class='page-info-text'>I'm studying computer science at Yale. Here are some of my projects outside the classroom.</p>
-				<div class="social-container-page social-container-web">
-					<a href="http://www.facebook.com/bobbydresser"><img class='social-small' src="../assets/facebook.svg" alt=""></a>
-					<a href="http://www.twitter.com/b_dresser"><img class='social-small' src="../assets/twitter.svg" alt=""></a>
+				<div class="menu">
+					<p>
+						Get in touch: <br>
+						<span class='link'>bobby.dresser@gmail.com</span><br>
+						<span class='link'>linkedin</span><br>
+						<span class='link'>resume</span><br>
+						<span class='link'>photography</span>
+					</p>
+
+				</div>
+
+
+				<!-- <div class="social-container-page social-container-web">
 					<a href="http://www.instagram.com/bobby.d"><img class='social-small' src="../assets/instagram.svg" alt=""></a>
 					<a href="http://www.linkedin.com/in/bobbydresser"><img class='social-small' src="../assets/linkedin.svg" alt=""></a>
 					<a href="http://www.github.com/bdresser"><img class='social-small' src="../assets/github.svg" alt=""></a>
@@ -25,33 +37,70 @@
 					<div class="back-button">
 						BACK
 					</div>
-				</a>
+				</a> -->
 			</div>
 			<div class="web-page-content page-content">
+				<div class="project project-1">
+					<p class="project-title">Troll Trump <span>10/12/2016</span></p>
+					<div class="project-info">
+						<p class="">While at Hillary for America, I managed the design, development and public rollout of Troll Trump, a fundraising site that let
+							users create an automatic donation to Hillary's campaign each time Trump posted on Twitter. The site raised $250,000 in three weeks.</p>
+						<p class="">Built with: React, Nuclear JS / Flux, DynamoDB, Amazon SQS</p>
+						<p class="">Press:
+							<a class="link" href="http://money.cnn.com/2016/10/20/technology/troll-trump-fundraising-tool/">CNN Money</a>,
+							<a class="link" href="https://www.cnet.com/news/hillary-trolls-trump-raises-money-each-time-he-tweets/">Mashable</a>,
+							<a class="link" href="https://www.good.is/articles/troll-trumps-twitter?utm_source=RS&utm_medium=TW&utm_campaign=Share">GOOD</a>,
+							<a class="link" href="http://www.usnews.com/news/articles/2016-10-21/hillary-clintons-campaign-sets-up-tool-that-allows-people-to-automatically-donate-every-time-donald-trump-tweets">USNews</a>,
+							<a class="link" href="http://www.dailydot.com/layer8/hillary-clinton-donations-trump-tweets/">DailyDot</a>,
+							<a class="link" href="https://www.cnet.com/news/hillary-trolls-trump-raises-money-each-time-he-tweets/">CNet</a>,
+							<a class="link" href="http://www.adweek.com/digital/hillary-clintons-campaign-just-created-way-make-money-donald-trumps-tweets-174141/">Adweek</a>
+						</p>
+						<p><a class="link" href='./troll-trump/index.html'>Read more...</a></p>
+						<img class="project-1-img" src="../assets/troll-trump-mobile.png" alt=""></img>
+						<img class="project-1-img" src="../assets/troll-trump-mobile-2.png" alt=""></img>
+						<img class="project-1-img" src="../assets/troll-trump-mobile-3.png" alt=""></img>
+
+					</div>
+				</div>
 				<div class="project">
-					<p class="project-title">Yale Projects Board</p>
-					<p class="project-info">The Yale Projects Board is a platform to connect developers with entrepeneurs and academics at Yale. We hope to unlock some of the peer-to-peer potential present on a college campus of thousands of brilliant students and help Yalies build some awesome things. Built with my partner Rafi Khan from concept to launch.</p>
-					<p class="project-info">Built with: Ruby on Rails, Angular JS, SASS </p>
-					<p class="project-info">View the project: <a class='link' href="http://yale.projectsboard.io">yale.projectsboard.io</a> (login required)</p>
+					<p class="project-title">hillaryclinton.com/donate <span>1/16 - 10/16</span></p>
+					<p class="project-info">I led optimization and feature development for the Clinton campaign’s online donation platform. We ran
+						dozens of multivariate experiments to maximize revenue, testing everything from small visual tweaks to large functional redesigns.
+						This data-first approach let us understand how donor behavior differs across traffic sources and
+						kept our allocation of development time closely tied to the product’s key success metrics.</br></br>
+						Our team also invested heavily in performance, eventually scrapping our isomorphic React / Flux stack
+						in favor of a custom vanilla JS framework built in-house. </br></br>
+						The platform we built raised money from over 3 million individual donors,
+						grew a pool of 1.2 million account holders with saved payment info, and raised hundreds of millions of dollars.
+					<br></p>
+					<p class="project-info">Built with: React, Nuclear JS / Flux, Django, Stripe</p>
+					<p><a class="link" href='./hfa-donate/index.html'>Read more...</a></p>
+					<img class="project-1-img" src="../assets/donate-1.png" alt=""></img>
+				</div>
+				<div class="project">
+					<p class="project-title">Zipper, an SMS fundraising tool <span>8/1/2016</span></p>
+					<div class="project-info">
+						<p class="">While at Hillary for America, I managed the design, development and public rollout of Troll Trump, a fundraising site that let
+							users create an automatic donation to Hillary's campaign each time Trump posted on Twitter. The site raised $250,000 in three weeks.</p>
+						<p class="">Built with: React, Nuclear JS / Flux, DynamoDB, Amazon SQS</p>
+						<p><a class="link" href='./troll-trump/index.html'>Read more...</a></p>
+						<img class="project-2-img" src="../assets/zipper-1.png" alt=""></img>
+						<img class="project-2-img" src="../assets/zipper-2.png" alt=""></img>
+
+					</div>
 				</div>
 
 				<div class="project">
-					<p class="project-title">Uber Trek</p>
+					<p class="project-title">Uber Trek <span>1/21/2015</span></p>
 					<p class="project-info">As a product case study, I came up with a new product for Uber that allows users to schedule rides in advance. I describe why the product makes sense, outline how it should work and look, and discuss what it could mean for Uber. </p>
 					<p class="project-info">Built with: Photoshop, imagination</p>
 					<p class="project-info">View the project: <a class='link' href="./uber/">Uber Trek</a></p>
 				</div>
 				<div class="project">
-					<p class="project-title">3Derm</p>
+					<p class="project-title">3Derm <span>11/15/2014</span></p>
 					<p class="project-info">3Derm is a Boston-based startup dedicated to improving the detection skin cancer in its earliest stages. The company uses a custom-built 3D imaging device for easy and affordable screening. I helped design and build the front-end of an online portal for patients and doctors.</p>
 					<p class="project-info">Built with: MongoDB, Node JS, Angular JS, Boostrap, SASS </p>
 					<p class="project-info">View the project: <a class='link' href="http://3derm.com">3derm.com</a></p>
-				</div>
-				<div class="project">
-					<p class="project-title">World Party Day</p>
-					<p class="project-info">World Party Day is a fictional event celebrating everything everywhere. Many worlds, many people, one large nonexistent party. Please explore, play, etc!</p>
-					<p class="project-info">Built with: Paper.js, jQuery, HTML5 etc.</p>
-					<p class="project-info">View the project: <a class='link' href="../interactive-design/p3/worldpartyday.html">World Party Day</a></p>
 				</div>
 				<div class="project">
 					<p class="project-title">Drawings of Humans</p>
@@ -59,26 +108,11 @@
 					<p class="project-info">Built with: HTML5 Canvas, IFTT, Humans of New York</p>
 					<p class="project-info">View the project: <a class='link' href="../interactive-design/p4/drawing.html">Drawings of Humans</a></p>
 					<p class="project-info">View submissions: <a class='link' href="http://drawings-of-humans.tumblr.com">drawings-of-humans.tumblr.com</a></p>
-
-				</div>
-				<div class="project">
-					<p class="project-title">A Homepage a Day</p>
-					<p class="project-info">As a follow-up to a course I took on Graphic Design, I designed a new homepage every day for two weeks, more out of interest than productivity. I tried to go for creativity over complexity. The winner of this one-man competition is the site you're looking at! </p>
-					<p class="project-info">Built with: CSS / HTML only</p>
-					<p class="project-info">View the project: <a class='link' href="../homepages/index.html">A Homepage a Day</a></p>
 				</div>
 
-				<div class="project">
-					<p class="project-title">ART 369 Interactive Design</p>
-					<p class="project-info">Some messings around from a Yale School of Art course taught by Laurel Schwulst. Don't take em too seriously.</p>
-					<p class="project-info"></p>
-					<p class="project-info"><a class='link' href="../interactive-design/index.html">/interactive-design</a></p>
-				</div>
-				<div class="project">
-					<p class="project-title">This site</p>
-					<p class="project-info">Built it myself! No framework, just some custom JS served up on Github Pages. Thanks for stopping by.</p>
-				</div>
 			</div>
 		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="../scripts/web.js"></script>
 	</body>
 </html>
