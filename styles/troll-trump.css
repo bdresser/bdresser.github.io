@@ -1,6 +1,6 @@
 h1, p, ul {
 	font-family: "Roboto";
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: .5px;
 }
 
@@ -19,25 +19,32 @@ body {
 }
 
 .first-content {
-	margin-top: 650px;
+	/*margin-top: 650px;*/
+}
+
+.top-left {
+	position: fixed;
+	top: 0;
+	left: 50;
 }
 
 .section-content, ul {
 	line-height: 23px;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .title-one {
-	font-size: 140px;
-	letter-spacing: 10px;
-	top: 130px;
-	position: fixed;
+	font-size: 120px;
+	letter-spacing: -5px;
+	text-align: center;
+	top: 30px;
+	/*position: fixed;*/
 }
 
 .section-head {
-	font-family: 'Source Code Pro';
+	font-family: 'Oswald';
 	font-size: 35px;
-	letter-spacing: 3px;
+	/*letter-spacing: 3px;*/
 	/*text-transform: uppercase;*/
 	/*color: rgb(150,150,150);*/
 }
@@ -71,6 +78,16 @@ body {
 
 .extra-padding {
 	padding-top: 150px;
+}
+
+.project-1-img {
+	height: 400px;
+	width: auto;
+}
+
+.project-2-img {
+	height: 600px;
+	width: auto;
 }
 
 @media only screen and (max-width: 820px) {
