@@ -2,7 +2,7 @@
 
 body {
 	background-color: white;
-	/*width: 100%;*/
+	width: 100%;
 }
 
 p {
@@ -53,11 +53,6 @@ p {
 .back-button:visited {
 	text-decoration: none;
 }
-
-.photo-page-head {
-	margin-left: calc(92% - 220px);
-}
-
 
 .page-head-text {
 	margin:0px;
@@ -206,7 +201,7 @@ p {
 	.page-head {
 		width: 88%;
 		position: relative;
-		margin-left: 6%;
+		margin-left: 5%;
 	}
 
 	.menu {
@@ -220,7 +215,7 @@ p {
 	.page-content {
 		margin-top: 40px;
 		width: 88%;
-		margin-left: 6%;
+		margin-left: 5%;
 	}
 
 	.project-1-img {
@@ -246,6 +241,10 @@ p {
 
 	.page-head .project-title {
 		font-size: 28px;
+	}
+
+	.gallery-pic {
+		width: 100%;
 	}
 
  }
