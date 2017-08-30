@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="74px" height="65px" viewBox="0 0 74 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>submissions</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="36" cy="30.4347826" r="30.4347826"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="64.8695652" height="64.8695652">
+            <rect x="3.56521739" y="-2" width="64.8695652" height="64.8695652" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="STELLAR-Build-Challenge" transform="translate(-663.000000, -3962.000000)">
+            <g id="submissions" transform="translate(664.000000, 3964.000000)">
+                <g id="Oval-78">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#5B6A72" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+                <g id="heart" transform="translate(20.021739, 17.500000)" stroke-width="2" stroke-linecap="square">
+                    <path d="M1.48462358,8.36944568 L1.48462354,14.1311598" id="Line-9" stroke="#FFD148"></path>
+                    <path d="M29.7110286,8.67391304 L29.7110287,14.456641" id="Line-3" stroke="#EF7E48"></path>
+                    <path d="M1.84173981,14.8131802 L15.5978261,28.5516304" id="Line-7" stroke="#50E3C2"></path>
+                    <path d="M29.6836568,15.2271276 L15.9549424,28.9558416" id="Line-2" stroke="#42AAE6"></path>
+                    <path d="M1.84650053,7.58967391 L8.73168014,0.713321802" id="Line-8" stroke="#42AAE6"></path>
+                    <path d="M8.7407211,0.722826087 L15.2645511,7.23829216" id="Line-5" stroke="#EF7E48"></path>
+                    <path d="M23.1972428,1.44565217 L29.5190447,7.767454" id="Line-6" stroke="#FFD148"></path>
+                    <path d="M15.5978261,7.58967391 L22.4830057,0.713321802" id="Line-4" stroke="#50E3C2"></path>
+                </g>
+                <path d="M71.829375,39.0303261 C70.6566848,36.8852446 67.4461957,31.9565217 67.4461957,31.9565217 C67.4461957,31.9565217 64.2248641,36.8915217 63.0430435,39.03375 L71.829375,39.0303261 L71.829375,39.0303261 Z" id="Imported-Layers" stroke="#5B6A72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"></path>
+                <path d="M8.95695652,28.9096196 C7.7842663,26.764538 4.57377717,21.8358152 4.57377717,21.8358152 C4.57377717,21.8358152 1.35244565,26.7708152 0.170625,28.9130435 L8.95695652,28.9096196 L8.95695652,28.9096196 Z" id="Imported-Layers-3" stroke="#5B6A72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(4.563791, 25.374429) rotate(-180.000000) translate(-4.563791, -25.374429) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

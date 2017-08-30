@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="35px" viewBox="0 0 42 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="16" y="8" width="25" height="14"></rect>
+        <path d="M41,18 L41,18 L41,22 L37,22 L37,22 L37,22 C37,19.790861 38.790861,18 41,18 Z" id="path-2"></path>
+        <path d="M41,8 L41,8 L41,12 L37,12 L37,12 L37,12 C37,9.790861 38.790861,8 41,8 Z" id="path-3"></path>
+    </defs>
+    <g id="wallets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-751.000000, -522.000000)">
+            <g id="Group-13" transform="translate(752.000000, 523.000000)">
+                <circle id="Oval-2" stroke="#5B6A72" fill="#DBF2FA" cx="16.5" cy="16.5" r="16.5"></circle>
+                <path d="M16.5,33 C22.2989899,33 27,25.6126984 27,16.5 C27,7.38730163 22.2989899,0 16.5,0 C10.7010101,0 6,7.38730163 6,16.5 C6,25.6126984 10.7010101,33 16.5,33 Z" id="Oval-2" stroke="#5B6A72"></path>
+                <path d="M30.7040816,8.55555556 L2.47322102,8.55555556" id="Path-5" stroke="#5B6A72"></path>
+                <path d="M31.9190716,21.5 L1.27678571,21.5" id="Path-5" stroke="#5B6A72"></path>
+                <g id="Rectangle-3">
+                    <use fill="#F0F0F0" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#5B6A72" stroke-width="1" x="16.5" y="8.5" width="24" height="13"></rect>
+                </g>
+                <circle id="Oval-3" stroke="#5B6A72" fill="#D8D8D8" cx="28" cy="15" r="4"></circle>
+                <g id="Rectangle-11">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <path stroke="#5B6A72" stroke-width="1" d="M40.5,18.5354444 C38.9671544,18.7547008 37.7547008,19.9671544 37.5354444,21.5 L40.5,21.5 L40.5,18.5354444 Z"></path>
+                </g>
+                <g id="Rectangle-11" transform="translate(39.000000, 10.000000) rotate(-90.000000) translate(-39.000000, -10.000000) ">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <path stroke="#5B6A72" stroke-width="1" d="M40.5,8.53544443 C38.9671544,8.75470081 37.7547008,9.96715442 37.5354444,11.5 L40.5,11.5 L40.5,8.53544443 Z"></path>
+                </g>
+                <path d="M16.5056152,0.041015625 L16.5056152,33.3757929" id="Path-10" stroke="#5B6A72"></path>
+            </g>
+        </g>
+    </g>
+</svg>
