@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="72px" height="77px" viewBox="0 0 72 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>anchors@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="STELLAR-Build-Challenge" transform="translate(-664.000000, -1242.000000)" stroke-width="2" stroke="#5B6A72">
+            <g id="anchors" transform="translate(665.000000, 1243.000000)">
+                <polyline id="Stroke-1" stroke-linejoin="round" points="32.5862069 9.65517241 32.5862069 6.03448276 28.9655172 6.03448276 28.9655172 0 41.0344828 0 41.0344828 6.03448276 37.4137931 6.03448276 37.4137931 9.65517241"></polyline>
+                <path d="M44.6527586,6.17593103 C59.2887931,10.3662759 70,23.8461034 70,39.8278276 C70,59.1562759 54.3296552,74.8278276 35,74.8278276 C15.6703448,74.8278276 0,59.1562759 0,39.8278276 C0,23.8473103 10.71,10.3674828 25.3448276,6.17593103" id="Stroke-3" stroke-linejoin="round"></path>
+                <path d="M7.24137931,10.862069 L10.862069,14.4827586" id="Stroke-5" stroke-linejoin="round"></path>
+                <polygon id="Stroke-7" stroke-linejoin="round" points="1.20689655 9.65517241 6.03448276 4.82758621 9.65517241 8.44827586 4.82758621 13.2758621"></polygon>
+                <path d="M35,39.8275862 L70,4.82758621" id="Stroke-9" stroke-linejoin="round"></path>
+                <polyline id="Stroke-11" stroke-linejoin="round" points="70 13.2758621 70 4.82758621 61.5517241 4.82758621"></polyline>
+                <path d="M35,39.8275862 L47.0689655,51.8965517" id="Stroke-13" stroke-linejoin="round"></path>
+                <path d="M27.7586207,18.0633793 C18.6417241,21.0951034 12.0689655,29.6942414 12.0689655,39.8273448 L35,39.8273448" id="Stroke-15"></path>
+                <path d="M35,39.8275862 L35,16.8965517 C47.6639655,16.8965517 57.9310345,27.1636207 57.9310345,39.8275862 C57.9310345,52.4915517 47.6639655,62.7586207 35,62.7586207 C24.8644828,62.7586207 16.2653448,56.1834483 13.2348276,47.0665517" id="Stroke-17"></path>
+                <path d="M65.1724138,39.8275862 C65.1724138,56.4912069 51.6636207,70 35,70 C18.3363793,70 4.82758621,56.4912069 4.82758621,39.8275862 C4.82758621,23.1639655 18.3363793,9.65517241 35,9.65517241 C51.6636207,9.65517241 65.1724138,23.1639655 65.1724138,39.8275862 L65.1724138,39.8275862 Z" id="Stroke-19" stroke-linejoin="round"></path>
+                <path d="M31.3793103,35 L28.9655172,35" id="Stroke-21" stroke-linejoin="round"></path>
+                <path d="M26.5517241,35 L24.137931,35" id="Stroke-23" stroke-linejoin="round"></path>
+                <path d="M21.7241379,35 L19.3103448,35" id="Stroke-25" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

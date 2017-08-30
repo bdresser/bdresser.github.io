@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>blue planet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="www" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Hayashi-www-8" sketch:type="MSArtboardGroup" transform="translate(-802.000000, -459.000000)">
+            <g id="blue-planet-+-violet-planet" sketch:type="MSLayerGroup" transform="translate(802.000000, 342.000000)">
+                <g id="blue-planet" transform="translate(0.000000, 117.000000)" sketch:type="MSShapeGroup">
+                    <path d="M80,40 C80,62.09125 62.0916667,80 40,80 C17.90875,80 0,62.09125 0,40 C0,17.9083333 17.90875,0 40,0 C62.0916667,0 80,17.9083333 80,40" id="Fill-14" fill="#ACD9F4"></path>
+                    <path d="M40,74.7382196 C21.8605525,74.7382196 7.15541667,62.1677537 7.15541667,46.6615176 C7.15541667,31.1549891 7.15541667,67.8607077 40,67.8607077 C72.8445833,67.8607076 72.8445833,31.1549891 72.8445833,46.6615176 C72.8445833,62.1677537 58.1397897,74.7382196 40,74.7382196 Z" id="Fill-5" opacity="0.308127332" fill="#59B1CD"></path>
+                    <circle id="Oval-54" opacity="0.308768657" fill="#FFFFFF" cx="21.4583333" cy="14.2993382" r="1.45833333"></circle>
+                    <circle id="Oval-55" opacity="0.308768657" fill="#59B1CD" cx="33.9583333" cy="30.9660049" r="1.45833333"></circle>
+                    <circle id="Oval-56" opacity="0.308768657" fill="#59B1CD" cx="46.4583333" cy="18.4660049" r="1.45833333"></circle>
+                    <circle id="Oval-57" fill="#59B1CD" cx="33.125" cy="8.88267152" r="1.45833333"></circle>
+                    <circle id="Oval-58" fill="#59B1CD" cx="11.875" cy="25.1326715" r="1.04166667"></circle>
+                    <circle id="Oval-59" opacity="0.454582556" fill="#59B1CD" cx="66.0416667" cy="20.9660049" r="1.04166667"></circle>
+                    <circle id="Oval-60" fill="#59B1CD" cx="32.2916667" cy="41.7993382" r="1.04166667"></circle>
+                    <circle id="Oval-61" opacity="0.454582556" fill="#59B1CD" cx="46.875" cy="30.5493382" r="1.04166667"></circle>
+                    <circle id="Oval-62" opacity="0.308768657" fill="#FFFFFF" cx="53.5416667" cy="8.46600486" r="1.04166667"></circle>
+                    <circle id="Oval-63" opacity="0.529792444" fill="#FFFFFF" cx="11.875" cy="35.5493382" r="1.04166667"></circle>
+                    <ellipse id="Oval-64" opacity="0.308768657" fill="#FFFFFF" cx="56.5641276" cy="14.1528441" rx="0.991210937" ry="1.04066077"></ellipse>
+                    <ellipse id="Oval-65" opacity="0.529792444" fill="#59B1CD" cx="64.4254557" cy="36.4889299" rx="0.991210937" ry="1.04066077"></ellipse>
+                    <ellipse id="Oval-66" opacity="0.308768657" fill="#FFFFFF" cx="26.0400391" cy="47.5488626" rx="0.991210937" ry="1.04066077"></ellipse>
+                    <circle id="Oval-67" opacity="0.454582556" fill="#59B1CD" cx="30.625" cy="17.2160049" r="1.04166667"></circle>
+                    <ellipse id="Oval-68" opacity="0.454582556" fill="#FFFFFF" cx="30.2067057" cy="60.0488626" rx="0.991210937" ry="1.04066077"></ellipse>
+                    <ellipse id="Oval-69" fill="#59B1CD" cx="18.9078776" cy="41.1915983" rx="0.991210937" ry="1.04066077"></ellipse>
+                    <ellipse id="Oval-70" opacity="0.529792444" fill="#FFFFFF" cx="38.2177734" cy="23.464999" rx="0.991210938" ry="1.04066077"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

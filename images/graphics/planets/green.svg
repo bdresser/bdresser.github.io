@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>green planet</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M25,50 C11.1929688,50 0,38.8070313 0,25 C0,11.1927083 11.1929688,0 25,0 C38.8072917,0 50,11.1927083 50,25 C50,38.8070313 38.8072917,50 25,50 Z"></path>
+    </defs>
+    <g id="www" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Hayashi-www-8" sketch:type="MSArtboardGroup" transform="translate(-591.000000, -351.000000)">
+            <g id="green-planet" sketch:type="MSLayerGroup" transform="translate(591.000000, 351.000000)">
+                <g id="Fill-14">
+                    <mask id="mask-2" sketch:name="Fill 14" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use fill="#60EAA8" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <ellipse id="Oval-146" opacity="0.26119403" fill="#33C9A7" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="27.8645833" cy="19.453125" rx="31.25" ry="21.953125"></ellipse>
+                    <ellipse id="Oval-144" opacity="0.111940299" fill="#72FDDE" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="27.8645833" cy="16.796875" rx="31.25" ry="19.6614583"></ellipse>
+                    <ellipse id="Oval-145" opacity="0.323227612" fill="#78FDBD" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="27.8645833" cy="-4.296875" rx="31.25" ry="19.6614583"></ellipse>
+                </g>
+                <circle id="Oval-57" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="19.4661458" cy="7.96052387" r="1.62760417"></circle>
+                <circle id="Oval-59" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="41.2760417" cy="10.546875" r="1.171875"></circle>
+                <circle id="Oval-72" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="9.04947917" cy="27.4917739" r="1.62760417"></circle>
+                <circle id="Oval-71" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="43.8802083" cy="36.328125" r="1.171875"></circle>
+                <circle id="Oval-61" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="27.7687848" cy="10.4995864" r="0.651041667"></circle>
+                <circle id="Oval-62" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="33.3734375" cy="5.29125304" r="0.651041667"></circle>
+                <ellipse id="Oval-65" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="43.1304932" cy="22.2847479" rx="0.619506836" ry="0.650412984"></ellipse>
+                <ellipse id="Oval-66" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="8.34190267" cy="12.2701225" rx="0.619506836" ry="0.650412984"></ellipse>
+                <ellipse id="Oval-68" opacity="0.140508396" fill="#C5E8F7" sketch:type="MSShapeGroup" cx="35.8388265" cy="14.6656244" rx="0.619506836" ry="0.650412984"></ellipse>
+                <g id="Group" transform="translate(5.500000, 2.500000)" fill="#C4FFE7" sketch:type="MSShapeGroup">
+                    <ellipse id="Oval-57" cx="8.72738487" cy="3.95107937" rx="0.899465461" ry="0.894579475"></ellipse>
+                    <ellipse id="Oval-59" cx="34.7229646" cy="8.93516502" rx="0.642475329" ry="0.63898534"></ellipse>
+                    <ellipse id="Oval-61" cx="21.4823534" cy="6.37922366" rx="0.642475329" ry="0.63898534"></ellipse>
+                    <ellipse id="Oval-62" cx="27.0132607" cy="1.26734094" rx="0.642475329" ry="0.63898534"></ellipse>
+                    <ellipse id="Oval-63" cx="1.31424753" cy="17.8809598" rx="0.642475329" ry="0.63898534"></ellipse>
+                    <ellipse id="Oval-65" cx="36.641934" cy="17.9461414" rx="0.61135543" ry="0.638368299"></ellipse>
+                    <ellipse id="Oval-66" cx="6.16594013" cy="25.2417791" rx="0.61135543" ry="0.638368299"></ellipse>
+                    <ellipse id="Oval-68" cx="29.4462104" cy="10.4681128" rx="0.61135543" ry="0.638368299"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
