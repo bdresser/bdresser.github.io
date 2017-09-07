@@ -64,7 +64,7 @@
  ██    ░█
 -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-<title>wallets | stellar-wallets</title>
+<title>Wallets | stellar-wallets</title>
 <link rel="pingback" href="http://www.stellar.org/xmlrpc.php">
 <meta name="google-site-verification" content="ypOI6oK7QnXU4rPrhNYP9S1LlW31kDaD3KmhklMPMRQ" />
 <link rel="icon" href="">
@@ -110,7 +110,7 @@ img.emoji {
 <link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.3.11' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css'  href='http://www.stellar.org/wp-includes/css/dashicons.min.css?ver=4.3.11' type='text/css' media='all' />
 <link rel='stylesheet' id='admin-bar-css'  href='http://www.stellar.org/wp-includes/css/admin-bar.min.css?ver=4.3.11' type='text/css' media='all' />
-<link rel='stylesheet' id='_s-style-css'  href='http://localhost/wp-content/themes/stellar/css/style.css?ver=1504131461' type='text/css' media='all' />
+<link rel='stylesheet' id='_s-style-css'  href='http://www.stellar.org/wp-content/themes/stellar/css/style.css?ver=1504812912' type='text/css' media='all' />
 <link rel='stylesheet' id='_s-style-css'  href='./test-wallet-source.css' type='text/css' media='all' />
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/intentPopup.js?ver=1'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
@@ -144,7 +144,7 @@ img.emoji {
 <script type="text/javascript">
 setTimeout(function(){var a=document.createElement("script");
 var b=document.getElementsByTagName("script")[0];
-a.src=https://script.crazyegg.com/pages/scripts/0065/1320.js?"+Math.floor(new Date().getTime()/3600000);
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0065/1320.js?"+Math.floor(new Date().getTime()/3600000);
 a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
 
@@ -161,12 +161,12 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title"><a href="http://www.stellar.org/" rel="home">Stellar</a></h1>
-					          <span class="snippet-stellars-given">6,990,780,327 <a href="https://dashboard.stellar.org/">lumens distributed<span class="away"></span></a></span>				</div>
+					          <span class="snippet-stellars-given">6,990,779,822 <a href="https://dashboard.stellar.org/">lumens distributed<span class="away"></span></a></span>				</div>
 
 				<nav id="site-navigation" class="main-navigation clear" role="navigation">
 					<a href="http://www.stellar.org/" class="site-home" rel="home">stellar-wallets</a>
 					<button class="menu-toggle"></button>
-					<div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">wallets</a></li></ul></div>
+					<div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 		</div>
@@ -182,14 +182,14 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <article id="post-4" class="post-4 page type-page status-publish hentry">
 			<div class="pageMenu0616 so-back">
 			<div class="so-chunk">
-				<div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">wallets</a></li></ul></div>
+				<div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
 			</div>
 		</div>
 		<div class="page-wrapper">
 		<div class="entry-content">
-						<div class="chunk">
+						<div class="wallets-page">
   <div class="back lumen0616-back lumen0616-headerBack">
-    <div class="chunk lumen0616-header">
+    <div class="so-chunk lumen0616-header">
       <h1 class="lumen0616-header__title">Choose your Lumen wallet</h1>
       <p class="lumen0616-header__lead">Below you&#8217;ll find a set of different wallets with varying functionality.</p>
       <div class="lumen0616-triangleSpace"></div>
@@ -197,437 +197,493 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     </div>
   </div>
 
+  <div class="modal">
+    <div class="modal-overlay hide">
+      <div class="modal-content">
+        <section class="modal-content-stargazer hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stargazer.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Stargazer is a wallet application for mobile (i.e. Android) and desktop.
+                Allows for multiple accounts, multiple assets, multiple networks,
+                and multiple languages. The vision is to push the limit; to raise the
+                bar for what a wallet is, and what you can do with it — without
+                adding too much fluff.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Multiple Accounts</li>
+                <li>Multiple Assets</li>
+                <li>Federated Addresses</li>
+                <li>Create/receive multi-sig/multi-party </li>
+                <li>Signing requests</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://getstargazer.com/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <strong>General info</strong>
+              <p>Supports: Android, Windows, Mac, Linux</p>
+              <a href="https://getstargazer.com/">Website</a>
+               | <a href="https://galactictalk.org/d/302-stellar-desktop-client-stargazer">Tutorial</a>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-lobstr hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/lobstr.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Lobstr is a wallet for Stellar. Lobstr is available as
+                a web app and also has native Android and iOS apps.
+                Lobstr is a smart and secure way to send and receive Lumens.
+                It’s clean design and helpful features like email
+                notifications simplify the whole experience and make
+                Lobstr one of the most user friendly wallets.</p>
 
-	<div class="modal">
-	<div class="modal-overlay hide">
-		<div class="modal-content">
-			<section class="modal-content-stargazer hide">
-				<div class="stargazer-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>Stargazer is a wallet application for mobile (i.e. Android) and desktop.
-							Allows for multiple accounts, multiple assets, multiple networks,
-							and multiple languages. The vision is to push the limit; to raise the
-							bar for what a wallet is, and what you can do with it — without
-							adding too much fluff.</p>
-					</div>
-					<div class="modal-wallet-features">
-						<strong>Key Features</strong>
-						<ul>
-							<li>Multiple Accounts</li>
-							<li>Multiple Assets</li>
-							<li>Federated Addresses</li>
-							<li>Create/receive multi-sig/multi-party </li>
-							<li>Signing requests</li>
-						</ul>
-					</div>
-					<div class="modal-wallet-button">
-						<a class='button' href=''>GET WALLET</a>
-					</div>
-					<div class="modal-wallet-links">
-						<strong>General info</strong>
-						<p>Supports: Android, Windows, Mac, Linux</p>
-						<a href="https://getstargazer.com/">Website</a>
-						 | <a href="https://galactictalk.org/d/302-stellar-desktop-client-stargazer">Tutorial</a>
-					</div>
-				</div>
-			</section>
-			<section class="modal-content-lobstr hide">
-				<div class="lobstr-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>Lobstr is a wallet for Stellar. Lobstr is available as
-							a web app and also has native Android and iOS apps.
-							Lobstr is a smart and secure way to send and receive Lumens.
-							It’s clean design and helpful features like email
-							notifications simplify the whole experience and make
-							Lobstr one of the most user friendly wallets.</p>
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>Send and receive lumens</li>
+                  <li>Quick XLM price converter</li>
+                  <li>Anti-fraud measures</li>
+                  <li>Support for operations with multiple transactions</li>
+                </ul>
+              </div>
+              <div class="modal-wallet-button">
+                <a class="button" href="https://lobstr.co/authorization/signup/">GET WALLET</a>
+              </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac, Android, iOS</p>
+              <p><a href="https://lobstr.co/">Website</a></p>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="modal-content-stellar-portal hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stellarportal.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Stellar Portal is a web application to view and
+                manage stellar accounts. It relies completely on
+                Horizon and has no backend. You can view balances, offers,
+                order books and payment, and do most of operations.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Balances view and edit trustlines</li>
+                <li>Send payments</li>
+                <li>Issue assets</li>
+                <li>Create/Merge accounts</li>
+                <li>Account offers view and edit</li>
+                <li>List of payments</li>
+                <li>Watch orderbooks</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://portal.willet.io'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <strong>General info</strong>
+              <p>Supports: Windows, Mac</p>
+              <p><a href="https://portal.willet.io">Website</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-stellar-desktop hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stellardesktop.png" alt="">
+          <div class="modal-content-text">
+              <div class="modal-wallet-description">
+                <p>The Stellar Desktop Client is an open source desktop
+                  client. It allows you to encrypt your secret key and store
+                  it as a file locally on your computer. Easily trust,
+                  send, and trade all within the client.</p>
+              </div>
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>Login information stored locally
+                  <li>Send and receive lumens</li>
+                  <li>Add trust from known anchors</li>
+                  <li>Create your own asset</li>
+                  <li>Deposit/withdraw CNY</li>
+                  <li>Buy/sell lumens</li>
+                </ul>
+              </div>
+              <div class="modal-wallet-button">
+                <a class='button' href='http://wallet.stellar.chat/'>GET WALLET</a>
+              </div>
+              <div class="modal-wallet-links">
+                <p>Supports: Windows, Mac, Linux</p>
+                <a href="http://wallet.stellar.chat/">Website</a> |
+                <a href="https://galactictalk.org/d/302-stellar-desktop-client-stargazer">Tutorial</a>
+              </div>
+          </div>
+        </section>
+        <section class="modal-content-centaurus hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/centaurus.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Centaurus was the first stellar wallet available
+                on Google Play. It is completely open source!
+                On first startup the app creates a stellar address
+                for you and you can immediately receive Lumens on
+                this address. As soon as you have some Lumens you can
+                start spending them, e.g. by scanning a friend&#8217;s QR code.
+                Furthermore you can enter the keys of an existing
+                stellar account to access it with your mobile device.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Display account balances</li>
+                <li>Send by manually pasting an address</li>
+                <li>Send by scanning a QR-code</li>
+                <li>QR-code for receiving</li>
+                <li>Simple Stellar Anchor support</li>
+                <li>Cross-currency payments</li>
+                <li>Encrypted backups</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://play.google.com/store/apps/details?id=de.xcoins.centaurus'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <a href="https://play.google.com/store/apps/details?id=de.xcoins.centaurus">Website</a> |
+              <a href="https://galactictalk.org/d/274-how-to-send-lumens-from-poloniex-to-centaurus-wallet-and-vice-versa">Tutorial</a>
+              <p>Supports: Android, iOS</p>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-ecliptic hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/ecliptic.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Ecliptic is a Stellar Wallet and Trading Client.
+                It has the ability to add multiple wallets, including hosted,
+                client-side and read-only accounts.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Store lumens, multiple currencies and other assets</li>
+                <li>Send payments and fund new accounts</li>
+                <li>Connect to your favourite Stellar anchors</li>
+                <li>Add contacts to simplify account ID management</li>
+                <li>Send and receive at next to no cost (only Stellar platform fees apply)</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://www.ecliptic.co/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac</p>
+              <p><a href="https://www.ecliptic.co/">Website</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-blackwallet hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/blackwallet.png" alt="">
+          <div class="modal-content-text">
+              <div class="modal-wallet-description">
+                <p>BlackWallet is an easy-to-use multiplatform web Stellar
+                  Lumens wallet. It was built using javascript &#038; Stellar Horizon.
+                  It is an enhanced account viewer as it doesn&#8217;t require
+                  users to create an account &#8211; all you need is a private key.
+                  Easily perform simple operations all within the wallet.</p>
+              </div>
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>No registration</li>
+                  <li>Sending and receiving Lumens, Assets, Tokens </li>
+                  <li>Assets/Tokens support</li>
+                  <li>Real time balances (+USD balance)</li>
+                  <li>Address inspector</li>
+                  <li>Set inflation destination</li>
+                  <li>XLM/BTC/XRP data &#038; charts</li>
+                </ul>
+              </div>
+              <div class="modal-wallet-button">
+                <a class='button' href='https://blackwallet.co/'>GET WALLET</a>
+              </div>
+              <div class="modal-wallet-links">
+                <p>Supports: Windows, Mac</p>
+                <a href="https://blackwallet.co/">Website</a> |
+                <a href="https://blackwallet.co/getstarted">Tutorial</a>
+              </div>
+            </div>
+        </section>
+        <section class="modal-content-saza hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/saza.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Saza is a stellar wallet that helps users manage
+                lumens and other assets.
+              </p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Manage multiple Stellar accounts</li>
+                <li>Send payments in different assets</li>
+                <li>Create/Manage Trustlines</li>
+                <li>Create/Manage Offers</li>
+                <li>View all operations on account</li>
+                <li>Set all account options.</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://saza.io'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac</p>
+              <a href="https://saza.io">Website</a> |
+              <a href="https://saza.io/faq.html">Tutorial</a>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-sika hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/sika.png" alt="">
+          <div class="modal-content-text">
+            <div class="left-column">
+              <div class="modal-wallet-description">
+                <p>A fast, secure and mobile payment system for Ghana.</p>
+              </div>
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>Connect mobile number/email to bank account</li>
+                  <li>Send and receive payments</li>
+                  <li>Cross platform</li>
+                  <li>Multi-currency (cedis, dollars, pounds, euro)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="modal-wallet-button">
+                <a class='button' href='https://sika.io'>GET WALLET</a>
+              </div>
+              <div class="modal-wallet-links">
+                <p>Supports: Windows, Mac, Android, iOS</p>
+                <p><a href="https://www.sika.io/">Website</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-stellar-term hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stellarterm.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>StellarTerm is a web based trading client.
+                With full ability to interact with the Stellar
+                distributed exchange. It aims to make it easy and safe
+                for users of any skill level to trade on the Stellar network.
+                One big feature is that it has a up-to-date list of
+                all the anchors so that users will have a simpler and
+                safer experience.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Exchange currencies</li>
+                <li>Create trust lines</li>
+                <li>View balance</li>
+                <li>See popular exchange markets</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://stellarterm.com/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac, Linux</p>
+              <a href="https://stellarterm.com/">Website</a> |
+              <a href="https://galactictalk.org/d/299-stellarterm-ecliptic">Tutorial</a>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-luuun hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/luuun.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Luuun is local lumens made easy. Built on Rehive, a platform
+                for launching and managing payment applications,
+                Luuun is a web and mobile wallet that supports federation</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Connect mobile number/email to account
+                <li>Buy/Sell lumens for cash from a local teller</li>
+                <li>Cross platform</li>
+                <li>Multi-currency/assets</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='http://luuun.com/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac, Android, iOS</p>
+              <a href="http://luuun.com/">Website</a>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-papaya hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/papaya.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Papaya is an easy-to-use wallet for Lumens and other assets,
+                such as BTC, LTC, EURT, etc. No technical knowledge required
+                to use it, no keys, trustlines, or minimum balances.
+                Works on every platform where Telegram client exists. </p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Supports federation</li>
+                <li>Path (cross-currency) payments </li>
+                <li>Built-in marketplace for peer-to-peer trading.</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://t.me/PapayaBot'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Linux, Mac, Android, iOS, FirefoxOS, Windows Mobile</p>
+              <a href="https://t.me/PapayaBot">Website</a>
+            </div>
+          </div>
+        </section>
+        <span class="modal-dismiss">&#10006; CLOSE</span>
+      </div>
+    </div>
+  </div>
 
-						<div class="modal-wallet-features">
-							<strong>Key Features</strong>
-							<ul>
-								<li>Send and receive lumens</li>
-								<li>Quick XLM price converter</li>
-								<li>Anti-fraud measures</li>
-								<li>Support for operations with multiple transactions</li>
-							</ul>
-						</div>
-						<div class="modal-wallet-button">
-							<a class="button" href="https://lobstr.co/authorization/signup/">GET WALLET</a>
-						</div>
-					<div class="modal-wallet-links">
-						<p>Supports: Windows, Mac, Android, iOS</p>
-						<p><a href="https://lobstr.co/">Website</a></p>
-					</div>
-				</div>
-				</div>
-			</section>
-			<section class="modal-content-stellar-portal hide">
-				<div class="stellar-portal-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>Stellar Portal is a web application to view and
-							manage stellar accounts. It relies completely on
-							Horizon and has no backend. You can view balances, offers,
-							order books and payment, and do most of operations.</p>
-					</div>
-					<div class="modal-wallet-features">
-						<strong>Key Features</strong>
-						<ul>
-							<li>Balances view and edit trustlines</li>
-							<li>Send payments</li>
-							<li>Issue assets</li>
-							<li>Create/Merge accounts</li>
-							<li>Account offers view and edit</li>
-							<li>List of payments</li>
-							<li>Watch orderbooks</li>
-						</ul>
-					</div>
-					<div class="modal-wallet-button">
-						<a class='button' href=''>GET WALLET</a>
-					</div>
-					<div class="modal-wallet-links">
-						<strong>General info</strong>
-						<p>Supports: Windows, Mac</p>
-						<p><a href="https://portal.willet.io">Website</a></p>
-					</div>
-				</div>
-			</section>
-			<section class="modal-content-stellar-desktop hide">
-				<div class="stellar-desktop-icon"></div>
-				<div class="modal-content-text">
-						<div class="modal-wallet-description">
-							<p>The Stellar Desktop Client is an open source desktop
-								client. It allows you to encrypt your secret key and store
-								it as a file locally on your computer. Easily trust,
-								send, and trade all within the client.</p>
-						</div>
-						<div class="modal-wallet-features">
-							<strong>Key Features</strong>
-							<ul>
-								<li>Login information stored locally
-								<li>Send and receive lumens</li>
-								<li>Add trust from known anchors</li>
-								<li>Create your own asset</li>
-								<li>Deposit/withdraw CNY</li>
-								<li>Buy/sell lumens</li>
-							</ul>
-						</div>
-						<div class="modal-wallet-button">
-							<a class='button' href=''>GET WALLET</a>
-						</div>
-						<div class="modal-wallet-links">
-							<p>Supports: Windows, Mac, Linux</p>
-							<a href="http://wallet.stellar.chat/">Website</a> |
-							<a href="https://galactictalk.org/d/302-stellar-desktop-client-stargazer">Tutorial</a>
-						</div>
-				</div>
-			</section>
-			<section class="modal-content-centaurus hide">
-				<div class="centaurus-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>Centaurus was the first stellar wallet available
-							on Google Play. It is completely open source!
-							On first startup the app creates a stellar address
-							for you and you can immediately receive Lumens on
-							this address. As soon as you have some Lumens you can
-							start spending them, e.g. by scanning a friend&#8217;s QR code.
-							Furthermore you can enter the keys of an existing
-							stellar account to access it with your mobile device.</p>
-					</div>
-					<div class="modal-wallet-features">
-						<strong>Key Features</strong>
-						<ul>
-							<li>Display account balances</li>
-							<li>Send by manually pasting an address</li>
-							<li>Send by scanning a QR-code</li>
-							<li>QR-code for receiving</li>
-							<li>Simple Stellar Anchor support</li>
-							<li>Cross-currency payments</li>
-							<li>Encrypted backups</li>
-						</ul>
-					</div>
-					<div class="modal-wallet-button">
-						<a class='button' href=''>GET WALLET</a>
-					</div>
-					<div class="modal-wallet-links">
-						<a href="https://play.google.com/store/apps/details?id=de.xcoins.centaurus">Website</a> |
-						<a href="https://galactictalk.org/d/274-how-to-send-lumens-from-poloniex-to-centaurus-wallet-and-vice-versa">Tutorial</a>
-						<p>Supports: Android, iOS</p>
-					</div>
-				</div>
-			</section>
-			<section class="modal-content-ecliptic hide">
-				<div class="ecliptic-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>Ecliptic is a Stellar Wallet and Trading Client.
-							It has the ability to add multiple wallets, including hosted,
-							client-side and read-only accounts.</p>
-					</div>
-					<div class="modal-wallet-features">
-						<strong>Key Features</strong>
-						<ul>
-							<li>Store lumens, multiple currencies and other assets</li>
-							<li>Send payments and fund new accounts</li>
-							<li>Connect to your favourite Stellar anchors</li>
-							<li>Add contacts to simplify account ID management</li>
-							<li>Send and receive at next to no cost (only Stellar platform fees apply)</li>
-						</ul>
-					</div>
-					<div class="modal-wallet-button">
-						<a class='button' href=''>GET WALLET</a>
-					</div>
-					<div class="modal-wallet-links">
-						<p>Supports: Windows, Mac</p>
-						<p><a href="https://www.ecliptic.co/">Website</a></p>
-					</div>
-				</div>
-			</section>
-			<section class="modal-content-blackwallet hide">
-				<div class="blackwallet-icon"></div>
-				<div class="modal-content-text">
-						<div class="modal-wallet-description">
-							<p>BlackWallet is an easy-to-use multiplatform web Stellar
-								Lumens wallet. It was built using javascript &#038; Stellar Horizon.
-								It is an enhanced account viewer as it doesn&#8217;t require
-								users to create an account &#8211; all you need is a private key.
-								Easily perform simple operations all within the wallet.</p>
-						</div>
-						<div class="modal-wallet-features">
-							<strong>Key Features</strong>
-							<ul>
-								<li>No registration</li>
-								<li>Sending and receiving Lumens, Assets, Tokens </li>
-								<li>Assets/Tokens support</li>
-								<li>Real time balances (+USD balance)</li>
-								<li>Address inspector</li>
-								<li>Set inflation destination</li>
-								<li>XLM/BTC/XRP data &#038; charts</li>
-							</ul>
-						</div>
-						<div class="modal-wallet-button">
-							<a class='button' href=''>GET WALLET</a>
-						</div>
-						<div class="modal-wallet-links">
-							<p>Supports: Windows, Mac</p>
-							<a href="https://blackwallet.co/">Website</a> |
-							<a href="https://blackwallet.co/getstarted">Tutorial</a>
-						</div>
-					</div>
-			</section>
-			<section class="modal-content-saza hide">
-				<div class="saza-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>Saza is a stellar wallet that helps users manage
-							lumens and other assets.
-						</p>
-					</div>
-					<div class="modal-wallet-features">
-						<strong>Key Features</strong>
-						<ul>
-							<li>Manage multiple Stellar accounts</li>
-							<li>Send payments in different assets</li>
-							<li>Create/Manage Trustlines</li>
-							<li>Create/Manage Offers</li>
-							<li>View all operations on account</li>
-							<li>Set all account options.</li>
-						</ul>
-					</div>
-					<div class="modal-wallet-button">
-						<a class='button' href=''>GET WALLET</a>
-					</div>
-					<div class="modal-wallet-links">
-						<p>Supports: Windows, Mac</p>
-						<a href="https://saza.io">Website</a> |
-						<a href="https://saza.io/faq.html">Tutorial</a>
-					</div>
-				</div>
-			</section>
-			<section class="modal-content-sika hide">
-				<div class="sika-icon"></div>
-				<div class="modal-content-text">
-					<div class="left-column">
-						<div class="modal-wallet-description">
-							<p>A fast, secure and mobile payment system for Ghana.</p>
-						</div>
-						<div class="modal-wallet-features">
-							<strong>Key Features</strong>
-							<ul>
-								<li>Connect mobile number/email to bank account</li>
-								<li>Send and receive payments</li>
-								<li>Cross platform</li>
-								<li>Multi-currency (cedis, dollars, pounds, euro)</li>
-							</ul>
-						</div>
-					</div>
-					<div class="right-column">
-						<div class="modal-wallet-button">
-							<button type="button" name="button">GET WALLET</button>
-						</div>
-						<div class="modal-wallet-links">
-							<p>Supports: Windows, Mac, Android, iOS</p>
-							<p><a href="https://www.sika.io/">Website</a></p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="modal-content-stellar-term hide">
-				<div class="stellar-term-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>StellarTerm is a web based trading client.
-							With full ability to interact with the Stellar
-							distributed exchange. It aims to make it easy and safe
-							for users of any skill level to trade on the Stellar network.
-							One big feature is that it has a up-to-date list of
-							all the anchors so that users will have a simpler and
-							safer experience.</p>
-					</div>
-					<div class="modal-wallet-features">
-						<strong>Key Features</strong>
-						<ul>
-							<li>Exchange currencies</li>
-							<li>Create trust lines</li>
-							<li>View balance</li>
-							<li>See popular exchange markets</li>
-						</ul>
-					</div>
-					<div class="modal-wallet-button">
-						<a class='button' href=''>GET WALLET</a>
-					</div>
-					<div class="modal-wallet-links">
-						<p>Supports: Windows, Mac, Linux</p>
-						<a href="https://stellarterm.com/">Website</a> |
-						<a href="https://galactictalk.org/d/299-stellarterm-ecliptic">Tutorial</a>
-					</div>
-				</div>
-			</section>
-			<section class="modal-content-luuun hide">
-				<div class="luuun-icon"></div>
-				<div class="modal-content-text">
-					<div class="modal-wallet-description">
-						<p>Luuun is local lumens made easy. Built on Rehive, a platform
-							for launching and managing payment applications,
-							Luuun is a web and mobile wallet that supports federation</p>
-					</div>
-					<div class="modal-wallet-features">
-						<strong>Key Features</strong>
-						<ul>
-							<li>Connect mobile number/email to account
-							<li>Buy/Sell lumens for cash from a local teller</li>
-							<li>Cross platform</li>
-							<li>Multi-currency/assets</li>
-						</ul>
-					</div>
-					<div class="modal-wallet-button">
-						<a class='button' href=''>GET WALLET</a>
-					</div>
-					<div class="modal-wallet-links">
-						<p>Supports: Windows, Mac, Android, iOS</p>
-						<a href="http://luuun.com/">Website</a>
-					</div>
-				</div>
-			</section>
-			<span class="modal-dismiss">&#10006; CLOSE</span>
-		</div>
-	</div>
-</div>
+  <div class="so-back">
+    <div class="so-chunk">
+      <div class="center wallet-second-banner">
+        <strong>NOT LOOKING FOR A WALLET?</strong>
+        <p>Go to our <a href="#">Account Viewer</a> to access our lighweight client.</p>
+      </div>
+    </div>
 
-<div class="so-chunk">
-	<div class="center wallet-second-banner">
-		<strong>NOT LOOKING FOR A WALLET?</strong>
-		<p>Go to our <a href="#">Account Viewer</a> to access our lighweight client.</p>
-	</div>
-</div>
+    <hr class="sm-margin-top">
 
-<hr class="sm-margin-top">
+    <div class="so-chunk wallets_mobile-chunk">
+      <section>
+        <div class="block center wallets_device-selector">
+          <div class="wallets_device-option type-all-devices" id="active-device">
+            <div class="wallets_device-icon"></div>
+            <p>ALL WALLETS</p>
+          </div>
+          <div class="wallets_device-option device-type-desktop">
+            <div class="wallets_device-icon"></div>
+            <p>DESKTOP WALLETS</p>
+          </div>
+          <div class="wallets_device-option device-type-mobile">
+            <div class="wallets_device-icon"></div>
+            <p>MOBILE WALLETS</p>
+          </div>
+          <div class="wallets_device-option device-type-web">
+            <div class="wallets_device-icon"></div>
+            <p>WEB WALLETS</p>
+          </div>
+        </div>
+      </section>
 
-<div class="chunk wallets_mobile-chunk">
-	<section>
-		<div class="block center wallets_device-selector">
-			<div class="wallets_device-option type-all-devices" id="active-device">
-				<div class="wallets_device-icon"></div>
-				<p>ALL WALLETS</p>
-			</div>
-			<div class="wallets_device-option device-type-desktop">
-				<div class="wallets_device-icon"></div>
-				<p>DESKTOP WALLETS</p>
-			</div>
-			<div class="wallets_device-option device-type-mobile">
-				<div class="wallets_device-icon"></div>
-				<p>MOBILE WALLETS</p>
-			</div>
-			<div class="wallets_device-option device-type-web">
-				<div class="wallets_device-icon"></div>
-				<p>WEB WALLETS</p>
-			</div>
-		</div>
-	</section>
+      <section>
+        <div class="block wallets_wallet-grid">
+          <div class="wallets_grid-item block feature w-desktop">
+            <div class="stellar-desktop-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stellardesktop.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web w-mobile">
+            <div class="lobstr-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/lobstr.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-desktop w-mobile">
+            <div class="stargazer-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stargazer.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-mobile">
+            <div class="sika-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/sika.png" alt="">
+            </div>
+          </div>
+            <div class="wallets_grid-item block feature w-web">
+              <div class="ecliptic-icon">
+                <img class="wallets-logo" src="../images/graphics/wallets/ecliptic.png" alt="">
+              </div>
+            </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="saza-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/saza.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-mobile">
+            <div class="centaurus-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/centaurus.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="stellar-portal-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stellarportal.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="stellar-term-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stellarterm.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="blackwallet-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/blackwallet.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web w-mobile">
+            <div class="luuun-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/luuun.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web w-mobile">
+            <div class="papaya-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/papaya.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="chunk-grey so-back">
+    <section>
+      <div class="">
+        <div class="wallets_additional-info">
+          <a href="https://www.stellar.org/faq/">
+            <div class="wallets_additional-info-section">
+                <div class="wallets_faq-image"></div>
+                <strong><br>FAQ</strong>
+                <p>Have additional questions about getting started with Stellar and lumens? Head to our support page</p>
+            </div>
+          </a>
+          <a href="https://coinmarketcap.com/currencies/stellar/#markets">
+            <div class="wallets_additional-info-section">
+              <div class="wallets_market-image"></div>
+              <strong><br>MARKETS &#038; EXCHANGES</strong>
+              <p>If you are looking to acquire lumens, you can purchase them on seveal known markets and exchanges.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-	<section>
-		<div class="block wallets_wallet-grid">
-			<div class="wallets_grid-item block feature w-desktop">
-				<div class="stellar-desktop-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-web w-mobile">
-				<div class="lobstr-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-desktop w-mobile">
-				<div class="stargazer-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-mobile">
-				<div class="sika-icon wallets_logo"></div>
-			</div>
-				<div class="wallets_grid-item block feature w-web">
-					<div class="ecliptic-icon wallets_logo"></div>
-				</div>
-			<div class="wallets_grid-item block feature w-web">
-				<div class="saza-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-mobile">
-				<div class="centaurus-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-web">
-				<div class="stellar-portal-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-web">
-				<div class="stellar-term-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-web">
-				<div class="blackwallet-icon wallets_logo"></div>
-			</div>
-			<div class="wallets_grid-item block feature w-web">
-				<div class="luuun-icon wallets_logo"></div>
-			</div>
-		</div>
-	</section>
-</div>
+  </div>
 
-<div class="chunk-grey">
-	<section>
-
-		<div class="block wallets_additional-info">
-			<a href="https://www.stellar.org/faq/">
-				<div class="wallets_additional-info-section">
-						<div class="wallets_faq-image"></div>
-						<strong><br>FAQ</strong>
-						<p>Have additional questions about getting started with Stellar and lumens? Head to our support page</p>
-				</div>
-			</a>
-			<a href="https://coinmarketcap.com/currencies/stellar/#markets">
-				<div class="wallets_additional-info-section">
-					<div class="wallets_market-image"></div>
-					<strong>MARKETS &#038; EXCHANGES</strong>
-					<p>If you are looking to acquire lumens, you can purchase them on seveal known markets and exchanges.</p>
-				</div>
-			</a>
-		</div>
-	</section>
-</div>
-</div>
 
 <script>
 
@@ -661,6 +717,13 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
       showModal(ev, self);
     });
   }
+
+  document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        hideModal();
+    }
+  };
 
   // HELPER FUNCTIONS
 
@@ -760,7 +823,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
       }
       element.style.opacity = opacity;
       opacity -= opacity * 0.1;
-    }, 20);
+    }, 15);
   }
 
   function fadeIn(element) {
@@ -794,20 +857,20 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
       <div class="footer-widget">
         <h3>Latest blog post</h3>
                   <p>
-            <a href="http://www.stellar.org/index.php/2017/08/27/hello-world/">Hello world!</a><br />
+            <a href="http://www.stellar.org/index.php/2017/09/07/hello-world/">Hello world!</a><br />
                       </p>
               </div>
       <div class="footer-widget">
         <h3>Software</h3>
-        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">wallets</a></li></ul></div>
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
       </div>
       <div class="footer-widget">
         <h3>Community and Help</h3>
-        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">wallets</a></li></ul></div>
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
       </div>
       <div class="footer-widget">
         <h3>About Stellar.org</h3>
-        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">wallets</a></li></ul></div>
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
       </div>
     </section>
   </div>
@@ -830,7 +893,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
   <div class="chunk">
     <section class="footer-white">
       <nav id="footer-navigation" class="clear" role="navigation">
-        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">wallets</a></li></ul></div>
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
       </nav><!-- #footer-navigation -->
       <div class="site-info">
         <p>&copy; 2014-2017 Stellar Development Foundation</p>
@@ -841,11 +904,11 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </div><!-- #page -->
 
 <script type='text/javascript' src='http://www.stellar.org/wp-includes/js/admin-bar.min.js?ver=4.3.11'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/main.js?ver=1504131461'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/api.js?ver=1504131461'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweetDB.js?ver=1504131461'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweets.js?ver=1504131461'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/community-map.js?ver=1504131461'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/main.js?ver=1504812912'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/api.js?ver=1504812912'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweetDB.js?ver=1504812912'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweets.js?ver=1504812912'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/community-map.js?ver=1504812912'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/friendbot-classic.js?ver=20140622'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/friendbot-galaxy.js?ver=20140622'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/modernizr.custom.53916.js?ver=2.8.3'></script>
@@ -877,7 +940,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 		<li id="wp-admin-bar-widgets"><a class="ab-item"  href="http://www.stellar.org/wp-admin/widgets.php">Widgets</a>		</li>
 		<li id="wp-admin-bar-menus"><a class="ab-item"  href="http://www.stellar.org/wp-admin/nav-menus.php">Menus</a>		</li>
 		<li id="wp-admin-bar-background" class="hide-if-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/themes.php?page=custom-background">Background</a>		</li></ul></div>		</li>
-		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/customize.php?url=http%3A%2F%2Fwww.stellar.org%2Findex.php%2Fwallets%2F%3Fpreview%3Dtrue%26preview_id%3D4%26preview_nonce%3D53ee3c65a5">Customize</a>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/customize.php?url=http%3A%2F%2Fwww.stellar.org%2Findex.php%2Fwallets%2F%3Fpreview%3Dtrue%26preview_id%3D4%26preview_nonce%3Df8c395c3b8">Customize</a>		</li>
 		<li id="wp-admin-bar-updates"><a class="ab-item"  href="http://www.stellar.org/wp-admin/update-core.php" title="1 Plugin Update, 3 Theme Updates"><span class="ab-icon"></span><span class="ab-label">4</span><span class="screen-reader-text">1 Plugin Update, 3 Theme Updates</span></a>		</li>
 		<li id="wp-admin-bar-comments"><a class="ab-item"  href="http://www.stellar.org/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
 		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
@@ -890,8 +953,8 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/profile.php">Howdy, bobby<img alt='' src='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=26&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=52&amp;d=mm&amp;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
 		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://www.stellar.org/wp-admin/profile.php"><img alt='' src='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=64&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=128&amp;d=mm&amp;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' /><span class='display-name'>bobby</span></a>		</li>
 		<li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://www.stellar.org/wp-admin/profile.php">Edit My Profile</a>		</li>
-		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=187e069190">Log Out</a>		</li></ul></div>		</li></ul>			</div>
-						<a class="screen-reader-shortcut" href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=187e069190">Log Out</a>
+		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=6cd99f44af">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=6cd99f44af">Log Out</a>
 					</div>
 
 
