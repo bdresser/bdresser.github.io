@@ -8,7 +8,7 @@
                                                           ▒█████████▓▒░     ▒██░
                                                        ███████▓              ███
                                                     ██████░                  ▓██
-    Have a Stellar day!                          ░████▓                       ██▒
+    You are Stellar <3                           ░████▓                       ██▒
                                                 ████                          ███
                                               ████                            ███
                                              ███░         ▒▒░                 ▒██
@@ -110,7 +110,8 @@ img.emoji {
 <link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.3.11' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css'  href='http://www.stellar.org/wp-includes/css/dashicons.min.css?ver=4.3.11' type='text/css' media='all' />
 <link rel='stylesheet' id='admin-bar-css'  href='http://www.stellar.org/wp-includes/css/admin-bar.min.css?ver=4.3.11' type='text/css' media='all' />
-<link rel='stylesheet' id='_s-style-css'  href='./test-wallet-source.css' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='./test-wallet-source.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_s-style-css'  href='http://www.stellar.org/wp-content/themes/stellar/css/style.css?ver=1504843307' type='text/css' media='all' />
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/intentPopup.js?ver=1'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
@@ -223,7 +224,6 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
               <a class='button' href='https://getstargazer.com/'>GET WALLET</a>
             </div>
             <div class="modal-wallet-links">
-              <strong>General info</strong>
               <p>Supports: Android, Windows, Mac, Linux</p>
                <a href="https://galactictalk.org/d/302-stellar-desktop-client-stargazer">Tutorial</a>
             </div>
@@ -283,7 +283,6 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
               <a class='button' href='https://portal.willet.io'>GET WALLET</a>
             </div>
             <div class="modal-wallet-links">
-              <strong>General info</strong>
               <p>Supports: Windows, Mac</p>
             </div>
           </div>
@@ -563,19 +562,19 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         <div class="block center wallets_device-selector">
           <div class="wallets_device-option type-all-devices" id="active-device">
             <div class="wallets_device-icon"></div>
-            <p>ALL WALLETS</p>
+            <p>ALL <br class='mobile-only'>WALLETS</p>
           </div>
           <div class="wallets_device-option device-type-desktop">
             <div class="wallets_device-icon"></div>
-            <p>DESKTOP WALLETS</p>
+            <p>DESKTOP <br class='mobile-only'>WALLETS</p>
           </div>
           <div class="wallets_device-option device-type-mobile">
             <div class="wallets_device-icon"></div>
-            <p>MOBILE WALLETS</p>
+            <p>MOBILE <br class='mobile-only'>WALLETS</p>
           </div>
           <div class="wallets_device-option device-type-web">
             <div class="wallets_device-icon"></div>
-            <p>WEB WALLETS</p>
+            <p>WEB <br class='mobile-only'>WALLETS</p>
           </div>
         </div>
       </section>
@@ -791,7 +790,9 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     var activeWallet = '.modal-content-' + getActiveWallet(self);
     fadeIn(document.querySelector('.modal-overlay'));
     fadeIn(document.querySelector(activeWallet));
+    checkSizing(activeWallet);
   }
+
   var hideModal = function() {
     fadeOut(document.querySelector('.modal-overlay'));
     document.querySelectorAll('.modal-content > section').forEach(function(element) {
@@ -799,6 +800,31 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         fadeOut(element);
       }
     });
+    clearSizing();
+  }
+
+  var checkSizing = function(element) {
+    var modal = document.querySelector('.modal-content');
+    var browserWidth = window.innerWidth || document.body.clientWidth;
+    var topPosition = document.querySelector('.modal-content').getBoundingClientRect().top;
+
+    if (browserWidth > 1024) {
+      if (topPosition < 70) {
+        console.log(browserWidth, topPosition);
+        modal.classList.add('modal-margin-lg');
+      }
+    }
+
+    else if (browserWidth > 520) {
+      if (topPosition < 35) {
+        modal.classList.add('modal-margin-sm');
+      }
+    }
+  }
+
+  var clearSizing = function(element) {
+    document.querySelector('.modal-content').classList.remove('modal-margin-sm');
+    document.querySelector('.modal-content').classList.remove('modal-margin-lg');
   }
 
   function fadeOut(element) {
@@ -891,11 +917,11 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </div><!-- #page -->
 
 <script type='text/javascript' src='http://www.stellar.org/wp-includes/js/admin-bar.min.js?ver=4.3.11'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/main.js?ver=1504818441'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/api.js?ver=1504818441'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweetDB.js?ver=1504818441'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweets.js?ver=1504818441'></script>
-<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/community-map.js?ver=1504818441'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/main.js?ver=1504843307'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/api.js?ver=1504843307'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweetDB.js?ver=1504843307'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweets.js?ver=1504843307'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/community-map.js?ver=1504843307'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/friendbot-classic.js?ver=20140622'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/friendbot-galaxy.js?ver=20140622'></script>
 <script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/modernizr.custom.53916.js?ver=2.8.3'></script>
@@ -927,7 +953,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 		<li id="wp-admin-bar-widgets"><a class="ab-item"  href="http://www.stellar.org/wp-admin/widgets.php">Widgets</a>		</li>
 		<li id="wp-admin-bar-menus"><a class="ab-item"  href="http://www.stellar.org/wp-admin/nav-menus.php">Menus</a>		</li>
 		<li id="wp-admin-bar-background" class="hide-if-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/themes.php?page=custom-background">Background</a>		</li></ul></div>		</li>
-		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/customize.php?url=http%3A%2F%2Fwww.stellar.org%2Findex.php%2Fwallets%2F%3Fpreview%3Dtrue">Customize</a>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/customize.php?url=http%3A%2F%2Fwww.stellar.org%2Findex.php%2Fwallets%2F%3Fpreview%3Dtrue%26preview_id%3D4">Customize</a>		</li>
 		<li id="wp-admin-bar-updates"><a class="ab-item"  href="http://www.stellar.org/wp-admin/update-core.php" title="1 Plugin Update, 3 Theme Updates"><span class="ab-icon"></span><span class="ab-label">4</span><span class="screen-reader-text">1 Plugin Update, 3 Theme Updates</span></a>		</li>
 		<li id="wp-admin-bar-comments"><a class="ab-item"  href="http://www.stellar.org/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
 		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
@@ -940,8 +966,8 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/profile.php">Howdy, bobby<img alt='' src='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=26&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=52&amp;d=mm&amp;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
 		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://www.stellar.org/wp-admin/profile.php"><img alt='' src='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=64&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=128&amp;d=mm&amp;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' /><span class='display-name'>bobby</span></a>		</li>
 		<li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://www.stellar.org/wp-admin/profile.php">Edit My Profile</a>		</li>
-		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=6cd99f44af">Log Out</a>		</li></ul></div>		</li></ul>			</div>
-						<a class="screen-reader-shortcut" href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=6cd99f44af">Log Out</a>
+		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=ea6c82c079">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=ea6c82c079">Log Out</a>
 					</div>
 
 
