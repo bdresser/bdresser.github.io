@@ -1,0 +1,987 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<!--                                                                 ░▓███████
+                                                                ▓█████████████▓
+                                                          ▒█████████▓▒░     ▒██░
+                                                       ███████▓              ███
+                                                    ██████░                  ▓██
+    You are Stellar <3                           ░████▓                       ██▒
+                                                ████                          ███
+                                              ████                            ███
+                                             ███░         ▒▒░                 ▒██
+                                            ███       ███████████             ░██
+                                          ░███      █████▒   ▒█████            ██
+                                         ░███     ░███          ░███           ██
+                                        ▒███      ███             ███         ░██
+                                       ▒███      ███               ███        ▓██
+                                      ▒███       ███               ███        ███
+                                     ▒███        ███               ███        ██▒
+                                    ░███         ███               ██▓       ▓██
+                                   ░███           ███            ░███        ███
+                         ▒████████████             ████         ████        ███
+                     ▓███████████████               ▒█████████████░        ▓██▒
+                  ▒█████████████████                   ▓███████▓          ▓███
+                ▓██████████████████                                      ███▓
+              ▓███████████████████                                      ███░
+            ░████████████████████                                     ▓███
+           █████████████████████                                     ███▓
+         ░█████████████████████                                    ▒███
+                        ▒▓████                                    ████
+                          ███                                   ░███░
+                          ██                                   ████
+                          ███                                 ███░
+                           ████░                            ▓████
+                            █████▓                         ██████▓
+                           █████████                     ▓████████
+                          ████▒░▒█████▓                 ███████████
+                         ████▓▒▒▒▒▒▓█████             ▓████████████
+                        ████▓▒▒▒▒▒▒▒░▒█████▒         ██████████████
+                       ▒████▒▒▒▒▒▒▒▒▒▒░▒▓█████     ▓███████████████
+                       ████▓▒▒▒▒▒▒▒▒▒▒▒▒░░▓█████▓▓█████████████████
+                      ▒████▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓██▓ ██████  ▓████████████
+                      █████▓▒▒▒▒▒▒▒▒▒▒▒▓███▒            ██████████▓
+                      ██████▓▒▒▒▒▒▒▒▒▓████               █████████
+                      ████████▓▓▓▓▓█████▓                 ███████▓
+                      ▓███████████████▓                   ▓██████
+                       █████████████▓                      █████
+                        ▒████████▓                         ▒███
+                                                            ██░
+                                                            █░
+
+             ▓▒
+            ██
+           █▓
+          █▒
+        ▒█    ▒█
+       ▓█    ▓█
+      ██    ██
+     █▓    █▓
+    █░   ░█░
+  ▓█    ▓█
+ ██    ░█
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<title>Wallets | stellar-wallets</title>
+<link rel="pingback" href="http://www.stellar.org/xmlrpc.php">
+<meta name="google-site-verification" content="ypOI6oK7QnXU4rPrhNYP9S1LlW31kDaD3KmhklMPMRQ" />
+<link rel="icon" href="">
+<!-- favicon support is a bit shoddy -->
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.stellar.org/wp-content/themes/stellar/favicon/rocket-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://www.stellar.org/wp-content/themes/stellar/favicon/rocket-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.stellar.org/wp-content/themes/stellar/favicon/rocket-180x180.png">
+<link rel="icon" type="image/png" href="http://www.stellar.org/wp-content/themes/stellar/favicon/rocket-96x96.png" sizes="96x96">
+<meta name="msapplication-TileImage" content="http://www.stellar.org/wp-content/themes/stellar/favicon/rocket-144x144.png">
+	<script>
+	( function() {
+		var query = document.location.search;
+
+		if ( query && query.indexOf( 'preview=true' ) !== -1 ) {
+			window.name = 'wp-preview-4';
+		}
+
+		if ( window.addEventListener ) {
+			window.addEventListener( 'unload', function() { window.name = ''; }, false );
+		}
+	}());
+	</script>
+	<link rel="alternate" type="application/rss+xml" title="stellar-wallets &raquo; Feed" href="http://www.stellar.org/index.php/feed/" />
+<link rel="alternate" type="application/rss+xml" title="stellar-wallets &raquo; Comments Feed" href="http://www.stellar.org/index.php/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.stellar.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.11"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.3.11' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://www.stellar.org/wp-includes/css/dashicons.min.css?ver=4.3.11' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://www.stellar.org/wp-includes/css/admin-bar.min.css?ver=4.3.11' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='./test-wallet-source-2.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/intentPopup.js?ver=1'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.stellar.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.stellar.org/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.3.11" />
+<link rel='canonical' href='http://www.stellar.org/index.php/wallets/' />
+<link rel='shortlink' href='http://www.stellar.org/?p=4' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+<!-- Backup thumbnail image --><meta property="og:image" content="http://www.stellar.org/wp-content/themes/stellar/images/stellar-rocket-300.png"/>
+<meta itemprop="image" content="http://www.stellar.org/wp-content/themes/stellar/images/stellar-rocket-300.png"/>
+<script type="text/javascript">
+  var $mcGoal = {'settings':{'uuid':'c001d97369b7a10d224c23867','dc':'us9'}};
+  (function() {
+		var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+		sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+  })();
+</script>
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0065/1320.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+</head>
+<body class="page page-id-4 page-template page-template-page-wallets page-template-page-wallets-php logged-in admin-bar no-customize-support">
+<div id="page" class="hfeed site">
+			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+
+		<div class="header-spacer"></div>
+		<div class="header-bar"></div>
+
+		<div id="header-wrapper" class="normal">
+			<header id="masthead" class="site-header" role="banner">
+				<div class="site-branding">
+					<h1 class="site-title"><a href="http://www.stellar.org/" rel="home">Stellar</a></h1>
+					          <span class="snippet-stellars-given">6,990,779,822 <a href="https://dashboard.stellar.org/">lumens distributed<span class="away"></span></a></span>				</div>
+
+				<nav id="site-navigation" class="main-navigation clear" role="navigation">
+					<a href="http://www.stellar.org/" class="site-home" rel="home">stellar-wallets</a>
+					<button class="menu-toggle"></button>
+					<div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
+				</nav><!-- #site-navigation -->
+			</header><!-- #masthead -->
+		</div>
+
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area primary--minEdges">
+		<main id="main" class="site-main" role="main">
+
+
+
+<article id="post-4" class="post-4 page type-page status-publish hentry">
+			<div class="pageMenu0616 so-back">
+			<div class="so-chunk">
+				<div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
+			</div>
+		</div>
+		<div class="page-wrapper">
+		<div class="entry-content">
+						<div class="wallets-page">
+  <div class="back lumen0616-back lumen0616-headerBack">
+    <div class="so-chunk lumen0616-header">
+      <h1 class="lumen0616-header__title">Choose your Lumen wallet</h1>
+      <p class="lumen0616-header__lead">Below you&#8217;ll find a set of different wallets with varying functionality.</p>
+      <div class="lumen0616-triangleSpace"></div>
+      <div class="lumen0616-triangle lumen0616-triangle--white"></div>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-overlay hide">
+      <div class="modal-content">
+        <section class="modal-content-stargazer hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stargazer.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Stargazer is a wallet application for mobile (i.e. Android) and desktop.
+                Allows for multiple accounts, multiple assets, multiple networks,
+                and multiple languages. The vision is to push the limit; to raise the
+                bar for what a wallet is, and what you can do with it — without
+                adding too much fluff.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Multiple Accounts</li>
+                <li>Multiple Assets</li>
+                <li>Federated Addresses</li>
+                <li>Create/receive multi-sig/multi-party </li>
+                <li>Signing requests</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://getstargazer.com/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Android, Windows, Mac, Linux</p>
+               <a href="https://galactictalk.org/d/302-stellar-desktop-client-stargazer">Tutorial</a>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-lobstr hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/lobstr.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Lobstr is a wallet for Stellar. Lobstr is available as
+                a web app and also has native Android and iOS apps.
+                Lobstr is a smart and secure way to send and receive Lumens.
+                It’s clean design and helpful features like email
+                notifications simplify the whole experience and make
+                Lobstr one of the most user friendly wallets.</p>
+
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>Send and receive lumens</li>
+                  <li>Quick XLM price converter</li>
+                  <li>Anti-fraud measures</li>
+                  <li>Support for operations with multiple transactions</li>
+                </ul>
+              </div>
+              <div class="modal-wallet-button">
+                <a class="button" href="https://lobstr.co/authorization/signup/">GET WALLET</a>
+              </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac, Android, iOS</p>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="modal-content-stellar-portal hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stellarportal.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Stellar Portal is a web application to view and
+                manage stellar accounts. It relies completely on
+                Horizon and has no backend. You can view balances, offers,
+                order books and payment, and do most of operations.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Balances view and edit trustlines</li>
+                <li>Send payments</li>
+                <li>Issue assets</li>
+                <li>Create/Merge accounts</li>
+                <li>Account offers view and edit</li>
+                <li>List of payments</li>
+                <li>Watch orderbooks</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://portal.willet.io'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac</p>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-stellar-desktop hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stellardesktop.png" alt="">
+          <div class="modal-content-text">
+              <div class="modal-wallet-description">
+                <p>The Stellar Desktop Client is an open source desktop
+                  client. It allows you to encrypt your secret key and store
+                  it as a file locally on your computer. Easily trust,
+                  send, and trade all within the client.</p>
+              </div>
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>Login information stored locally
+                  <li>Send and receive lumens</li>
+                  <li>Add trust from known anchors</li>
+                  <li>Create your own asset</li>
+                  <li>Deposit/withdraw CNY</li>
+                  <li>Buy/sell lumens</li>
+                </ul>
+              </div>
+              <div class="modal-wallet-button">
+                <a class='button' href='http://wallet.stellar.chat/'>GET WALLET</a>
+              </div>
+              <div class="modal-wallet-links">
+                <p>Supports: Windows, Mac, Linux</p>
+                <a href="https://galactictalk.org/d/302-stellar-desktop-client-stargazer">Tutorial</a>
+              </div>
+          </div>
+        </section>
+        <section class="modal-content-centaurus hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/centaurus.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Centaurus was the first stellar wallet available
+                on Google Play. It is completely open source!
+                On first startup the app creates a stellar address
+                for you and you can immediately receive Lumens on
+                this address. As soon as you have some Lumens you can
+                start spending them, e.g. by scanning a friend&#8217;s QR code.
+                Furthermore you can enter the keys of an existing
+                stellar account to access it with your mobile device.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Display account balances</li>
+                <li>Send by manually pasting an address</li>
+                <li>Send by scanning a QR-code</li>
+                <li>QR-code for receiving</li>
+                <li>Simple Stellar Anchor support</li>
+                <li>Cross-currency payments</li>
+                <li>Encrypted backups</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://play.google.com/store/apps/details?id=de.xcoins.centaurus'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <a href="https://galactictalk.org/d/274-how-to-send-lumens-from-poloniex-to-centaurus-wallet-and-vice-versa">Tutorial</a>
+              <p>Supports: Android, iOS</p>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-ecliptic hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/ecliptic.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Ecliptic is a Stellar Wallet and Trading Client.
+                It has the ability to add multiple wallets, including hosted,
+                client-side and read-only accounts.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Store lumens, multiple currencies and other assets</li>
+                <li>Send payments and fund new accounts</li>
+                <li>Connect to your favourite Stellar anchors</li>
+                <li>Add contacts to simplify account ID management</li>
+                <li>Send and receive at next to no cost (only Stellar platform fees apply)</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://www.ecliptic.co/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac</p>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-blackwallet hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/blackwallet.png" alt="">
+          <div class="modal-content-text">
+              <div class="modal-wallet-description">
+                <p>BlackWallet is an easy-to-use multiplatform web Stellar
+                  Lumens wallet. It was built using javascript &#038; Stellar Horizon.
+                  It is an enhanced account viewer as it doesn&#8217;t require
+                  users to create an account &#8211; all you need is a private key.
+                  Easily perform simple operations all within the wallet.</p>
+              </div>
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>No registration</li>
+                  <li>Sending and receiving Lumens, Assets, Tokens </li>
+                  <li>Assets/Tokens support</li>
+                  <li>Real time balances (+USD balance)</li>
+                  <li>Address inspector</li>
+                  <li>Set inflation destination</li>
+                  <li>XLM/BTC/XRP data &#038; charts</li>
+                </ul>
+              </div>
+              <div class="modal-wallet-button">
+                <a class='button' href='https://blackwallet.co/'>GET WALLET</a>
+              </div>
+              <div class="modal-wallet-links">
+                <p>Supports: Windows, Mac</p>
+                <a href="https://blackwallet.co/getstarted">Tutorial</a>
+              </div>
+            </div>
+        </section>
+        <section class="modal-content-saza hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/saza.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Saza is a stellar wallet that helps users manage
+                lumens and other assets.
+              </p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Manage multiple Stellar accounts</li>
+                <li>Send payments in different assets</li>
+                <li>Create/Manage Trustlines</li>
+                <li>Create/Manage Offers</li>
+                <li>View all operations on account</li>
+                <li>Set all account options.</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://saza.io'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac</p>
+              <a href="https://saza.io/faq.html">Tutorial</a>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-sika hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/sika.png" alt="">
+          <div class="modal-content-text">
+            <div class="left-column">
+              <div class="modal-wallet-description">
+                <p>A fast, secure and mobile payment system for Ghana.</p>
+              </div>
+              <div class="modal-wallet-features">
+                <strong>Key Features</strong>
+                <ul>
+                  <li>Connect mobile number/email to bank account</li>
+                  <li>Send and receive payments</li>
+                  <li>Cross platform</li>
+                  <li>Multi-currency (cedis, dollars, pounds, euro)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="right-column">
+              <div class="modal-wallet-button">
+                <a class='button' href='https://sika.io'>GET WALLET</a>
+              </div>
+              <div class="modal-wallet-links">
+                <p>Supports: Windows, Mac, Android, iOS</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-stellar-term hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/stellarterm.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>StellarTerm is a web based trading client.
+                With full ability to interact with the Stellar
+                distributed exchange. It aims to make it easy and safe
+                for users of any skill level to trade on the Stellar network.
+                One big feature is that it has a up-to-date list of
+                all the anchors so that users will have a simpler and
+                safer experience.</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Exchange currencies</li>
+                <li>Create trust lines</li>
+                <li>View balance</li>
+                <li>See popular exchange markets</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://stellarterm.com/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac, Linux</p>
+              <a href="https://galactictalk.org/d/299-stellarterm-ecliptic">Tutorial</a>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-luuun hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/luuun.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Luuun is local lumens made easy. Built on Rehive, a platform
+                for launching and managing payment applications,
+                Luuun is a web and mobile wallet that supports federation</p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Connect mobile number/email to account
+                <li>Buy/Sell lumens for cash from a local teller</li>
+                <li>Cross platform</li>
+                <li>Multi-currency/assets</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='http://luuun.com/'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Mac, Android, iOS</p>
+            </div>
+          </div>
+        </section>
+        <section class="modal-content-papaya hide">
+          <img class="wallets-logo" src="../images/graphics/wallets/papaya.png" alt="">
+          <div class="modal-content-text">
+            <div class="modal-wallet-description">
+              <p>Papaya is an easy-to-use wallet for Lumens and other assets,
+                such as BTC, LTC, EURT, etc. No technical knowledge required
+                to use it, no keys, trustlines, or minimum balances.
+                Works on every platform where Telegram client exists. </p>
+            </div>
+            <div class="modal-wallet-features">
+              <strong>Key Features</strong>
+              <ul>
+                <li>Supports federation</li>
+                <li>Path (cross-currency) payments </li>
+                <li>Built-in marketplace for peer-to-peer trading.</li>
+              </ul>
+            </div>
+            <div class="modal-wallet-button">
+              <a class='button' href='https://t.me/PapayaBot'>GET WALLET</a>
+            </div>
+            <div class="modal-wallet-links">
+              <p>Supports: Windows, Linux, Mac, Android, iOS, FirefoxOS, Windows Mobile</p>
+            </div>
+          </div>
+        </section>
+        <span class="modal-dismiss">&#10006; CLOSE</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="so-back">
+    <div class="so-chunk">
+      <div class="center wallet-second-banner">
+        <strong>NOT LOOKING FOR A WALLET?</strong>
+        <p>Go to our <a href="#">Account Viewer</a> to access our lighweight client.</p>
+      </div>
+    </div>
+
+    <hr class="sm-margin-top">
+
+    <div class="so-chunk wallets_mobile-chunk">
+      <section>
+        <div class="block center wallets_device-selector">
+          <div class="wallets_device-option type-all-devices" id="active-device">
+            <section class="icon-label-wrap">
+              <div class="wallets_device-icon"></div>
+              <span>ALL <br class='mobile-only'>WALLETS</span>
+            </section>
+
+          </div>
+          <div class="wallets_device-option device-type-desktop">
+            <section class="icon-label-wrap">
+              <div class="wallets_device-icon"></div>
+              <span>DESKTOP <br class='mobile-only'>WALLETS</span>
+            </section>
+          </div>
+          <div class="wallets_device-option device-type-mobile">
+            <section class="icon-label-wrap">
+              <div class="wallets_device-icon"></div>
+              <span>MOBILE <br class='mobile-only'>WALLETS</span>
+            </section>
+          </div>
+          <div class="wallets_device-option device-type-web">
+            <section class="icon-label-wrap">
+              <div class="wallets_device-icon"></div>
+              <span>WEB <br class='mobile-only'>WALLETS</span>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="block wallets_wallet-grid">
+          <div class="wallets_grid-item block feature w-desktop">
+            <div class="stellar-desktop-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stellardesktop.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web w-mobile">
+            <div class="lobstr-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/lobstr.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-desktop w-mobile">
+            <div class="stargazer-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stargazer.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-mobile">
+            <div class="sika-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/sika.png" alt="">
+            </div>
+          </div>
+            <div class="wallets_grid-item block feature w-web">
+              <div class="ecliptic-icon">
+                <img class="wallets-logo" src="../images/graphics/wallets/ecliptic.png" alt="">
+              </div>
+            </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="saza-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/saza.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-mobile">
+            <div class="centaurus-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/centaurus.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="stellar-portal-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stellarportal.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="stellar-term-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/stellarterm.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web">
+            <div class="blackwallet-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/blackwallet.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web w-mobile">
+            <div class="luuun-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/luuun.png" alt="">
+            </div>
+          </div>
+          <div class="wallets_grid-item block feature w-web w-mobile">
+            <div class="papaya-icon">
+              <img class="wallets-logo" src="../images/graphics/wallets/papaya.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="chunk-grey so-back">
+    <section>
+      <div class="">
+        <div class="wallets_additional-info">
+          <a href="https://www.stellar.org/faq/">
+            <div class="wallets_additional-info-section">
+                <div class="wallets_faq-image"></div>
+                <strong><br>FAQ</strong>
+                <p>Have additional questions about getting started with Stellar and lumens? Head to our support page</p>
+            </div>
+          </a>
+          <a href="https://coinmarketcap.com/currencies/stellar/#markets">
+            <div class="wallets_additional-info-section no-margin">
+              <div class="wallets_market-image"></div>
+              <strong><br>MARKETS &#038; EXCHANGES</strong>
+              <p>If you are looking to acquire lumens, you can purchase them on seveal known markets and exchanges.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  </div>
+
+
+<script>
+
+  // CLICK HANDLERS
+
+  var deviceOptions = document.getElementsByClassName('wallets_device-option');
+  for (var i = 0; i < deviceOptions.length; i++) {
+      deviceOptions[i].addEventListener('click', function(ev){
+      var self = this;
+      toggleActiveDevice(ev, self);
+    });
+  }
+
+  document.querySelector('.modal-dismiss').addEventListener('click', function(ev){
+    hideModal();
+  });
+
+  document.querySelector('.modal-overlay').addEventListener('click', function(ev){
+    hideModal();
+  });
+
+  document.querySelector('.modal-content').addEventListener('click', function(ev){
+    ev.stopPropagation();
+  });
+
+
+  var wallets = document.getElementsByClassName('wallets_grid-item');
+  for (var i = 0; i < wallets.length; i++) {
+    wallets[i].addEventListener('click', function(ev){
+      var self = this;
+      showModal(ev, self);
+    });
+  }
+
+  document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        hideModal();
+    }
+  };
+
+  // HELPER FUNCTIONS
+
+  function hasClass(element, cl) {
+     return (' ' + element.className + ' ').indexOf(' ' + cl + ' ') >= 0;
+   }
+
+  var toggleActiveDevice = function(ev, self) {
+    document.getElementById('active-device').removeAttribute('id', 'active-device');
+    if(ev.target == self) {
+      ev.target.setAttribute('id', 'active-device');
+      showRelevantWallets(ev.target);
+    } else {
+      var parent = ev.target.parentElement;
+      while (!parent.classList.contains('wallets_device-option')) {
+        parent = parent.parentElement;
+      }
+
+      parent.setAttribute('id', 'active-device');
+      showRelevantWallets(parent);
+    }
+  };
+
+  var showRelevantWallets = function(activeWalletDiv) {
+    var classPreface = 'device-type';
+    var activeDivClasses = activeWalletDiv.classList;
+
+    // find which device should be shown
+    var activeDevice;
+    for (var i = 0; i < activeDivClasses.length; i++) {
+      var index = activeDivClasses[i].indexOf(classPreface);
+      if (index >= 0) {
+        activeDevice = activeDivClasses[i].slice(index + classPreface.length);
+      }
+    }
+
+    // hide irrelevant wallets; show all if no device type
+    if (activeDevice) {
+      var shownWallets = "w" + activeDevice
+      document.querySelectorAll('.wallets_grid-item').forEach(function(el){
+        if (!hasClass(el, shownWallets)) {
+          hideWallet(el);
+        } else {
+          showWallet(el);
+        }
+      });
+    } else {
+      document.querySelectorAll('.wallets_grid-item').forEach(function(el){
+        showWallet(el);
+      });
+    }
+  }
+
+  var getActiveWallet = function(clicked) {
+    var activeWalletClasses = clicked.firstElementChild.classList
+    var walletName;
+    for (var i = 0; i < activeWalletClasses.length; i++) {
+      if (activeWalletClasses[i].indexOf('-icon' >= 0)) {
+        walletName = activeWalletClasses[i].slice(0, activeWalletClasses[i].indexOf('-icon'));
+        return walletName;
+      }
+    }
+  }
+
+  // hiding done by wrapping in <section> tag to not break styles
+  var hideWallet = function(div) {
+    var parent = div.parentNode;
+    if (!hasClass(parent, 'hide')) {
+      var wrapper = document.createElement('section');
+      wrapper.classList.add('hide');
+      parent.replaceChild(wrapper, div);
+      wrapper.appendChild(div);
+    }
+  }
+  var showWallet = function(div) {
+    var parent = div.parentNode;
+    if (hasClass(parent, 'hide')) {
+      parent.parentNode.replaceChild(div, parent);
+    }
+  }
+
+  var showModal = function(e, self) {
+    var activeWallet = '.modal-content-' + getActiveWallet(self);
+    fadeIn(document.querySelector('.modal-overlay'));
+    fadeIn(document.querySelector(activeWallet));
+    checkSizing(activeWallet);
+  }
+
+  var hideModal = function() {
+    fadeOut(document.querySelector('.modal-overlay'));
+    document.querySelectorAll('.modal-content > section').forEach(function(element) {
+      if (element.style.display == 'inline-block') {
+        fadeOut(element);
+      }
+    });
+    clearSizing();
+  }
+
+  var checkSizing = function(element) {
+    var modal = document.querySelector('.modal-content');
+    var browserWidth = window.innerWidth || document.body.clientWidth;
+    var topPosition = document.querySelector('.modal-content').getBoundingClientRect().top;
+
+    if (browserWidth > 1024) {
+      if (topPosition < 70) {
+        modal.classList.add('modal-margin-lg');
+      }
+    }
+
+    else if (browserWidth > 520) {
+      if (topPosition < 35) {
+        modal.classList.add('modal-margin-sm');
+      }
+    }
+  }
+
+  var clearSizing = function(element) {
+    document.querySelector('.modal-content').classList.remove('modal-margin-sm');
+    document.querySelector('.modal-content').classList.remove('modal-margin-lg');
+  }
+
+  function fadeOut(element) {
+    var opacity = 1;
+    var timer = setInterval(function () {
+      if (opacity <= 0.1){
+        clearInterval(timer);
+        element.style.display = 'none';
+      }
+      element.style.opacity = opacity;
+      opacity -= opacity * 0.1;
+    }, 10);
+  }
+
+  function fadeIn(element) {
+    var opacity = 0;
+    element.style.opacity = opacity;
+    element.style.display = 'inline-block';
+
+    var timer = setInterval(function () {
+      if (opacity >= 1.0){
+        clearInterval(timer);
+      }
+      element.style.opacity = opacity;
+      opacity = opacity + 0.1;
+    }, 20);
+  }
+
+</script>					</div><!-- .entry-content -->
+			</div>
+</article><!-- #post-## -->
+
+
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+  </div><!-- #content -->
+    <footer id="colophon">
+  <div class="chunk colors-top spu-padBottom-10">
+    <section class="footer-light">
+      <div class="footer-widget">
+        <h3>Latest blog post</h3>
+                  <p>
+            <a href="http://www.stellar.org/index.php/2017/09/07/hello-world/">Hello world!</a><br />
+                      </p>
+              </div>
+      <div class="footer-widget">
+        <h3>Software</h3>
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
+      </div>
+      <div class="footer-widget">
+        <h3>Community and Help</h3>
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
+      </div>
+      <div class="footer-widget">
+        <h3>About Stellar.org</h3>
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
+      </div>
+    </section>
+  </div>
+  <div class="chunk footer-bridgeBack">
+    <section class="footer-bridge">
+      <div class="footer-bridge__contentStart foo">
+        <a href="https://www.facebook.com/stellarfoundation" class="footer-socialHoverIcon"><span class="graphic-socialHover-facebook"></span></a>
+        <a href="https://twitter.com/stellarorg" class="footer-socialHoverIcon"><span class="graphic-socialHover-twitter"></span></a>
+        <a href="https://www.linkedin.com/company/stellar-development-foundation" class="footer-socialHoverIcon"><span class="graphic-socialHover-linkedin"></span></a>
+        <a href="https://github.com/stellar" class="footer-socialHoverIcon"><span class="graphic-socialHover-github"></span></a>
+        <a href="https://www.reddit.com/r/stellar" class="footer-socialHoverIcon"><span class="graphic-socialHover-reddit"></span></a>
+        <a href="http://slack.stellar.org/" class="footer-socialHoverIcon"><span class="graphic-socialHover-slack"></span></a>
+      </div>
+      <div class="footer-bridge__contentEnd">
+        <p><span class="graphic-inline-heart footer-heart-alignment"></span>&nbsp;
+        <a href="http://www.stellar.org">Stellar.org</a> is a nonprofit organization.</p>
+      </div>
+    </section>
+  </div>
+  <div class="chunk">
+    <section class="footer-white">
+      <nav id="footer-navigation" class="clear" role="navigation">
+        <div class="menu"><ul><li ><a href="http://www.stellar.org/">Home</a></li><li class="page_item page-item-2"><a href="http://www.stellar.org/index.php/sample-page/">Sample Page</a></li><li class="page_item page-item-4 current_page_item"><a href="http://www.stellar.org/index.php/wallets/">Wallets</a></li></ul></div>
+      </nav><!-- #footer-navigation -->
+      <div class="site-info">
+        <p>&copy; 2014-2017 Stellar Development Foundation</p>
+      </div><!-- .site-info -->
+    </section>
+  </div>
+    </footer>
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://www.stellar.org/wp-includes/js/admin-bar.min.js?ver=4.3.11'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/main.js?ver=1504894043'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/api.js?ver=1504894043'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweetDB.js?ver=1504894043'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/tweets.js?ver=1504894043'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/community-map.js?ver=1504894043'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/friendbot-classic.js?ver=20140622'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/friendbot-galaxy.js?ver=20140622'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/modernizr.custom.53916.js?ver=2.8.3'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/navigation.js?ver=20120206'></script>
+<script type='text/javascript' src='http://www.stellar.org/wp-content/themes/stellar/js/skip-link-focus-fix.js?ver=20130115'></script>
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar" tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item"  href="http://www.stellar.org/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item"  href="https://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item"  href="https://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item"  href="https://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item"  href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/">stellar-wallets</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard"><a class="ab-item"  href="http://www.stellar.org/wp-admin/">Dashboard</a>		</li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
+		<li id="wp-admin-bar-themes"><a class="ab-item"  href="http://www.stellar.org/wp-admin/themes.php">Themes</a>		</li>
+		<li id="wp-admin-bar-widgets"><a class="ab-item"  href="http://www.stellar.org/wp-admin/widgets.php">Widgets</a>		</li>
+		<li id="wp-admin-bar-menus"><a class="ab-item"  href="http://www.stellar.org/wp-admin/nav-menus.php">Menus</a>		</li>
+		<li id="wp-admin-bar-background" class="hide-if-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/themes.php?page=custom-background">Background</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://www.stellar.org/wp-admin/customize.php?url=http%3A%2F%2Fwww.stellar.org%2Findex.php%2Fwallets%2F%3Fpreview%3Dtrue">Customize</a>		</li>
+		<li id="wp-admin-bar-updates"><a class="ab-item"  href="http://www.stellar.org/wp-admin/update-core.php" title="1 Plugin Update, 3 Theme Updates"><span class="ab-icon"></span><span class="ab-label">4</span><span class="screen-reader-text">1 Plugin Update, 3 Theme Updates</span></a>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item"  href="http://www.stellar.org/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item"  href="http://www.stellar.org/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item"  href="http://www.stellar.org/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item"  href="http://www.stellar.org/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item"  href="http://www.stellar.org/wp-admin/user-new.php">User</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-edit"><a class="ab-item"  href="http://www.stellar.org/wp-admin/post.php?post=4&#038;action=edit">Edit Page</a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://www.stellar.org/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search"/></form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="http://www.stellar.org/wp-admin/profile.php">Howdy, bobby<img alt='' src='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=26&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=52&amp;d=mm&amp;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://www.stellar.org/wp-admin/profile.php"><img alt='' src='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=64&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/260330104d81b09474c1ad75599fea17?s=128&amp;d=mm&amp;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' /><span class='display-name'>bobby</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://www.stellar.org/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=e881b50eec">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://www.stellar.org/wp-login.php?action=logout&#038;_wpnonce=e881b50eec">Log Out</a>
+					</div>
+
+
+</body>
+</html>
