@@ -14943,16 +14943,17 @@ li.how0516-features__list__item:nth-of-type(2n) {
   }
 }
 /* line 52, ../scss/_wallets0916.scss */
-.wallets-page .sm-margin-top {
+.wallets-page .sm-margins {
   margin-top: 40px;
+  margin-bottom: 45px;
 }
 @media only screen and (max-width: 512px) {
   /* line 52, ../scss/_wallets0916.scss */
-  .wallets-page .sm-margin-top {
+  .wallets-page .sm-margins {
     display: none;
   }
 }
-/* line 60, ../scss/_wallets0916.scss */
+/* line 61, ../scss/_wallets0916.scss */
 .wallets-page .wallets_grid-item {
   float: left;
   display: block;
@@ -14968,18 +14969,18 @@ li.how0516-features__list__item:nth-of-type(2n) {
 .wallets-page .wallets_grid-item:last-child {
   margin-right: 0;
 }
-/* line 69, ../scss/_wallets0916.scss */
+/* line 70, ../scss/_wallets0916.scss */
 .wallets-page .wallets_grid-item:hover {
   cursor: pointer;
 }
 @media only screen and (min-width: 1025px) {
-  /* line 74, ../scss/_wallets0916.scss */
+  /* line 75, ../scss/_wallets0916.scss */
   .wallets-page .wallets_grid-item:nth-of-type(3n) {
     margin-right: 0;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 60, ../scss/_wallets0916.scss */
+  /* line 61, ../scss/_wallets0916.scss */
   .wallets-page .wallets_grid-item {
     float: left;
     display: block;
@@ -14990,13 +14991,13 @@ li.how0516-features__list__item:nth-of-type(2n) {
   .wallets-page .wallets_grid-item:last-child {
     margin-right: 0;
   }
-  /* line 81, ../scss/_wallets0916.scss */
+  /* line 82, ../scss/_wallets0916.scss */
   .wallets-page .wallets_grid-item:nth-of-type(2n) {
     margin-right: 0;
   }
 }
 @media only screen and (max-width: 512px) {
-  /* line 60, ../scss/_wallets0916.scss */
+  /* line 61, ../scss/_wallets0916.scss */
   .wallets-page .wallets_grid-item {
     float: left;
     display: block;
@@ -15008,15 +15009,15 @@ li.how0516-features__list__item:nth-of-type(2n) {
     margin-right: 0;
   }
 }
-/* line 91, ../scss/_wallets0916.scss */
+/* line 92, ../scss/_wallets0916.scss */
 .wallets-page .wallets_logo {
   height: 100px;
 }
-/* line 95, ../scss/_wallets0916.scss */
+/* line 96, ../scss/_wallets0916.scss */
 .wallets-page .wallets_wallet-grid {
   min-height: 550px;
 }
-/* line 99, ../scss/_wallets0916.scss */
+/* line 100, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option {
   height: 100%;
   overflow: hidden;
@@ -15026,27 +15027,27 @@ li.how0516-features__list__item:nth-of-type(2n) {
   border-right: 1px solid #dee3e5;
   text-align: center;
 }
-/* line 108, ../scss/_wallets0916.scss */
+/* line 109, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option .icon-label-wrap {
   display: inline-block;
   padding-top: 12px;
 }
-/* line 113, ../scss/_wallets0916.scss */
+/* line 114, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option div {
   float: left;
 }
-/* line 117, ../scss/_wallets0916.scss */
+/* line 118, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option:hover {
   cursor: pointer;
 }
-/* line 121, ../scss/_wallets0916.scss */
+/* line 122, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option .device-text-wrap {
   padding-top: 7px;
   padding-left: 12px;
   display: inline-block;
 }
 @media only screen and (max-width: 768px) {
-  /* line 121, ../scss/_wallets0916.scss */
+  /* line 122, ../scss/_wallets0916.scss */
   .wallets-page .wallets_device-option .device-text-wrap {
     padding-left: 0px;
     font-size: 14px;
@@ -15055,44 +15056,44 @@ li.how0516-features__list__item:nth-of-type(2n) {
   }
 }
 @media screen and (max-width: 582px) {
-  /* line 121, ../scss/_wallets0916.scss */
+  /* line 122, ../scss/_wallets0916.scss */
   .wallets-page .wallets_device-option .device-text-wrap {
     font-size: 12px;
     padding-top: 4px;
   }
 }
-/* line 139, ../scss/_wallets0916.scss */
+/* line 140, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option .device-text-wrap p {
   margin: 0px;
   line-height: 14px;
   text-align: left;
 }
-/* line 145, ../scss/_wallets0916.scss */
+/* line 146, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option .device-text-wrap .count {
   font-size: 12px;
   color: #9b9b9b;
 }
 @media only screen and (max-width: 512px) {
-  /* line 145, ../scss/_wallets0916.scss */
+  /* line 146, ../scss/_wallets0916.scss */
   .wallets-page .wallets_device-option .device-text-wrap .count {
     display: none;
   }
 }
 @media screen and (max-width: 860px) {
-  /* line 156, ../scss/_wallets0916.scss */
+  /* line 157, ../scss/_wallets0916.scss */
   .wallets-page .wallets_device-option .wallets_device-icon {
     display: none;
   }
-  /* line 160, ../scss/_wallets0916.scss */
+  /* line 161, ../scss/_wallets0916.scss */
   .wallets-page .wallets_device-option span {
     padding-left: 0px;
   }
 }
-/* line 165, ../scss/_wallets0916.scss */
+/* line 166, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-option:last-child {
   border-right: none;
 }
-/* line 170, ../scss/_wallets0916.scss */
+/* line 171, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-selector {
   border: 2px solid #dee3e5;
   border-radius: 2px;
@@ -15101,7 +15102,7 @@ li.how0516-features__list__item:nth-of-type(2n) {
   background-color: #eceff0;
   transition: all .4s;
 }
-/* line 178, ../scss/_wallets0916.scss */
+/* line 179, ../scss/_wallets0916.scss */
 .wallets-page .wallets_device-selector #active-device {
   background-color: #DCF2F9;
   border: 1px solid #08b5e5;
@@ -15109,16 +15110,16 @@ li.how0516-features__list__item:nth-of-type(2n) {
   transition: all .4s;
 }
 @media only screen and (max-width: 768px) {
-  /* line 186, ../scss/_wallets0916.scss */
+  /* line 187, ../scss/_wallets0916.scss */
   .wallets-page .wallets_mobile-chunk {
     margin: 4px;
   }
 }
-/* line 192, ../scss/_wallets0916.scss */
+/* line 193, ../scss/_wallets0916.scss */
 .wallets-page .hide {
   display: none;
 }
-/* line 196, ../scss/_wallets0916.scss */
+/* line 197, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
@@ -15131,7 +15132,7 @@ li.how0516-features__list__item:nth-of-type(2n) {
   height: 100%;
   width: 100%;
 }
-/* line 205, ../scss/_wallets0916.scss */
+/* line 206, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-content {
   padding: 70px;
   padding-top: 25px;
@@ -15147,14 +15148,14 @@ li.how0516-features__list__item:nth-of-type(2n) {
   z-index: 1000;
 }
 @media only screen and (max-width: 768px) {
-  /* line 205, ../scss/_wallets0916.scss */
+  /* line 206, ../scss/_wallets0916.scss */
   .wallets-page .modal-overlay .modal-content {
     width: 85%;
     margin-top: 50px;
   }
 }
 @media only screen and (max-width: 512px) {
-  /* line 205, ../scss/_wallets0916.scss */
+  /* line 206, ../scss/_wallets0916.scss */
   .wallets-page .modal-overlay .modal-content {
     width: 100%;
     top: 0px;
@@ -15163,82 +15164,82 @@ li.how0516-features__list__item:nth-of-type(2n) {
     padding: 30px;
   }
 }
-/* line 233, ../scss/_wallets0916.scss */
+/* line 234, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-margin-lg {
   top: 85px;
   transform: translate(-50%, 0%);
 }
-/* line 238, ../scss/_wallets0916.scss */
+/* line 239, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-margin-sm {
   top: 35px;
   transform: translate(-50%, 0%);
 }
-/* line 243, ../scss/_wallets0916.scss */
+/* line 244, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .get-wallet-button {
   width: 100%;
 }
-/* line 247, ../scss/_wallets0916.scss */
+/* line 248, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-dismiss {
   position: absolute;
   right: 4%;
   top: 2%;
 }
-/* line 252, ../scss/_wallets0916.scss */
+/* line 253, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-dismiss:hover {
   cursor: pointer;
 }
 @media only screen and (max-width: 512px) {
-  /* line 247, ../scss/_wallets0916.scss */
+  /* line 248, ../scss/_wallets0916.scss */
   .wallets-page .modal-overlay .modal-dismiss {
     left: 4%;
   }
 }
-/* line 262, ../scss/_wallets0916.scss */
+/* line 263, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-wallet-features li, .wallets-page .modal-overlay .modal-wallet-features p, .wallets-page .modal-overlay .modal-wallet-links li, .wallets-page .modal-overlay .modal-wallet-links p {
   margin: 0;
 }
-/* line 266, ../scss/_wallets0916.scss */
+/* line 267, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-wallet-features ul, .wallets-page .modal-overlay .modal-wallet-links ul {
   margin-left: 30px;
 }
-/* line 271, ../scss/_wallets0916.scss */
+/* line 272, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-wallet-links {
   margin-top: 20px;
 }
-/* line 275, ../scss/_wallets0916.scss */
+/* line 276, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay button {
   width: 80%;
   margin: auto;
 }
-/* line 280, ../scss/_wallets0916.scss */
+/* line 281, ../scss/_wallets0916.scss */
 .wallets-page .modal-overlay .modal-content-top, .wallets-page .modal-overlay .modal-content-bottom {
   float: left;
   clear: both;
 }
-/* line 287, ../scss/_wallets0916.scss */
+/* line 288, ../scss/_wallets0916.scss */
 .wallets-page .chunk-grey {
   background-color: #f4f6f5;
   height: auto;
   overflow: auto;
 }
-/* line 293, ../scss/_wallets0916.scss */
+/* line 294, ../scss/_wallets0916.scss */
 .wallets-page .wallets_additional-info {
   width: 600px;
   margin: auto;
 }
 @media only screen and (max-width: 768px) {
-  /* line 293, ../scss/_wallets0916.scss */
+  /* line 294, ../scss/_wallets0916.scss */
   .wallets-page .wallets_additional-info {
     width: 100%;
   }
 }
 @media only screen and (max-width: 512px) {
-  /* line 293, ../scss/_wallets0916.scss */
+  /* line 294, ../scss/_wallets0916.scss */
   .wallets-page .wallets_additional-info {
     width: 80%;
   }
 }
-/* line 304, ../scss/_wallets0916.scss */
+/* line 305, ../scss/_wallets0916.scss */
 .wallets-page .wallets_additional-info .wallets_additional-info-section {
   float: left;
   margin-top: 50px;
@@ -15246,7 +15247,7 @@ li.how0516-features__list__item:nth-of-type(2n) {
   margin-right: 20%;
 }
 @media only screen and (max-width: 512px) {
-  /* line 304, ../scss/_wallets0916.scss */
+  /* line 305, ../scss/_wallets0916.scss */
   .wallets-page .wallets_additional-info .wallets_additional-info-section {
     margin-top: 20px;
     float: left;
@@ -15259,11 +15260,11 @@ li.how0516-features__list__item:nth-of-type(2n) {
     margin-right: 0;
   }
 }
-/* line 316, ../scss/_wallets0916.scss */
+/* line 317, ../scss/_wallets0916.scss */
 .wallets-page .wallets_additional-info .no-margin {
   margin-right: 0px;
 }
-/* line 320, ../scss/_wallets0916.scss */
+/* line 321, ../scss/_wallets0916.scss */
 .wallets-page .wallets_additional-info .wallets_faq-image {
   background-image: url("../images/graphics/wallets/faq.png");
   width: 136px;
@@ -15287,7 +15288,7 @@ li.how0516-features__list__item:nth-of-type(2n) {
     background-size: 68px 38px;
   }
 }
-/* line 324, ../scss/_wallets0916.scss */
+/* line 325, ../scss/_wallets0916.scss */
 .wallets-page .wallets_additional-info .wallets_market-image {
   background-image: url("../images/graphics/wallets/market.png");
   width: 136px;
@@ -15311,51 +15312,51 @@ li.how0516-features__list__item:nth-of-type(2n) {
     background-size: 68px 37.5px;
   }
 }
-/* line 328, ../scss/_wallets0916.scss */
+/* line 329, ../scss/_wallets0916.scss */
 .wallets-page .wallets_additional-info .wallets_market-image, .wallets-page .wallets_additional-info .wallets_faq-image {
   background-size: 200px 100px;
   height: 100px;
   width: 200px;
 }
 @media only screen and (max-width: 512px) {
-  /* line 328, ../scss/_wallets0916.scss */
+  /* line 329, ../scss/_wallets0916.scss */
   .wallets-page .wallets_additional-info .wallets_market-image, .wallets-page .wallets_additional-info .wallets_faq-image {
     background-size: 100% 100%;
     width: 80%;
   }
 }
-/* line 338, ../scss/_wallets0916.scss */
+/* line 339, ../scss/_wallets0916.scss */
 .wallets-page .wallets_additional-info a {
   text-decoration: none;
   color: #5b6a72;
 }
-/* line 344, ../scss/_wallets0916.scss */
+/* line 345, ../scss/_wallets0916.scss */
 .wallets-page .mobile-only {
   display: none;
 }
 @media only screen and (max-width: 512px) {
-  /* line 344, ../scss/_wallets0916.scss */
+  /* line 345, ../scss/_wallets0916.scss */
   .wallets-page .mobile-only {
     display: inline;
   }
 }
 
 @-moz-document url-prefix() {
-  /* line 353, ../scss/_wallets0916.scss */
+  /* line 354, ../scss/_wallets0916.scss */
   .wallets-page .device-type-web .wallets_device-icon {
     width: 35px;
     height: 30px;
     margin-top: 5px;
   }
 
-  /* line 359, ../scss/_wallets0916.scss */
+  /* line 360, ../scss/_wallets0916.scss */
   .wallets-page .device-type-desktop .wallets_device-icon {
     width: 30px;
     height: 35px;
     margin-top: 3px;
   }
 
-  /* line 365, ../scss/_wallets0916.scss */
+  /* line 366, ../scss/_wallets0916.scss */
   .wallets-page .device-type-mobile .wallets_device-icon {
     width: 26px;
     height: 40px;

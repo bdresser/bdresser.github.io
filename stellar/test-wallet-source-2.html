@@ -8,7 +8,7 @@
                                                           ▒█████████▓▒░     ▒██░
                                                        ███████▓              ███
                                                     ██████░                  ▓██
-    Have a Stellar day!                          ░████▓                       ██▒
+    You are Stellar <3                           ░████▓                       ██▒
                                                 ████                          ███
                                               ████                            ███
                                              ███░         ▒▒░                 ▒██
@@ -554,9 +554,8 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
       </div>
     </div>
 
-    <hr class="sm-margin-top">
+    <hr class="sm-margins">
     <div class="header-disclaimer center">
-      <strong>Available XLM Wallets</strong>
       <p>Disclaimer: Stellar.org does not own, maintain or operate any of these wallets.</p>
     </div>
 
@@ -671,7 +670,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
   </div>
   <div class="chunk-grey so-back">
     <section>
-      <div class="">
+      <div>
         <div class="wallets_additional-info">
           <a href="https://www.stellar.org/faq/">
             <div class="wallets_additional-info-section">
@@ -737,7 +736,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
   // set up counters for each wallet type
   var numWeb = 0, numDesktop = 0, numMobile = 0, numWallets = 0;
-  document.querySelectorAll('.wallets_grid-item').forEach(function(el){
+  var allWallets = document.querySelectorAll('.wallets_grid-item');
+
+  for (var i = 0; i < allWallets.length; i++) {
+    var el = allWallets[i];
     if (hasClass(el, 'w-web')) {
       numWeb++;
     } if (hasClass(el, 'w-desktop')) {
@@ -745,7 +747,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     } if (hasClass(el, 'w-mobile')) {
       numMobile++;
     } numWallets++;
-  });
+  };
 
   document.querySelector('#web-wallet-count').textContent = String(numWeb);
   document.querySelector('#desktop-wallet-count').textContent = String(numDesktop);
@@ -790,17 +792,21 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     // hide irrelevant wallets; show all if no device type
     if (activeDevice) {
       var shownWallets = "w" + activeDevice
-      document.querySelectorAll('.wallets_grid-item').forEach(function(el){
-        if (!hasClass(el, shownWallets)) {
-          hideWallet(el);
+      var allWallets = document.querySelectorAll('.wallets_grid-item')
+
+      for (var i = 0; i < allWallets.length; i++) {
+        if (!hasClass(allWallets[i], shownWallets)) {
+          hideWallet(allWallets[i]);
         } else {
-          showWallet(el);
+          showWallet(allWallets[i]);
         }
-      });
+      }
+
     } else {
-      document.querySelectorAll('.wallets_grid-item').forEach(function(el){
-        showWallet(el);
-      });
+      var allWallets = document.querySelectorAll('.wallets_grid-item');
+      for (var i = 0; i < allWallets.length; i++) {
+        showWallet(allWallets[i]);
+      }
     }
   }
 
@@ -841,11 +847,14 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
   var hideModal = function() {
     fadeOut(document.querySelector('.modal-overlay'));
-    document.querySelectorAll('.modal-content > section').forEach(function(element) {
-      if (element.style.display == 'inline-block') {
-        fadeOut(element);
+    var sections = document.querySelectorAll('.modal-content > section');
+
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].style.display == 'inline-block') {
+        fadeOut(sections[i]);
       }
-    });
+    }
+
     clearSizing();
   }
 
@@ -962,11 +971,11 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </div><!-- #page -->
 
 <script type='text/javascript' src='http://localhost/wp-includes/js/admin-bar.min.js?ver=4.3.11'></script>
-<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/main.js?ver=1505237375'></script>
-<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/api.js?ver=1505237375'></script>
-<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/tweetDB.js?ver=1505237375'></script>
-<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/tweets.js?ver=1505237375'></script>
-<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/community-map.js?ver=1505237375'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/main.js?ver=1505239834'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/api.js?ver=1505239834'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/tweetDB.js?ver=1505239834'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/tweets.js?ver=1505239834'></script>
+<script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/community-map.js?ver=1505239834'></script>
 <script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/friendbot-classic.js?ver=20140622'></script>
 <script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/friendbot-galaxy.js?ver=20140622'></script>
 <script type='text/javascript' src='http://localhost/wp-content/themes/stellar/js/modernizr.custom.53916.js?ver=2.8.3'></script>
