@@ -81,16 +81,53 @@
         discussion, but the community of folks who would need to update their
         applications is different from the standards geeks who were involved in its initial ratification.
         <br><br>
+				</p>
+
+				<p class="section-head first-content">Feedback is a gift</p>
+        <p class="section-content">
         This is where it got interesting. Some developers were particularly concerned
         with how this change would affect their apps first-time flows. The first
         version of the proposal removed all visible presence of an Ethereum browser
-        altogether, and required dapps to use the post message API. If the
+        altogether, and required dapps to use the postMessage API. If the
         application got a response, it was good to go – but if the app did not
         receive a response, it was impossible to distinguish between users who
         declined to share their address and users who had no Ethereum browser/add-on
         installed. In a world where onboarding is already a massive deterrent, this
         change —  despite its noble intentions — was met with resistance.
         <br><br>
+				The proposal was initially drafted this way to ensure complete privacy
+				for the end-user. But it became clear as developer feedback poured in
+				that complete user privacy was less important than establishing an ecosystem
+				that was user-friendly in its basic primitives. We don't want to make onboarding
+				such a burden that there are no users to protect in the first place!
+				<br><br>
+				We eventually drafted a revised version of the proposal that exposes a simple
+				object to all webpages by default. Before this standard, this object (called the
+				Ethereum "provider") exposed a whole suite of convenience methods. The revised proposal
+				whittled those methods down to one: ethereum.enable(). Calling .enable() would
+				prompt the user to disclose their Ethereum address to the site they're visiting,
+				and business continues as usual.
+				<br><br>
+				The revised proposal doesn't achieve complete privacy: it's possible for any site to
+				know whether their user has an Etheruem browser add-on installed by detecting the presence
+				of the provider object. But it's still a substantial step in favor of user privacay without
+				harming UX across the nascent dapp ecosystem.
+				</p>
+				<p class="section-head first-content">Go Time.</p>
+        <p class="section-content">
+        After announcing the standard, accepting feedback and making changes, reaching out
+				to literally hundreds of dapps and dapp browsers, we launched this feature in mid-November
+				and cheered as the ecosystem updated in line with the spec.
+
+				But there's one last step. Today, all new downloads of MetaMask ship with "Privacy Mode" as an
+				optional feature that users can enable in their settings. We're in the process of giving stray
+				applications a several-month "grace period" to update before enabling by default for all users.
+
+				This was my first experience with standards work, and, while it took a much longer development cycle
+				than what I'm used to, the basic principles are similar to other product development: understand your
+				users & their needs, explore the solution space & gather feedback, develop & launch carefully
+				and iterate on the outcome. Thanks for reading!
+				<br><br>
 
         </p>
 
