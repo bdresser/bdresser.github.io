@@ -1,0 +1,121 @@
+body {
+  margin: 20px;
+  font-size: 1em;
+}
+
+article {
+  padding: 4em;
+  font-size: 1rem;
+  max-width: 40rem;
+  line-height: 1.6;
+  font-family: -apple-system,BlinkMacSystemFont,
+  avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+
+li {
+  line-height: 1.6;
+  display:list-item;
+}
+
+.link {
+  color: rgb(10,100,256);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+@media only screen and (max-device-width: 800px) {
+
+  body {
+    margin: 35px;
+  }
+
+  article {
+    max-width: 100rem;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .nav {
+    font-size: .8em;
+  }
+}
+
+/* PRODUCT PAGE */
+
+.project {
+  margin-bottom: 100px;
+}
+
+.project-1-img {
+	height: 300px;
+	width: auto;
+}
+
+.project-2-img {
+	width: 100%;
+	height: auto;
+}
+
+.project-3-img {
+	height: 400px;
+	margin-left: 50px;
+	width: auto;
+}
+
+.project-4-img {
+	height: 400px;
+	width: auto;
+	margin-left: 25%;
+}
+
+.project-img-full {
+	width: 100%;
+}
+
+.nav {
+  /* position: absolute;
+  top: 0; */
+  top: 0;
+}
+
+.active-nav {
+  display: inline;
+  color: rgb(10,100,256);
+  background-color: #b7ffa9;
+}
+
+/* PHOTO PAGE */
+
+.photo-nav {
+  margin-bottom: 50px;
+}
+
+.gallery-pic {
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.fader {
+	opacity: 0;
+}
+
+/* BOOKSHELF */
+
+.ul {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: #b7ffa9;
+}

@@ -5,18 +5,12 @@ body {
 }
 
 p {
-	font-family: 'Source Code Pro';
-	font-weight: 500;
-	font-size:14px;
-	color: rgb(150,150,150);
+	font-family: -apple-system,BlinkMacSystemFont,
+  avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
 }
 
-.page-head {
-	width: 250px;
-	position: fixed;
-	margin-top:75px;
-	margin-left: 8%;
-}
 /*
 .underline {
 	border-bottom: 3px solid rgb(150,150,150);
@@ -78,7 +72,7 @@ p {
 }
 
 .link {
-	color: rgb(50,150,250);
+	color: rgb(10,100,256);
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -114,10 +108,8 @@ p {
 }
 
 .page-content {
-	max-width: 700px;
-	display: inline-block;
-	margin-top: 130px;
-	margin-left: calc(250px + 15%);
+	padding: 4em;
+  max-width: 40rem;
 }
 
 /* Photo Page Style */
