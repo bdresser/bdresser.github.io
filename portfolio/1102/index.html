@@ -1,0 +1,143 @@
+
+<!doctype html>
+
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name='author' content='Bobby Dresser'>
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../styles/troll-trump.css">
+		<link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
+		<title> &nbsp; Bobby Dresser</title>
+
+	</head>
+	<body>
+		<p class="top-left home-font"><a class='link' href="../">BACK</a></p>
+		<div class="wrapper wrapper-two">
+
+			<div class="project-info">
+				<h1 class="section-head">EIP 1102: Privacy Mode for Ethereum Browsers</h1>
+				<p class="section-content">As part of my work on MetaMask,
+          I helped create an industry-wide standard to improve Ethereum’s privacy layer.
+				</p>
+
+			</div>
+			<p class="section-head first-content">What.. is an Ethereum browser?</p>
+			<p class="section-content">  Ethereum browsers & extensions let users interact
+        with decentralized applications, or “dapps” — websites that involve a smart
+        contract as part (or all) of their backend. Although dapps mostly look like
+        regular websites, they have a wild side: occasionally they’ll call a smart
+        contract function, or ask their users to send some ETH.
+        <br></br>
+        These interactions expect users to be able to cryptographically sign messages or
+        transactions with their private keys. But there is no standardized browser API for
+        “ask the user to sign this transaction” like there is for “tell me where the nice lady’s mouse is”
+        or “let me know if this person’s window is too small.”
+        <br></br>
+        That’s where Ethereum browsers come in: MetaMask runs as a browser extension and helps
+        the user get set up with a set of Ethereum addresses & corresponding private keys.
+        The extension then exposes an API to websites to let them suggest actions to the user,
+        and voila: the dapp can now ask the user to sign the transaction it needs. 
+        <br><br>
+        Before our work on this privacy standard, Ethereum browsers had a sort of shotgun strategy.
+        On any page the user visited, the extension injected a web3 object
+        into the global page context and exposed the Ethereum provider API.
+        The web3 object contains a number of convenience methods
+        along with the user’s Ethereum address. The Ethereum provider allows for sites
+        to make RPC calls directly to Infura, which MetaMask uses to submit transactions
+        to the blockchain. This was super helpful for adoption and development. Dapps
+        simply looked for the proper APIs and either found them (yay) or didn’t (go download MetaMask, silly!)
+
+        <p class="section-head first-content">So what's the issue?</p>
+        <p class="section-content">There's a glaring privacy issue in the pattern described above. Using the internet with MetaMask
+        installed meant exposing your Ethereum address to every site you visited,
+        dapp or not. Coupled with the fact that all blockchain data is public, it’s
+        easy to imagine how this data could be used to track, fingerprint, or phish unsuspecting users.
+        <br></br>
+        We drafted EIP 1102 [link] to propose a new standard: rather than exposing
+        addresses by default, dapps should ask permission from the user to see their
+        address. The idea is simple, but it changes the fundamental assumptions dapps
+        can make, causing a breaking change for every dapp and browser in the ecosystem.
+        Advocating for and implementing the change ran the risk of fragmenting or
+        frustrating the Ethereum dev community, but we considered the change a necessity for safe broad adoption.
+        </p>
+
+        <p class="section-head first-content">Boiling the ocean</p>
+        <p class="section-content">
+        First, we rallied support from other Ethereum browser teams. The ecosystem
+        values interoperability and is unusually collaborative. Each team is invested
+        in supporting the development and accessibility of dapps, and un-even implementation
+        of a new standard could lead to confusion and fragmentation. Teams at Status,
+        Mist, imToken, and Coinbase Wallet were supportive of the idea, and after
+        several conversations, they agreed to implement the standard on a similar timeline to ours.
+        <br><br>
+        We published a series of blog posts and discussion threads to inform the
+        Ethereum developer community. The EIP itself had already undergone extensive
+        discussion, but the community of folks who would need to update their
+        applications is different from the standards geeks who were involved in its initial ratification.
+        <br><br>
+				</p>
+
+				<p class="section-head first-content">Feedback is a gift</p>
+        <p class="section-content">
+        This is where it got interesting. Some developers were particularly concerned
+        with how this change would affect their apps first-time flows. The first
+        version of the proposal removed all visible presence of an Ethereum browser
+        altogether, and required dapps to use the postMessage API. If the
+        application got a response, it was good to go – but if the app did not
+        receive a response, it was impossible to distinguish between users who
+        declined to share their address and users who had no Ethereum browser/add-on
+        installed. In a world where onboarding is already a massive deterrent, this
+        change —  despite its noble intentions — was met with resistance.
+        <br><br>
+				The proposal was initially drafted this way to ensure complete privacy
+				for the end-user. But it became clear as developer feedback poured in
+				that complete user privacy was less important than establishing an ecosystem
+				that was user-friendly in its basic primitives. We don't want to make onboarding
+				such a burden that there are no users to protect in the first place!
+				<br><br>
+				We eventually drafted a revised version of the proposal that exposes a simple
+				object to all webpages by default. Before this standard, this object (called the
+				Ethereum "provider") exposed a whole suite of convenience methods. The revised proposal
+				whittled those methods down to one: ethereum.enable(). Calling .enable() would
+				prompt the user to disclose their Ethereum address to the site they're visiting,
+				and business continues as usual.
+				<br><br>
+				The revised proposal doesn't achieve complete privacy: it's possible for any site to
+				know whether their user has an Etheruem browser add-on installed by detecting the presence
+				of the provider object. But it's still a substantial step in favor of user privacay without
+				harming UX across the nascent dapp ecosystem.
+				</p>
+				<p class="section-head first-content">Go Time.</p>
+        <p class="section-content">
+        After announcing the standard, accepting feedback and making changes, reaching out
+				to literally hundreds of dapps and dapp browsers, we launched this feature in mid-November
+				and cheered as the ecosystem updated in line with the spec.
+
+				But there's one last step. Today, all new downloads of MetaMask ship with "Privacy Mode" as an
+				optional feature that users can enable in their settings. We're in the process of giving stray
+				applications a several-month "grace period" to update before enabling by default for all users.
+
+				This was my first experience with standards work, and, while it took a much longer development cycle
+				than what I'm used to, the basic principles are similar to other product development: understand your
+				users & their needs, explore the solution space & gather feedback, develop & launch carefully
+				and iterate on the outcome. Thanks for reading!
+				<br><br>
+
+        </p>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="../../scripts/uber.js"></script>
+	</body>
+</html>
+
+
+
+1102

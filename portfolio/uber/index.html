@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name='author' content='Bobby Dresser'>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../../styles/uber.css">
+		<link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
+		<title> &nbsp; Bobby Dresser</title>
+
+	</head>
+	<body>
+		<div class="wrapper wrapper-two">
+			<h1 class="title-one"><span class="grey">UBER</span> TREK</h1>
+			<p class="section-head first-content">The Brainstorm</p>
+			<p class="section-content">Uber’s rapidly expanding business has eclipsed the taxi industry and become a choice mode of transportation in major cities across the world. Yet despite its rapid ascent, there is still potential to grow as a service to fill a broader set of needs. <br> <br>
+
+			The current use case has been extraordinarily well-covered. Today, Uber exists to help people: <br></p>
+
+			<ul>
+				<li>get from point A to point B (the nature of the game)</li>
+				<li>now, or soon (since we can only order a car for immediate pickup)</li>
+				<li>for an affordable price (rates relative to taxi fare; uberPool)</li>
+			</ul>
+
+			<p class="section-content">
+				The only way left to improve this use case is to increase the number of drivers in cities across the world, and to increase the number of people using the service to support increased drivers. This will drive prices and wait times down. Marketing, promotional offers, and the natural pace of internet/smartphone access will help achieve these goals. This use case will continue to improve gradually. <br><br>
+
+				So what other use cases can Uber cover? We can approach the problem by asking what alternative modes of transportation have to offer in comparison. People use the subway for reliability, timeliness, and affordability. People use private cars to make regular trips at exactly the moment they want. People use trains and buses to go far distances for an affordable rate. <br><br>
+
+				Let’s look at the last use case. People avoid using Uber for long trips because it can be much more expensive than a bus or train ticket. Timeliness may also be an important factor if the person is trying to catch a plane or make a date. The tradeoff of public transport is conveniece: you must leave at a set time, from a set destination. <br>
+			</p>
+
+			<p class="section-head">The Product</p>
+			<p class="section-content">
+				The comfort and flexibility of Uber would far surpass the experience of a train or bus for a long-distance trip if the option were affordable and time-reliable. Towards those two goals, I propose a product here called UBER TREK to schedule Uber rides in advance. <br><br>
+
+				A long Uber ride at current rates could be much more expensive than a bus or train ticket. But if there are enough users headed in the same direction, Uber could pair riders in the same ride (much along the lines of uberPool) to decrease the cost per rider. <br><br>
+
+				The user needs to be able to input a pickup date, time and location. But the affordability component depends on being able to find other users to share the ride with. To that end, the user has several options: she can search for existing rides headed to the same destination at roughly the same time that could stop to pick her up. She can create a new ride and let other users see and join the ride, reducing her fare. Or, she can choose to take the scheduled ride by herself and pay the full fare.<br><br>
+
+				This product is helpful in addition to Uber’s existing functionality because it will encourage users to use the service for long-distance trips. With enough demand in the system, rates would be low enough to make this an incredible competitor to America’s bus lines and train servies. This feature may also set the framework for a routine, dependable use of Uber that could be beneficial in the future. In general, Uber gets more users, and people save money while having a better experience.<br><br>
+
+				Here's how it works:
+
+			</p>
+		</div>
+		<img class='flow' src="screenshots/uber_flow_flat.png" alt="">
+
+		<div class="wrapper">
+			<img class='screenshot fader' src="screenshots/uber_home.png" alt="">
+			<p class="section-content ss-description">
+				The user inputs a location for pick-up and drop-off. Only trips of some length (say, 20 miles or greater) are allowed to be scheduled. <br><br>
+				The user inputs a time and date for departure, along with an optional period of flexibility and the number of riders in the party. Based off timing, destination, and pickup, SEARCH will display rides that have already been scheduled and allow carpool. SCHEDULE will establish a new ride for pickup later, with additional details on the following page. <br><br>
+
+				The flexibility interval will help determine what rides will match in search. If the user decides to schedule a new ride instead of searching, the flexibility period will help find other riders to join. <br><br>
+				
+				As a step further: we don’t have to allow for search. We can simply assign the best existing match. However, search and selection may allow for more convenient timing and ride comfort. <br><br>
+				The user can also select car type, just as with immediate Uber. <br><br>
+			</p>
+			<img class='screenshot fader' src="screenshots/uber_search.png" alt="">
+			<p class="section-content ss-description">
+				The top bar displays the ride information you’re searching on. The EDIT button will return you to the previous screen, HOME. <br><br>
+				Each ride displays the expected fare, the number of riders if you join, and the time the ride would pick the user up. It’s up to the user to choose the most appealing. Perhaps the search results will return especially good deals slightly out of the specified time range, denoted by red text. The JOIN button takes you to a confirmation screen for verification and payment. <br><br>
+
+				As a step further, it could be interesting to experiment here with different ride types. We could allow rides to set a fixed departure location, allowing no pickups along the way but greater precision with departure times. The user searching would note the departure location and meet the rest of the riders there. (Although this raises privacy implications that should be considered.) <br><br>
+
+				If the user sees no rides that work with her schedule, she can use the bottom button to schedule her own ride (instead of returning to the homepage.) <br><br>
+
+			</p>
+			<img class='screenshot fader' src="screenshots/uber_schedule.png" alt="">
+			<p class="section-content ss-description extra-padding">
+				The top section displays the final ride information. It doesn’t need to move from the previous screen. <br><br>
+				The estimated price for the ride is displayed before confirmation. It’s important to note that this is the total price for the ride if taken by the user only, with no carpooling, and the price will change as other users join the ride if permitted (perhaps prompting a push notification or text).
+				<br><br>
+				Here the user determines whether or not he wants to allow others to see the ride and join it. This would not change the original poster’s destination or departure time. Pick-ups will be allowed only if they interfere with arrival time by a small amount. Obviously this will reduce the fee for each rider. <br><br>
+				As a step further, we could allow users to determine whether they are willing to make stops for other passengers, or wehther the departure location is fixed, requiring other passengers to meet there. This would allow for more precise departure time but would complicate the search experience. <br><br>
+				After payment, the user can choose to invite friends to their ride via email or text. <br><br>
+
+			</p>
+
+			<p class="section-head">Discussion</p>
+			<p class="section-content">
+				As previously stated, this feature will expand Uber’s business and make Uber a solid competitor with America’s bus and train services. The feature also points Uber’s relationship with its users in a new direction that could have an effect on future use of the service. <br><br>
+
+				Uber has the potential to make the private car obselete. Why own an automobile when you can use it for just the two hours you need each day? When we consider driverless car technology that eliminates the cost of a driver, there suddenly exists a world where people can use Uber for any transportation need they have. Uber Trek could even expand to allow for recurring rides, potentially at a discount, which could fill the everyday transportation needs of its users, like commuting to work. <br><br>
+
+				This necessitates an increased sense of trust and dependability towards the service, which is perhaps the biggest hurdle the company has to overcome. A feature that allows the user to schedule a ride that is prompt and reliable is a step towards establishing a relationhip with Uber that is not transient but rather firmly rooted in the transportation infrastructure of the future.<br><br>
+
+
+			</p>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="../../scripts/uber.js"></script>
+	</body>
+</html>
